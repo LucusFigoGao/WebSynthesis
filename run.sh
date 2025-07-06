@@ -44,5 +44,3 @@ for config_file in "${PROJECT_ROOT}/config_files"/*.json; do
 done
 
 echo "所有任务处理完毕"
-
-python merge.py
