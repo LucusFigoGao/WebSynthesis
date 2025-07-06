@@ -1,6 +1,6 @@
 # WebSynthesis
 
-<img src="./figure/WebSynthesis.png" alt="overview" style="zoom:10%; margin: 0 auto; display: block;" />
+<img src="./figure/WebSynthesis.png" alt="overview" style="zoom:20%; margin: 0 auto; display: block;" />
 
 ## World Model-Guided MCTS for Efficient WebUI-Trajectory Synthesis
 WebSynthesis is a framework integrating **world model** learning and **Monte Carlo Tree Search** (MCTS), designed to significantly reduce the cost of online synthesis of high-quality Web UI trajectories. Through a two-stage curriculum, including UI fundamental understanding and UI behavior cloning, the policy agent acquires web navigation capabilities.
