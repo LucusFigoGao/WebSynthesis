@@ -15,7 +15,7 @@ WebSynthesis is a framework integrating **world model** learning and **Monte Car
 
 1. **Clone the GitHub Repository:**
    ```
-   git clone https://github.com/LucusFigoGao/WebMCTS.git
+   git clone https://github.com/LucusFigoGao/WebSynthesis.git
    ```
 
 2. **Collection:**
