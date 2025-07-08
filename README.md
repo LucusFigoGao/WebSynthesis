@@ -55,5 +55,13 @@ WebSynthesis is a framework integrating **world model** learning and **Monte Car
 🫶 If you are interested in our work or find this repository / our data helpful, please consider using the following citation format when referencing our paper:
 
 ```bibtex
-
+@misc{gao2025websynthesisworldmodelguidedmctsefficient,
+   title={WebSynthesis: World-Model-Guided MCTS for Efficient WebUI-Trajectory Synthesis}, 
+   author={Yifei Gao and Junhong Ye and Jiaqi Wang and Jitao Sang},
+   year={2025},
+   eprint={2507.04370},
+   archivePrefix={arXiv},
+   primaryClass={cs.AI},
+   url={https://arxiv.org/abs/2507.04370}, 
+}
 ```
