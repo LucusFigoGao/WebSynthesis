@@ -40,6 +40,16 @@ def _pick_sibling(node: treeNode) -> treeNode:
     except ValueError:              # siblings 为空
         return None
 
+def _dfs_find_stop_nodes(node: treeNode, stop_nodes: List[treeNode]):
+    """DFS 遍历所有节点，收集 action 包含 'stop' 的节点"""
+    if hasattr(node, 'action') and 'stop' in node.action:
+        # stop必须位于叶子节点，否则不能标志为完整的轨迹
+        if node.isTerminal:
+            stop_nodes.append(node)
+    for child in node.children.values():
+        _dfs_find_stop_nodes(child, stop_nodes)
+
+
 def extract_valuable_trajectories(root: treeNode):
     """
     返回两类轨迹的合集：
@@ -58,8 +68,17 @@ def extract_valuable_trajectories(root: treeNode):
     
     if len(good_leaves) == 0:
         print(f"Warning: No leaf has value >= {value_threshold}.")
-        good_leaves = [leaf for v, leaf in leaves if v == 4]
-        flag = 0
+        
+        # 搜索包含 'stop' 的节点
+        stop_nodes: List[treeNode] = []
+        _dfs_find_stop_nodes(root, stop_nodes)
+        if stop_nodes:
+            good_leaves = stop_nodes
+            flag = 1
+        else:
+            # 如果没有找到包含'stop'的节点，回退到原来的v==4的逻辑
+            good_leaves = [leaf for v, leaf in leaves if v == 4]
+            flag = 0
     else:
         flag = 1
     
