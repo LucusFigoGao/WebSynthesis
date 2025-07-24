@@ -1,6 +1,6 @@
 # WebSynthesis
 
-<img src="./figure/WebSynthesis.png" alt="overview" style="zoom:20%; margin: 0 auto; display: block;" />
+<img src="./figure/Inro.jpg" alt="overview" style="zoom:20%; margin: 0 auto; display: block;" />
 
 <div style='display:flex; gap: 0.25rem; '>
 <a href="https://www.arxiv.org/abs/2507.04370"><img src="https://img.shields.io/badge/arXiv-2507.04370-b31b1b.svg"></a>
