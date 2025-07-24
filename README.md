@@ -69,7 +69,7 @@ WebSynthesis is a framework integrating **world model** learning and **Monte Car
 ![aba-exp](./figure/ablation.png)
 
 ## Scaling Analysis
-![scaling-exp](./figure/scaling.png)
+![scaling-exp](./figure/scaling.jpg)
 
 ## Citation 📖
 
