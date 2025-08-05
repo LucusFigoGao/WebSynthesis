@@ -1,0 +1,41 @@
+{
+    "sites": [
+        "reddit"
+    ],
+    "task_id": 635,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:9999",
+    "geolocation": null,
+    "intent_template": "Post in the most appropriate subreddit and ask for recommendations for {{category}} products within a budget of {{price}}",
+    "instantiation_dict": {
+        "category": "noise-cancelling headphones",
+        "price": "$200"
+    },
+    "intent": "Post in the most appropriate subreddit and ask for recommendations for noise-cancelling headphones products within a budget of $200",
+    "require_reset": false,
+    "eval": {
+        "eval_types": [
+            "url_match",
+            "program_html"
+        ],
+        "reference_answers": null,
+        "reference_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:9999/f/headphones",
+        "program_html": [
+            {
+                "url": "func:reddit_get_post_url('__last_url__')",
+                "locator": "document.querySelector('.submission__inner').outerText",
+                "required_contents": {
+                    "must_include": [
+                        "200",
+                        "noise-cancelling",
+                        "headphone"
+                    ]
+                }
+            }
+        ],
+        "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 6100,
+    "state": "Tab 0 (current): Postmill\n\n[1] RootWebArea 'Postmill' focused: True\n\t[17] HeaderAsNonLandmark ''\n\t\t[52] link 'Home'\n\t[171] link 'Forums'\n\t[172] link 'Wiki'\n\t[100] searchbox 'Search query'\n\t[101] link 'Notifications (0)'\n\t[102] link 'Submit'\n\t[1919] button 'MarvelsGrantMan136' hasPopup: menu expanded: False\n\t[12] main ''\n\t\t[203] link 'Submissions'\n\t\t[204] link 'Comments'\n\t\t[1920] button 'Filter on: Subscribed' hasPopup: menu expanded: False\n\t\t[1921] button 'Sort by: Hot' hasPopup: menu expanded: False\n\t\t[22] article ''\n\t\t\t[209] HeaderAsNonLandmark ''\n\t\t\t\t[334] heading 'Gone with the wind'\n\t\t\t\t\t[614] link 'Gone with the wind'\n\t\t\t\t[616] StaticText 'Submitted by '\n\t\t\t\t[617] link 'MarvelsGrantMan136' expanded: False\n\t\t\t\t[619] time 'September 27, 2023 at 5:11:33 AM EDT'\n\t\t\t\t\t[1955] StaticText '1 hour ago'\n\t\t\t\t[620] StaticText ' in '\n\t\t\t\t[621] link 'books'\n\t\t\t[1037] link '2 comments'\n\t\t\t[1039] link 'Edit'\n\t\t\t[1431] button 'Delete'\n\t\t\t[338] button 'Retract upvote'\n\t\t\t[341] button 'Downvote'\n\t\t[23] article ''\n\t\t\t[212] HeaderAsNonLandmark ''\n\t\t\t\t[343] heading 'Harry Potter movie series'\n\t\t\t\t\t[629] link 'Harry Potter movie series'\n\t\t\t\t[631] StaticText 'Submitted by '\n\t\t\t\t[632] link 'MarvelsGrantMan136' expanded: False\n\t\t\t\t[634] time 'September 27, 2023 at 6:00:40 AM EDT'\n\t\t\t\t\t[1956] StaticText '38 minutes ago'\n\t\t\t\t[635] StaticText ' in '\n\t\t\t\t[636] link 'books'\n\t\t\t[1051] link '1 comment'\n\t\t\t[1053] link 'Edit'\n\t\t\t[1441] button 'Delete'\n\t\t\t[347] button 'Retract upvote'\n\t\t\t[350] button 'Downvote'\n\t\t[24] article ''\n\t\t\t[215] HeaderAsNonLandmark ''\n\t\t\t\t[352] heading 'what is the recommended console to buy these days'\n\t\t\t\t\t[644] link 'what is the recommended console to buy these days'\n\t\t\t\t[646] StaticText 'Submitted by '\n\t\t\t\t[647] link 'MarvelsGrantMan136' expanded: False\n\t\t\t\t[649] time 'September 27, 2023 at 4:09:06 AM EDT'\n\t\t\t\t\t[1957] StaticText '3 hours ago'\n\t\t\t\t[650] StaticText ' in '\n\t\t\t\t[651] link 'CyberpunkCyberpunk'\n\t\t\t[1065] link '1 comment'\n\t\t\t[1067] link 'Edit'\n\t\t\t[1451] button 'Delete'\n\t\t\t[1922] button 'Actions' hasPopup: menu expanded: False\n\t\t\t[356] button 'Upvote'\n\t\t\t[1925] StaticText '−1'\n\t\t\t[359] button 'Retract downvote'\n\t\t[25] article ''\n\t\t\t[218] HeaderAsNonLandmark ''\n\t\t\t\t[361] heading 'Nvidia RTX 4090'\n\t\t\t\t\t[661] link 'Nvidia RTX 4090'\n\t\t\t\t[663] StaticText 'Submitted by '\n\t\t\t\t[664] link 'MarvelsGrantMan136' expanded: False\n\t\t\t\t[666] time 'June 12, 2023 at 12:55:45 PM EDT'\n\t\t\t\t\t[1959] StaticText '4 months ago'\n\t\t\t\t[667] StaticText ' in '\n\t\t\t\t[668] link 'MachineLearning'\n\t\t\t[1082] link 'No comments'\n\t\t\t[1084] link 'Edit'\n\t\t\t[1468] button 'Delete'\n\t\t\t[365] button 'Upvote'\n\t\t\t[1927] StaticText '−1'\n\t\t\t[368] button 'Retract downvote'\n\t\t[26] article ''\n\t\t\t[221] HeaderAsNonLandmark ''\n\t\t\t\t[370] heading 'Museum issues appeal to save famed \"Misty of Chincoteague\" ranch from being sold to developers'\n\t\t\t\t\t[677] link 'Museum issues appeal to save famed \"Misty of Chincoteague\" ranch from being sold to developers'\n\t\t\t\t[372] link 'delmarvanow.com'\n\t\t\t\t[680] StaticText 'Submitted by '\n\t\t\t\t[681] link 'ZebZ' expanded: False\n\t\t\t\t[1095] StaticText 't3_11goa5z'\n\t\t\t\t[685] time 'March 2, 2023 at 9:12:11 PM EST'\n\t\t\t\t\t[1961] StaticText '7 months ago'\n\t\t\t\t[686] StaticText ' in '\n\t\t\t\t[687] link 'books'\n\t\t\t[1100] link '43 comments'\n\t\t\t[376] button 'Upvote'\n\t\t\t[1929] StaticText '−1'\n\t\t\t[379] button 'Retract downvote'\n\t\t[27] article ''\n\t\t\t[224] HeaderAsNonLandmark ''\n\t\t\t\t[381] heading 'After Two Decades And 38 Children’s Books Lin Oliver Continues Her Thriving Collaboration With Henry Winkler'\n\t\t\t\t\t[694] link 'After Two Decades And 38 Children’s Books Lin Oliver Continues Her Thriving Collaboration With Henry Winkler'\n\t\t\t\t[383] link 'forbes.com'\n\t\t\t\t[697] StaticText 'Submitted by '\n\t\t\t\t[698] link 'drak0bsidian' expanded: False\n\t\t\t\t[1111] StaticText 't3_11dewje'\n\t\t\t\t[702] time 'February 27, 2023 at 10:43:55 AM EST'\n\t\t\t\t\t[1963] StaticText '7 months ago'\n\t\t\t\t[703] StaticText ' in '\n\t\t\t\t[704] link 'books'\n\t\t\t[1116] link '27 comments'\n\t\t\t[387] button 'Upvote'\n\t\t\t[1931] StaticText '−1'\n\t\t\t[390] button 'Retract downvote'\n\t\t[28] article ''\n\t\t\t[227] HeaderAsNonLandmark ''\n\t\t\t\t[392] heading 'The letters of T. S. Eliot to Emily Hale that were kept sealed from 1956 to 2020 have been released for free online'\n\t\t\t\t\t[711] link 'The letters of T. S. Eliot to Emily Hale that were kept sealed from 1956 to 2020 have been released for free online'\n\t\t\t[398] button 'Upvote'\n\t\t\t[1933] StaticText '−1'\n\t[13] complementary ''\n\t\t[88] heading 'Subscribed forums'\n\t\t[285] link 'books'\n\t\t[286] link 'CyberpunkCyberpunk'\n\t\t[287] link 'MachineLearning'\n\t\t[288] link 'pittsburgh'"
+}

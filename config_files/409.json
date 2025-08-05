@@ -1,0 +1,37 @@
+{
+    "sites": [
+        "reddit"
+    ],
+    "task_id": 409,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:9999/f/books/59421/friendly-reminder-bookshop-org-exists",
+    "geolocation": null,
+    "intent_template": "Reply to {{position_description}} in this post with \"{{content_description}}\"",
+    "instantiation_dict": {
+        "position_description": "the manager of the website",
+        "content_description": "thanks! I am a big fan of your website."
+    },
+    "intent": "Reply to the manager of the website in this post with \"thanks! I am a big fan of your website.\"",
+    "require_reset": false,
+    "eval": {
+        "eval_types": [
+            "program_html"
+        ],
+        "reference_answers": null,
+        "reference_url": "",
+        "program_html": [
+            {
+                "url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:9999/f/books/59421/-/comment/1235250",
+                "locator": "",
+                "required_contents": {
+                    "must_include": [
+                        "thanks! I am a big fan of your website."
+                    ]
+                }
+            }
+        ]
+    },
+    "intent_template_id": 23,
+    "state": "Tab 0 (current): Friendly reminder bookshop.org exists.\n\n[1] RootWebArea 'Friendly reminder bookshop.org exists.' focused: True\n\t[14] HeaderAsNonLandmark ''\n\t\t[33] link 'Home'\n\t\t\t[78] StaticText 'Postmill'\n\t[142] link 'Forums'\n\t[143] link 'Wiki'\n\t[84] searchbox 'Search query'\n\t[85] link 'Notifications (0)'\n\t[86] link 'Submit'\n\t[9473] button 'MarvelsGrantMan136' hasPopup: menu expanded: False\n\t[11] main ''\n\t\t[174] link '/f/books'\n\t\t[19] article ''\n\t\t\t[175] HeaderAsNonLandmark ''\n\t\t\t\t[301] heading 'Friendly reminder bookshop.org exists.'\n\t\t\t\t\t[486] link 'Friendly reminder bookshop.org exists.'\n\t\t\t\t[488] StaticText 'Submitted by '\n\t\t\t\t[489] link 'smita16' expanded: False\n\t\t\t\t[790] StaticText 't3_zzvi0q'\n\t\t\t\t[493] time 'December 31, 2022 at 9:40:19 AM EST'\n\t\t\t\t\t[9531] StaticText '9 months ago'\n\t\t\t\t[494] StaticText ' in '\n\t\t\t\t[495] link 'books'\n\t\t\t[795] StaticText 'Saw it’s been a few months since this website was discussed. I actually just discovered it last night. Local bookstores are so important and they have so much character we should all do what we can to support this.'\n\t\t\t[796] StaticText 'This website allows you to select a local bookstore in your area and 30% of any book purchase on the website goes to the store.'\n\t\t\t[797] StaticText 'I think it is amazing!'\n\t\t\t[798] link '125 comments'\n\t\t\t[306] button 'Upvote'\n\t\t\t[9475] StaticText '3085'\n\t\t\t[309] button 'Downvote'\n\t\t[20] heading 'Comments'\n\t\t[312] textbox 'Comment' required: True describedby: reply_to_submission_59421_comment_help\n\t\t[181] checkbox 'Formatting help +' checked: false\n\t\t[183] StaticText 'Markdown allowed.'\n\t\t[95] button 'Post'\n\t\t[190] link 'Nested'\n\t\t[191] link 'Linear'\n\t\t[23] article ''\n\t\t\t[50] checkbox 'Hide −' checked: true\n\t\t\t[192] HeaderAsNonLandmark ''\n\t\t\t\t[324] heading 'ameliaspond [t1_j2eg7wq] wrote 9 months ago'\n\t\t\t\t\t[523] link 'ameliaspond' expanded: False\n\t\t\t\t\t[527] time 'December 31, 2022 at 12:36:15 PM EST'\n\t\t\t[329] button 'Upvote'\n\t\t\t[9476] StaticText '367'\n\t[6335] complementary ''\n\t\t[6523] StaticText '0 points'\n\t\t[6526] StaticText '(+0, −0)'\n\t\t[6527] heading 'Short URL:'\n\t\t[6990] StaticText 'http://metis.lti.cs.cmu.edu:9999/59421'\n\t\t[6445] heading 'books'\n\t\t\t[6529] link 'books'\n\t\t[6686] button 'Subscribe No subscribers'\n\t\t\t[6992] generic 'No subscribers'\n\t\t\t\t[9530] StaticText '0'\n\t\t[6687] StaticText 't5_2qh4i'\n\t\t[6448] separator '' orientation: horizontal\n\t\t[6688] StaticText 'Created '\n\t\t[6689] time 'September 30, 2022 at 10:17:55 PM EDT'\n\t\t\t[9474] StaticText '12 months ago'\n\t\t[6690] link 'Subscribe via RSS'\n\t\t[6336] Details ''\n\t\t\t[6338] DisclosureTriangle 'Hide this forum' expanded: False\n\t\t[6451] heading 'Toolbox'\n\t\t[6698] link 'Bans'\n\t\t[6699] link 'Moderation log'"
+}

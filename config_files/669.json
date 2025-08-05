@@ -1,0 +1,39 @@
+{
+    "sites": [
+        "gitlab"
+    ],
+    "task_id": 669,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:8023/byteblaze/solarized-prism-theme",
+    "geolocation": null,
+    "intent_template": "Open a new issue to discuss the implementation of {{feature}}",
+    "instantiation_dict": {
+        "feature": "dark mode"
+    },
+    "intent": "Open a new issue to discuss the implementation of dark mode",
+    "require_reset": false,
+    "eval": {
+        "eval_types": [
+            "url_match",
+            "program_html"
+        ],
+        "reference_answers": null,
+        "reference_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:8023/byteblaze/solarized-prism-theme/-/issues",
+        "program_html": [
+            {
+                "url": "last",
+                "locator": "document.querySelector('.detail-page-description').outerText",
+                "required_contents": {
+                    "must_include": [
+                        "implementation",
+                        "dark mode"
+                    ]
+                }
+            }
+        ],
+        "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 337,
+    "state": "Tab 0 (current): Byte Blaze / solarized-prism-theme · GitLab\n\n[1] RootWebArea 'Byte Blaze / solarized-prism-theme · GitLab' focused: True\n\t[5] link 'Skip to content'\n\t[18] link 'Dashboard'\n\t[1802] button '' hasPopup: menu expanded: False\n\t[98] textbox 'Search GitLab' required: False\n\t[73] generic 'Use the shortcut key <kbd>/</kbd> to start a search'\n\t[37] link 'Create new...'\n\t[39] link 'Issues'\n\t\t[59] generic '13 assigned issues'\n\t[40] link 'Merge requests'\n\t\t[61] generic '8 merge requests'\n\t[42] link 'To-Do List'\n\t\t[386] generic 'Todos count'\n\t\t\t[514] StaticText '5'\n\t[251] link 'Help'\n\t[253] link 'Byte Blaze'\n\t\t[392] img 'Byte Blaze'\n\t[134] complementary 'Project navigation'\n\t\t[153] listitem 'solarized-prism-theme'\n\t\t\t[195] link 'solarized-prism-theme'\n\t\t\t\t[541] StaticText 'S'\n\t\t[196] link 'Project information'\n\t\t[198] link 'Repository'\n\t\t[200] link 'Issues'\n\t\t[202] link 'Merge requests'\n\t\t[204] link 'CI/CD'\n\t\t[206] link 'Security &amp; Compliance'\n\t\t[208] link 'Deployments'\n\t\t[210] link 'Packages and registries'\n\t\t[212] link 'Infrastructure'\n\t\t[214] link 'Monitor'\n\t\t[216] link 'Analytics'\n\t\t[218] link 'Wiki'\n\t\t[220] link 'Snippets'\n\t\t[222] link 'Settings'\n\t\t[144] button 'Collapse sidebar'\n\t[1063] alert '' live: assertive atomic: True relevant: additions text\n\t\t[1070] button 'Dismiss'\n\t\t[1068] alert '' live: assertive atomic: True relevant: additions text\n\t\t\t[1042] link 'Add SSH key'\n\t\t\t[1118] button \"Don't show again\"\n\t[1124] alert '' live: assertive atomic: True relevant: additions text\n\t\t[1014] button 'Dismiss'\n\t\t[1034] alert '' live: assertive atomic: True relevant: additions text\n\t\t\t[1022] StaticText 'The Auto DevOps pipeline has been enabled and will be used if no alternative CI configuration file is found.'\n\t\t\t[997] StaticText 'Container registry is not enabled on this GitLab instance. Ask an administrator to enable it in order for Auto DevOps to work.'\n\t\t\t[1146] link 'Settings'\n\t\t\t[1091] link 'More information'\n\t[994] navigation 'Breadcrumbs'\n\t\t[1157] link 'Byte Blaze'\n\t\t[1101] link 'solarized-prism-theme'\n\t[990] main ''\n\t\t[1021] StaticText 'S'\n\t\t[1025] heading 'solarized-prism-theme Private - Project access must be granted explicitly to each user. If this project is part of a group, access is granted to members of the group.'\n\t\t\t[1015] generic 'Private - Project access must be granted explicitly to each user. If this project is part of a group, access is granted to members of the group.'\n\t\t[1053] StaticText 'Project ID: 188 '\n\t\t[1148] button 'Copy project ID' live: polite atomic: False relevant: additions text\n\t\t[1296] button '' hasPopup: menu expanded: False\n\t\t[1123] button 'Star'\n\t\t[1064] link '0'\n\t\t[1049] link 'Fork'\n\t\t[1001] link '0'\n\t\t[1175] link '7 Commits'\n\t\t[1176] link '1 Branch'\n\t\t[1177] link '0 Tags'\n\t\t[1178] link '143 KB Project Storage'\n\t\t[1141] StaticText 'solarized theme for prism.js'\n\t\t[1120] StaticText 'Forked from '\n\t\t[1050] link '小子欠扁 / solarized-prism-theme'\n\t\t[1163] generic '<span class=\"repository-language-bar-tooltip-language\">CSS</span> <span class=\"repository-language-bar-tooltip-share\">90.4%</span>'\n\t\t[983] generic '<span class=\"repository-language-bar-tooltip-language\">HTML</span> <span class=\"repository-language-bar-tooltip-share\">9.6%</span>'\n\t\t[1759] img 'user avatar'\n\t\t[1763] link 'Update README.md'\n\t\t[1767] StaticText '小子欠扁 authored '\n\t\t[1768] time 'Jul 24, 2013 10:43pm EDT'\n\t\t\t[1771] StaticText '10 years ago'\n\t\t[1765] group ''\n\t\t\t[1774] StaticText 'c6d880bf'\n\t\t\t[1770] button 'Copy commit SHA' live: polite atomic: False relevant: additions text\n\t\t[1443] button 'master' hasPopup: menu expanded: False\n\t\t[1416] navigation 'Files breadcrumb'\n\t\t\t[1444] link 'solarized-prism-theme'\n\t\t\t[1458] button 'Add to tree' hasPopup: menu expanded: False\n\t\t[1028] link 'Find file'\n\t\t[1440] link 'Web IDE'\n\t\t[988] button 'Download'\n\t\t\t[1018] StaticText 'Select Archive Format'\n\t\t[1168] link 'Clone'\n\t\t[1198] link 'README'\n\t\t[1199] link 'Auto DevOps enabled'\n\t\t[1200] link 'Add LICENSE'\n\t\t[1201] link 'Add CHANGELOG'\n\t\t[1202] link 'Add CONTRIBUTING'"
+}

@@ -1,0 +1,35 @@
+{
+    "sites": [
+        "shopping"
+    ],
+    "task_id": 163,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:7770/ostent-16gb-memory-card-stick-storage-for-sony-ps-vita-psv1000-2000-pch-z081-z161-z321-z641.html",
+    "geolocation": null,
+    "intent_template": "What are the main criticisms of this product? Please extract the relevant sentences.",
+    "instantiation_dict": {},
+    "intent": "What are the main criticisms of this product? Please extract the relevant sentences.",
+    "require_reset": false,
+    "eval": {
+        "eval_types": [
+            "string_match"
+        ],
+        "reference_answers": {
+            "must_include": [
+                "I ordered the 16gb but I only got 14 gigs even though I formatted the card",
+                "The memory card is kind of slow on games and downloads",
+                "No original packaging It's used and the previous owners data has not been erased",
+                "The product is a legit sony hardware that have been owned by someone else before",
+                "The media could not be loaded",
+                "I could not format the card so I wasn’t able to use it for my VITA"
+            ]
+        },
+        "reference_url": "",
+        "program_html": [],
+        "string_note": "",
+        "reference_answer_raw_annotation": "I ordered the 16gb but I only got 14 gigs even though I formatted the card. The memory card is kind of slow on games and downloads. No original packaging It's used and the previous owners data has not been erased. The product is a legit sony hardware that have been owned by someone else before The media could not be loaded.  I could not format the card so I wasn’t able to use it for my VITA"
+    },
+    "intent_template_id": 136,
+    "state": "Tab 0 (current): PHOTOSMART PLUS B209 CLR INKJETFB P/S/C USB/WRLS 1\n\n[1] RootWebArea 'PHOTOSMART PLUS B209 CLR INKJETFB P/S/C USB/WRLS 1' focused: True\n\t[119] link 'My Account'\n\t[120] link 'My Wish List'\n\t[121] link 'Sign Out'\n\t[3457] StaticText 'Welcome to One Stop Market'\n\t[57] link 'Skip to Content'\n\t[42] link 'store logo'\n\t\t[59] img 'one_stop_market_logo'\n\t[60] link '\\ue611 My Cart'\n\t[348] StaticText 'Search'\n\t[223] combobox '\\ue615 Search' autocomplete: both hasPopup: listbox required: False expanded: False\n\t[351] link 'Advanced Search'\n\t[171] button 'Search' disabled: True\n\t[3438] tablist '' multiselectable: False orientation: horizontal\n\t\t[3440] tabpanel ''\n\t\t\t[1684] menu '' orientation: vertical\n\t\t\t\t[2435] menuitem '\\ue622 Beauty &amp; Personal Care' hasPopup: menu\n\t\t\t\t[2500] menuitem '\\ue622 Sports &amp; Outdoors' hasPopup: menu\n\t\t\t\t[2510] menuitem '\\ue622 Clothing, Shoes &amp; Jewelry' hasPopup: menu\n\t\t\t\t[2524] menuitem '\\ue622 Home &amp; Kitchen' hasPopup: menu\n\t\t\t\t[2561] menuitem '\\ue622 Office Products' hasPopup: menu\n\t\t\t\t[2569] menuitem '\\ue622 Tools &amp; Home Improvement' hasPopup: menu\n\t\t\t\t[2574] menuitem '\\ue622 Health &amp; Household' hasPopup: menu\n\t\t\t\t[2580] menuitem '\\ue622 Patio, Lawn &amp; Garden' hasPopup: menu\n\t\t\t\t[2585] menuitem '\\ue622 Electronics' hasPopup: menu\n\t\t\t\t[2646] menuitem '\\ue622 Cell Phones &amp; Accessories' hasPopup: menu\n\t\t\t\t[2661] menuitem '\\ue622 Video Games' hasPopup: menu\n\t\t\t\t[2674] menuitem '\\ue622 Grocery &amp; Gourmet Food' hasPopup: menu\n\t[1678] link 'Home'\n\t[1681] StaticText 'PHOTOSMART PLUS B209 CLR INKJETFB P/S/C USB/WRLS 1'\n\t[5] main ''\n\t\t[49] heading 'PHOTOSMART PLUS B209 CLR INKJETFB P/S/C USB/WRLS 1'\n\t\t[11] generic 'Availability'\n\t\t\t[13] StaticText 'IN STOCK'\n\t\t[325] StaticText 'SKU'\n\t\t[488] StaticText 'B002N860RE'\n\t\t[146] LayoutTable ''\n\t\t\t[490] StaticText 'Rating:'\n\t\t\t[328] generic '60%'\n\t\t\t\t[1109] StaticText '% of'\n\t\t\t\t[1344] StaticText '100'\n\t\t\t[329] link '2\\xa0 Reviews '\n\t\t\t[330] link 'Add Your Review'\n\t\t[1674] StaticText '$449.99'\n\t\t[208] LayoutTable ''\n\t\t\t[1112] StaticText 'Qty'\n\t\t\t[1113] spinbutton 'Qty' required: False valuemin: 0 valuemax: 0 valuetext: \n\t\t\t[806] button 'Add to Cart'\n\t\t[209] link 'Add to Wish List'\n\t\t[210] link 'Add to Compare'\n\t\t[150] link 'Skip to the end of the images gallery'\n\t\t[3455] generic 'Image'\n\t\t\t[3476] img 'Image'"
+}

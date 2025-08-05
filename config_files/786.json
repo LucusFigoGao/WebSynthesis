@@ -1,0 +1,33 @@
+{
+    "sites": [
+        "gitlab"
+    ],
+    "task_id": 786,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:8023/vinta/awesome-python",
+    "geolocation": null,
+    "intent_template": "Tell me the {{attribute}} of the contributor who has the most commits to branch {{branch_name}}",
+    "instantiation_dict": {
+        "branch_name": "main",
+        "attribute": "number of commits"
+    },
+    "intent": "Tell me the number of commits of the contributor who has the most commits to branch main",
+    "require_reset": false,
+    "eval": {
+        "eval_types": [
+            "string_match"
+        ],
+        "reference_answers": {
+            "must_include": [
+                "412"
+            ]
+        },
+        "reference_url": "",
+        "program_html": [],
+        "string_note": "",
+        "reference_answer_raw_annotation": "412"
+    },
+    "intent_template_id": 316,
+    "state": "Tab 0 (current): Vinta Chen / awesome-python · GitLab\n\n[1] RootWebArea 'Vinta Chen / awesome-python · GitLab' focused: True\n\t[8] link 'Skip to content'\n\t[48] link 'Dashboard'\n\t[1517] button '' hasPopup: menu expanded: False\n\t[391] textbox 'Search GitLab' required: False\n\t[292] generic 'Use the shortcut key <kbd>/</kbd> to start a search'\n\t[103] link 'Create new...'\n\t[105] link 'Issues'\n\t\t[207] generic '13 assigned issues'\n\t[106] link 'Merge requests'\n\t\t[209] generic '8 merge requests'\n\t[108] link 'To-Do List'\n\t\t[213] generic 'Todos count'\n\t\t\t[312] StaticText '5'\n\t[109] link 'Help'\n\t[111] link 'Byte Blaze'\n\t\t[219] img 'Byte Blaze'\n\t[10] complementary 'Project navigation'\n\t\t[28] listitem 'awesome-python'\n\t\t\t[63] link 'awesome-python'\n\t\t\t\t[339] StaticText 'A'\n\t\t[64] link 'Project information'\n\t\t[66] link 'Repository'\n\t\t[68] link 'Issues'\n\t\t\t[242] StaticText '13'\n\t\t[70] link 'Merge requests'\n\t\t\t[250] StaticText '317'\n\t\t[72] link 'CI/CD'\n\t\t[74] link 'Deployments'\n\t\t[76] link 'Packages and registries'\n\t\t[78] link 'Monitor'\n\t\t[80] link 'Analytics'\n\t\t[82] link 'Wiki'\n\t\t[84] link 'Snippets'\n\t\t[19] button 'Collapse sidebar'\n\t[852] alert '' live: assertive atomic: True relevant: additions text\n\t\t[866] button 'Dismiss'\n\t\t[867] alert '' live: assertive atomic: True relevant: additions text\n\t\t\t[885] link 'Add SSH key'\n\t\t\t[762] button \"Don't show again\"\n\t[871] navigation 'Breadcrumbs'\n\t\t[771] link 'Vinta Chen'\n\t\t[811] link 'awesome-python'\n\t[822] main ''\n\t\t[806] StaticText 'A'\n\t\t[765] heading 'awesome-python Public - The project can be accessed without any authentication.'\n\t\t\t[778] generic 'Public - The project can be accessed without any authentication.'\n\t\t[904] StaticText 'Project ID: 84 '\n\t\t[861] button 'Copy project ID' live: polite atomic: False relevant: additions text\n\t\t[819] link 'Request Access'\n\t\t[1017] button '' hasPopup: menu expanded: False\n\t\t[843] button 'Star'\n\t\t[916] link '29'\n\t\t[831] link 'Fork'\n\t\t[910] link '0'\n\t\t[1010] link '1,632 Commits'\n\t\t[1011] link '318 Branches'\n\t\t[1012] link '0 Tags'\n\t\t[1048] StaticText '37.6 MB'\n\t\t[1029] StaticText ' Project Storage'\n\t\t[791] StaticText 'A curated list of awesome Python frameworks, libraries, software and resources'\n\t\t[878] generic '<span class=\"repository-language-bar-tooltip-language\">Python</span> <span class=\"repository-language-bar-tooltip-share\">92.6%</span>'\n\t\t[835] generic '<span class=\"repository-language-bar-tooltip-language\">Makefile</span> <span class=\"repository-language-bar-tooltip-share\">7.4%</span>'\n\t\t[1479] img 'user avatar'\n\t\t[1483] link 'Merge pull request #2297 from hofrob/remove-abandoned-project-pyannotate'\n\t\t[1488] StaticText 'Vinta Chen authored '\n\t\t[1489] time 'Jan 5, 2023 7:29am EST'\n\t\t\t[1493] StaticText '8 months ago'\n\t\t[1490] button 'Unverified'\n\t\t[1486] group ''\n\t\t\t[1497] StaticText '091e9e6c'\n\t\t\t[1492] button 'Copy commit SHA' live: polite atomic: False relevant: additions text\n\t\t[1190] button 'master' hasPopup: menu expanded: False\n\t\t[1181] navigation 'Files breadcrumb'\n\t\t\t[1191] link 'awesome-python'\n\t\t\t[1784] button 'Add to tree' hasPopup: menu expanded: False\n\t\t[892] link 'Find file'\n\t\t[1187] link 'Web IDE'\n\t\t[841] button 'Download'\n\t\t\t[862] StaticText 'Select Archive Format'\n\t\t[786] link 'Clone'\n\t\t[1030] link 'README'\n\t\t[1031] link 'LICENSE'\n\t\t[1032] link 'CONTRIBUTING'\n\t\t[1178] table 'Files, directories, and submodules in the path / for commit reference master' live: polite atomic: False relevant: additions text\n\t\t\t[1193] row ''\n\t\t\t\t[1204] columnheader 'Name' required: False\n\t\t\t\t[1205] columnheader 'Last commit' required: False\n\t\t\t\t[1206] columnheader 'Last update' required: False\n\t\t\t[1769] row ''\n\t\t\t\t[1785] gridcell '.github' required: False\n\t\t\t\t\t[1822] link '.github'\n\t\t\t\t[1786] gridcell 'cleanup' required: False\n\t\t\t\t\t[8607] link 'cleanup'\n\t\t\t\t[1787] gridcell '2 years ago' required: False\n\t\t\t\t\t[8608] time 'Oct 30, 2020 4:50pm EDT'\n\t\t\t[1770] row ''\n\t\t\t\t[1788] gridcell 'docs' required: False\n\t\t\t\t\t[1824] link 'docs'\n\t\t\t\t[1789] gridcell 'Removed dead css' required: False\n\t\t\t\t\t[8609] link 'Removed dead css'\n\t\t\t\t[1790] gridcell '4 years ago' required: False\n\t\t\t\t\t[8610] time 'Mar 3, 2019 3:30am EST'\n\t\t\t[1771] row ''\n\t\t\t\t[1791] gridcell '.gitignore' required: False\n\t\t\t\t\t[1826] link '.gitignore'\n\t\t\t\t[1792] gridcell 'Sort readme and add to docs build' required: False\n\t\t\t\t\t[8611] link 'Sort readme and add to docs build'\n\t\t\t\t[1793] gridcell '3 years ago' required: False"
+}

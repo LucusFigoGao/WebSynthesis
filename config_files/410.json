@@ -1,0 +1,37 @@
+{
+    "sites": [
+        "reddit"
+    ],
+    "task_id": 410,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:9999/f/singularity/69404/this-is-how-chatgpt-sees-itself",
+    "geolocation": null,
+    "intent_template": "Reply to {{position_description}} in this post with \"{{content_description}}\"",
+    "instantiation_dict": {
+        "position_description": "the first reply",
+        "content_description": "don't panic"
+    },
+    "intent": "Reply to the first reply in this post with \"don't panic\"",
+    "require_reset": false,
+    "eval": {
+        "eval_types": [
+            "program_html"
+        ],
+        "reference_answers": null,
+        "reference_url": "",
+        "program_html": [
+            {
+                "url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:9999/f/singularity/69404/-/comment/1042264",
+                "locator": "",
+                "required_contents": {
+                    "must_include": [
+                        "don't panic"
+                    ]
+                }
+            }
+        ]
+    },
+    "intent_template_id": 23,
+    "state": "Tab 0 (current): This is how chatGPT sees itself.\n\n[1] RootWebArea 'This is how chatGPT sees itself.' focused: True\n\t[149] HeaderAsNonLandmark ''\n\t\t[167] link 'Home'\n\t\t\t[215] StaticText 'Postmill'\n\t[285] link 'Forums'\n\t[286] link 'Wiki'\n\t[221] searchbox 'Search query'\n\t[222] link 'Notifications (0)'\n\t[223] link 'Submit'\n\t[14698] button 'MarvelsGrantMan136' hasPopup: menu expanded: False\n\t[5] main ''\n\t\t[317] link '/f/singularity'\n\t\t[154] article ''\n\t\t\t[318] HeaderAsNonLandmark ''\n\t\t\t\t[458] heading 'This is how chatGPT sees itself.'\n\t\t\t\t\t[670] link 'This is how chatGPT sees itself.'\n\t\t\t\t[672] StaticText 'Submitted by '\n\t\t\t\t[673] link 'Kindly-Customer-1312' expanded: False\n\t\t\t\t[1028] StaticText 't3_zufdv1'\n\t\t\t\t[677] time 'December 24, 2022 at 1:16:43 PM EST'\n\t\t\t\t\t[14929] StaticText '9 months ago'\n\t\t\t\t[678] StaticText ' in '\n\t\t\t\t[679] link 'singularity'\n\t\t\t[461] link ''\n\t\t\t[1033] link '195 comments'\n\t\t\t[464] button 'Upvote'\n\t\t\t[14864] StaticText '1034'\n\t\t\t[467] button 'Downvote'\n\t\t[155] heading 'Comments'\n\t\t[470] textbox 'Comment' required: True describedby: reply_to_submission_69404_comment_help\n\t[12494] complementary ''\n\t\t[12644] StaticText '0 points'\n\t\t[12647] StaticText '(+0, −0)'\n\t\t[12648] heading 'Short URL:'\n\t\t[13008] StaticText 'http://metis.lti.cs.cmu.edu:9999/69404'\n\t\t[12583] heading 'singularity'\n\t\t\t[12650] link 'singularity'\n\t\t[12769] button 'Subscribe No subscribers'\n\t\t\t[13010] generic 'No subscribers'\n\t\t[12770] StaticText 't5_2qh8m'\n\t\t[12586] separator '' orientation: horizontal\n\t\t[12771] StaticText 'Created '\n\t\t[12772] time 'September 30, 2022 at 8:17:56 PM EDT'\n\t\t\t[14863] StaticText '12 months ago'\n\t\t[12773] link 'Subscribe via RSS'\n\t\t[12495] Details ''\n\t\t\t[12497] DisclosureTriangle 'Hide this forum' expanded: False\n\t\t[12589] heading 'Toolbox'\n\t\t[12781] link 'Bans'\n\t\t[12782] link 'Moderation log'"
+}

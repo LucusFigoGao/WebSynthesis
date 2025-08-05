@@ -1,0 +1,36 @@
+{
+    "sites": [
+        "gitlab"
+    ],
+    "task_id": 443,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:8023/byteblaze/gimmiethat.space",
+    "geolocation": null,
+    "intent_template": "Update the project site's title to \"{{title}}\"",
+    "instantiation_dict": {
+        "title": "Not an interesting site"
+    },
+    "intent": "Update the project site's title to \"Not an interesting site\"",
+    "require_reset": false,
+    "eval": {
+        "eval_types": [
+            "program_html"
+        ],
+        "reference_answers": null,
+        "reference_url": "",
+        "program_html": [
+            {
+                "url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:8023/byteblaze/gimmiethat.space/-/raw/main/index.html",
+                "locator": "",
+                "required_contents": {
+                    "must_include": [
+                        "<title>Not an interesting site</title>"
+                    ]
+                }
+            }
+        ]
+    },
+    "intent_template_id": 308,
+    "state": "Tab 0 (current): Byte Blaze / gimmiethat.spaceGIVE GGIVE ME SPACEGIVE ME SPACEGIVE ME SPACEGIVE ME SPACEGIVE ME SPACEIVE ME SPACEME SPACE · GitLab\n\n[1] RootWebArea 'Byte Blaze / gimmiethat.spaceGIVE GGIVE ME SPACEGIVE ME SPACEGIVE ME SPACEGIVE ME SPACEGIVE ME SPACEIVE ME SPACEME SPACE · GitLab' focused: True\n\t[5] link 'Skip to content'\n\t[16] link 'Dashboard'\n\t[1855] button '' hasPopup: menu expanded: False\n\t[45] textbox 'Search GitLab' required: False\n\t[474] generic 'Use the shortcut key <kbd>/</kbd> to start a search'\n\t[181] link 'Create new...'\n\t[183] link 'Issues'\n\t\t[330] generic '13 assigned issues'\n\t[184] link 'Merge requests'\n\t\t[332] generic '8 merge requests'\n\t[186] link 'To-Do List'\n\t\t[336] generic 'Todos count'\n\t\t\t[497] StaticText '5'\n\t[187] link 'Help'\n\t[189] link 'Byte Blaze'\n\t\t[342] img 'Byte Blaze'\n\t[53] complementary 'Project navigation'\n\t\t[74] listitem 'gimmiethat.spaceGIVE GGIVE ME SPACEGIVE ME SPACEGIVE ME SPACEGIVE ME SPACEGIVE ME SPACEIVE ME SPACEME SPACE'\n\t\t\t[122] link 'gimmiethat.spaceGIVE GGIVE ME SPACEGIVE ME SPACEGIVE ME SPACEGIVE ME SPACEGIVE ME SPACEIVE ME SPACEME SPACE'\n\t\t[123] link 'Project information'\n\t\t[125] link 'Repository'\n\t\t[127] link 'Issues'\n\t\t\t[365] StaticText '0'\n\t\t[129] link 'Merge requests'\n\t\t[131] link 'CI/CD'\n\t\t[133] link 'Security &amp; Compliance'\n\t\t[135] link 'Deployments'\n\t\t[137] link 'Packages and registries'\n\t\t[139] link 'Infrastructure'\n\t\t[141] link 'Monitor'\n\t\t[143] link 'Analytics'\n\t\t[145] link 'Wiki'\n\t\t[147] link 'Snippets'\n\t\t[149] link 'Settings'\n\t\t[64] button 'Collapse sidebar'\n\t[1187] alert '' live: assertive atomic: True relevant: additions text\n\t\t[1152] button 'Dismiss'\n\t\t[1083] alert '' live: assertive atomic: True relevant: additions text\n\t\t\t[1200] link 'Add SSH key'\n\t\t\t[1176] button \"Don't show again\"\n\t[1122] alert '' live: assertive atomic: True relevant: additions text\n\t\t[1173] button 'Dismiss'\n\t\t[1079] alert '' live: assertive atomic: True relevant: additions text\n\t\t\t[1153] StaticText 'The Auto DevOps pipeline has been enabled and will be used if no alternative CI configuration file is found.'\n\t\t\t[1100] StaticText 'Container registry is not enabled on this GitLab instance. Ask an administrator to enable it in order for Auto DevOps to work.'\n\t\t\t[1015] link 'Settings'\n\t\t\t[1204] link 'More information'\n\t[1039] navigation 'Breadcrumbs'\n\t\t[1041] link 'Byte Blaze'\n\t\t[1156] link 'gimmiethat.spaceGIVE GGIVE ME SPACEGIVE ME SPACEGIVE ME SPACEGIVE ME SPACEGIVE ME SPACEIVE ME SPACEME SPACE'\n\t[1132] main ''\n\t\t[1077] alert '' live: assertive atomic: True relevant: additions text\n\t\t\t[1135] button 'Dismiss'\n\t\t\t[1058] alert '' live: assertive atomic: True relevant: additions text\n\t\t\t\t[1052] StaticText 'You pushed to'\n\t\t\t\t[996] strong 'byteblaze-main-patch-10662'\n\t\t\t\t\t[1158] link 'byteblaze-main-patch-10662'\n\t\t\t\t[1048] link 'Byte Blaze / gimmiethat.spaceGIVE GGIVE ME SPACEGIVE ME SPACEGIVE ME SPACEGIVE ME SPACEGIVE ME SPACEIVE ME SPACEME SPACE'\n\t\t\t\t[1125] time 'Sep 27, 2023 1:13am EDT'\n\t\t\t\t\t[1226] StaticText '2 minutes ago'\n\t\t\t\t[1159] link 'Create merge request'\n\t\t[1134] StaticText 'G'\n\t\t[1013] heading 'gimmiethat.spaceGIVE GGIVE ME SPACEGIVE ME SPACEGIVE ME SPACEGIVE ME SPACEGIVE ME SPACEIVE ME SPACEME SPACE Private - Project access must be granted explicitly to each user. If this project is part of a group, access is granted to members of the group.'\n\t\t\t[1034] generic 'Private - Project access must be granted explicitly to each user. If this project is part of a group, access is granted to members of the group.'\n\t\t[1024] StaticText 'Project ID: 184 '\n\t\t[1092] button 'Copy project ID' live: polite atomic: False relevant: additions text\n\t\t[1238] button '' hasPopup: menu expanded: False\n\t\t[1023] button 'Star'\n\t\t[1008] link '0'\n\t\t[1166] link 'Fork'\n\t\t[1051] link '0'\n\t\t[1227] link '3 Commits'\n\t\t[1228] link '2 Branches'\n\t\t[1229] link '0 Tags'\n\t\t[1230] link '113 KB Project Storage'\n\t\t[1067] StaticText 'I need some space.'\n\t\t[1194] generic '<span class=\"repository-language-bar-tooltip-language\">HTML</span> <span class=\"repository-language-bar-tooltip-share\">100.0%</span>'"
+}

@@ -1,0 +1,32 @@
+{
+    "sites": [
+        "reddit"
+    ],
+    "task_id": 29,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:9999",
+    "geolocation": null,
+    "intent_template": "Tell me the count of comments that have received more downvotes than upvotes for the user who made the latest post on the {{forum}} forum.",
+    "instantiation_dict": {
+        "forum": "DIY"
+    },
+    "intent": "Tell me the count of comments that have received more downvotes than upvotes for the user who made the latest post on the DIY forum.",
+    "require_reset": false,
+    "eval": {
+        "eval_types": [
+            "string_match"
+        ],
+        "reference_answers": {
+            "must_include": [
+                "1"
+            ]
+        },
+        "reference_url": "",
+        "program_html": [],
+        "string_note": "",
+        "reference_answer_raw_annotation": "1"
+    },
+    "intent_template_id": 33,
+    "state": "Tab 0 (current): Postmill\n\n[1] RootWebArea 'Postmill' focused: True\n\t[17] HeaderAsNonLandmark ''\n\t\t[27] link 'Home'\n\t[69] link 'Forums'\n\t[70] link 'Wiki'\n\t[51] searchbox 'Search query'\n\t[52] link 'Notifications (0)'\n\t[53] link 'Submit'\n\t[224] button 'MarvelsGrantMan136' hasPopup: menu expanded: False\n\t[12] main ''\n\t\t[101] link 'Submissions'\n\t\t[102] link 'Comments'\n\t\t[225] button 'Filter on: Featured' hasPopup: menu expanded: False\n\t\t[226] button 'Sort by: Hot' hasPopup: menu expanded: False\n\t\t[108] StaticText 'You are not subscribed to any forum. Showing featured forums instead.'\n\t[13] complementary ''\n\t\t[39] heading 'Featured forums'\n\t\t[64] StaticText 'There are no featured forums to display.'\n\t[8] contentinfo ''\n\t\t[25] StaticText 'Running '\n\t\t[26] link 'Postmill'"
+}

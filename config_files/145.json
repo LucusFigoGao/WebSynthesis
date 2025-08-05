@@ -1,0 +1,33 @@
+{
+    "sites": [
+        "shopping"
+    ],
+    "task_id": 145,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:7770",
+    "geolocation": null,
+    "intent_template": "How much I spent on {{category}} shopping during {{time}}",
+    "instantiation_dict": {
+        "category": "cooking and food",
+        "time": "March 2022"
+    },
+    "intent": "How much I spent on cooking and food shopping during March 2022",
+    "require_reset": false,
+    "eval": {
+        "eval_types": [
+            "string_match"
+        ],
+        "reference_answers": {
+            "must_include": [
+                "52.35"
+            ]
+        },
+        "reference_url": "",
+        "program_html": [],
+        "string_note": "",
+        "reference_answer_raw_annotation": "$52.35"
+    },
+    "intent_template_id": 162,
+    "state": "Tab 0 (current): One Stop Market\n\n[1] RootWebArea 'One Stop Market' focused: True\n\t[95] link 'My Account'\n\t[96] link 'My Wish List'\n\t[97] link 'Sign Out'\n\t[3838] StaticText 'Welcome to One Stop Market'\n\t[39] link 'Skip to Content'\n\t[23] link 'store logo'\n\t\t[41] img 'one_stop_market_logo'\n\t[42] link '\\ue611 My Cart'\n\t[281] StaticText 'Search'\n\t[172] combobox '\\ue615 Search' autocomplete: both hasPopup: listbox required: False expanded: False\n\t[284] link 'Advanced Search'\n\t[139] button 'Search' disabled: True\n\t[3832] tablist '' multiselectable: False orientation: horizontal\n\t\t[3834] tabpanel ''\n\t\t\t[2078] menu '' orientation: vertical\n\t\t\t\t[2829] menuitem '\\ue622 Beauty &amp; Personal Care' hasPopup: menu\n\t\t\t\t[2894] menuitem '\\ue622 Sports &amp; Outdoors' hasPopup: menu\n\t\t\t\t[2904] menuitem '\\ue622 Clothing, Shoes &amp; Jewelry' hasPopup: menu\n\t\t\t\t[2918] menuitem '\\ue622 Home &amp; Kitchen' hasPopup: menu\n\t\t\t\t[2955] menuitem '\\ue622 Office Products' hasPopup: menu\n\t\t\t\t[2963] menuitem '\\ue622 Tools &amp; Home Improvement' hasPopup: menu\n\t\t\t\t[2968] menuitem '\\ue622 Health &amp; Household' hasPopup: menu\n\t\t\t\t[2974] menuitem '\\ue622 Patio, Lawn &amp; Garden' hasPopup: menu\n\t\t\t\t[2979] menuitem '\\ue622 Electronics' hasPopup: menu\n\t\t\t\t[3040] menuitem '\\ue622 Cell Phones &amp; Accessories' hasPopup: menu\n\t\t\t\t[3055] menuitem '\\ue622 Video Games' hasPopup: menu\n\t\t\t\t[3068] menuitem '\\ue622 Grocery &amp; Gourmet Food' hasPopup: menu\n\t[11] main ''\n\t\t[30] heading 'One Stop Market'\n\t\t[165] StaticText 'Product Showcases'\n\t\t[1038] link 'Image'\n\t\t\t[1577] img 'Image'\n\t\t[1578] link 'Pre-baked Gingerbread House Kit Value Pack, 17 oz., Pack of 2, Total 34 oz.'\n\t\t[1040] link 'Image'\n\t\t\t[1584] img 'Image'\n\t\t[1585] link 'V8 +Energy, Healthy Energy Drink, Steady Energy from Black and Green Tea, Pomegranate Blueberry, 8 Ounce Can ,Pack of 24'\n\t\t[1042] link 'Image'\n\t\t\t[1591] img 'Image'\n\t\t[1592] link 'Elmwood Inn Fine Teas, Orange Vanilla Caffeine-free Fruit Infusion, 16-Ounce Pouch'\n\t\t[1044] link 'Image'\n\t\t\t[1598] img 'Image'\n\t\t[1599] link 'Belle Of The Ball Princess Sprinkle Mix| Wedding Colorful Sprinkles| Cake Cupcake Cookie Sprinkles| Ice cream Candy Sprinkles| Yellow Gold Red Royal Red Rose Icing Flowers Decorating Sprinkles, 8OZ'\n\t\t[1046] link 'Image'\n\t\t\t[1605] img 'Image'\n\t\t[1606] link 'So Delicious Dairy Free CocoWhip Light, Vegan, Non-GMO Project Verified, 9 oz. Tub'"
+}

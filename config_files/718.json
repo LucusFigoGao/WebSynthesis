@@ -1,0 +1,73 @@
+{
+    "sites": [
+        "reddit"
+    ],
+    "task_id": 718,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:9999",
+    "geolocation": null,
+    "intent_template": "Thumbs down the top {{k}} post ever in {{subreddit}}.",
+    "instantiation_dict": {
+        "k": "5",
+        "subreddit": "technology"
+    },
+    "intent": "Thumbs down the top 5 post ever in technology.",
+    "require_reset": false,
+    "eval": {
+        "eval_types": [
+            "program_html"
+        ],
+        "reference_answers": null,
+        "reference_url": "",
+        "program_html": [
+            {
+                "url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:9999/f/technology/48670/brain-cancer-vaccine-succeeds-at-prolonging-survival-in",
+                "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+                "required_contents": {
+                    "must_include": [
+                        "vote vote--user-downvoted"
+                    ]
+                }
+            },
+            {
+                "url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:9999/f/technology/134696/india-cuts-internet-for-27-million-people-amid-search-for",
+                "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+                "required_contents": {
+                    "must_include": [
+                        "vote vote--user-downvoted"
+                    ]
+                }
+            },
+            {
+                "url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:9999/f/technology/48785/us-judge-orders-amazon-to-cease-and-desist-anti-union",
+                "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+                "required_contents": {
+                    "must_include": [
+                        "vote vote--user-downvoted"
+                    ]
+                }
+            },
+            {
+                "url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:9999/f/technology/70354/activision-s-boston-studio-workers-announce-unionization",
+                "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+                "required_contents": {
+                    "must_include": [
+                        "vote vote--user-downvoted"
+                    ]
+                }
+            },
+            {
+                "url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:9999/f/technology/70233/social-media-influencers-are-charged-with-feeding-followers",
+                "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+                "required_contents": {
+                    "must_include": [
+                        "vote vote--user-downvoted"
+                    ]
+                }
+            }
+        ]
+    },
+    "intent_template_id": 24,
+    "state": "Tab 0 (current): Postmill\n\n[1] RootWebArea 'Postmill' focused: True\n\t[17] HeaderAsNonLandmark ''\n\t\t[52] link 'Home'\n\t[171] link 'Forums'\n\t[172] link 'Wiki'\n\t[100] searchbox 'Search query'\n\t[101] link 'Notifications (0)'\n\t[102] link 'Submit'\n\t[1728] button 'MarvelsGrantMan136' hasPopup: menu expanded: False\n\t[12] main ''\n\t\t[203] link 'Submissions'\n\t\t[204] link 'Comments'\n\t\t[1729] button 'Filter on: Subscribed' hasPopup: menu expanded: False\n\t\t[1730] button 'Sort by: Hot' hasPopup: menu expanded: False\n\t\t[22] article ''\n\t\t\t[209] HeaderAsNonLandmark ''\n\t\t\t\t[331] heading 'what is the recommended console to buy these days'\n\t\t\t\t\t[603] link 'what is the recommended console to buy these days'\n\t\t\t\t[605] StaticText 'Submitted by '\n\t\t\t\t[606] link 'MarvelsGrantMan136' expanded: False\n\t\t\t\t[608] time 'September 27, 2023 at 4:09:06 AM EDT'\n\t\t\t\t\t[1775] StaticText '51 minutes ago'\n\t\t\t\t[609] StaticText ' in '\n\t\t\t\t[610] link 'CyberpunkCyberpunk'\n\t\t\t[1020] link '1 comment'\n\t\t\t[1022] link 'Edit'\n\t\t\t[1416] button 'Delete'\n\t\t\t[1731] button 'Actions' hasPopup: menu expanded: False\n\t\t\t[335] button 'Upvote'\n\t\t\t[1740] StaticText '−1'\n\t\t\t[338] button 'Retract downvote'\n\t\t[23] article ''\n\t\t\t[212] HeaderAsNonLandmark ''\n\t\t\t\t[340] heading 'Nvidia RTX 4090'\n\t\t\t\t\t[620] link 'Nvidia RTX 4090'\n\t\t\t\t[622] StaticText 'Submitted by '\n\t\t\t\t[623] link 'MarvelsGrantMan136' expanded: False\n\t\t\t\t[625] time 'June 12, 2023 at 12:55:45 PM EDT'\n\t\t\t\t\t[1777] StaticText '4 months ago'\n\t\t\t\t[626] StaticText ' in '\n\t\t\t\t[627] link 'MachineLearning'\n\t\t\t[1037] link 'No comments'\n\t\t\t[1039] link 'Edit'\n\t\t\t[1433] button 'Delete'\n\t\t\t[344] button 'Upvote'\n\t\t\t[1742] StaticText '−1'\n\t\t\t[347] button 'Retract downvote'\n\t\t[24] article ''\n\t\t\t[215] HeaderAsNonLandmark ''\n\t\t\t\t[349] heading 'Museum issues appeal to save famed \"Misty of Chincoteague\" ranch from being sold to developers'\n\t\t\t\t\t[636] link 'Museum issues appeal to save famed \"Misty of Chincoteague\" ranch from being sold to developers'\n\t\t\t\t[351] link 'delmarvanow.com'\n\t\t\t\t[639] StaticText 'Submitted by '\n\t\t\t\t[640] link 'ZebZ' expanded: False\n\t\t\t\t[1050] StaticText 't3_11goa5z'\n\t\t\t\t[644] time 'March 2, 2023 at 9:12:11 PM EST'\n\t\t\t\t\t[1779] StaticText '7 months ago'\n\t\t\t\t[645] StaticText ' in '\n\t\t\t\t[646] link 'books'\n\t\t\t[1055] link '43 comments'\n\t\t\t[355] button 'Upvote'\n\t\t\t[1744] StaticText '−1'\n\t\t\t[358] button 'Retract downvote'\n\t\t[25] article ''\n\t\t\t[218] HeaderAsNonLandmark ''\n\t\t\t\t[360] heading 'After Two Decades And 38 Children’s Books Lin Oliver Continues Her Thriving Collaboration With Henry Winkler'\n\t\t\t\t\t[653] link 'After Two Decades And 38 Children’s Books Lin Oliver Continues Her Thriving Collaboration With Henry Winkler'\n\t\t\t\t[362] link 'forbes.com'\n\t\t\t\t[656] StaticText 'Submitted by '\n\t\t\t\t[657] link 'drak0bsidian' expanded: False\n\t\t\t\t[1066] StaticText 't3_11dewje'\n\t\t\t\t[661] time 'February 27, 2023 at 10:43:55 AM EST'\n\t\t\t\t\t[1781] StaticText '7 months ago'\n\t\t\t\t[662] StaticText ' in '\n\t\t\t\t[663] link 'books'\n\t\t\t[1071] link '27 comments'\n\t\t\t[366] button 'Upvote'\n\t\t\t[1746] StaticText '−1'\n\t\t\t[369] button 'Retract downvote'\n\t\t[26] article ''\n\t\t\t[221] HeaderAsNonLandmark ''\n\t\t\t\t[371] heading 'The letters of T. S. Eliot to Emily Hale that were kept sealed from 1956 to 2020 have been released for free online'\n\t\t\t\t\t[670] link 'The letters of T. S. Eliot to Emily Hale that were kept sealed from 1956 to 2020 have been released for free online'\n\t\t\t\t[373] link 'tseliot.com'\n\t\t\t\t[673] StaticText 'Submitted by '\n\t\t\t\t[674] link 'RunDNA' expanded: False\n\t\t\t\t[1082] StaticText 't3_10p83br'\n\t\t\t\t[678] time 'January 30, 2023 at 12:11:46 PM EST'\n\t\t\t\t\t[1783] StaticText '8 months ago'\n\t\t\t\t[679] StaticText ' in '\n\t\t\t\t[680] link 'books'\n\t\t\t[1087] link '184 comments'\n\t\t\t[377] button 'Upvote'\n\t\t\t[1748] StaticText '−1'\n\t\t\t[380] button 'Retract downvote'\n\t\t[27] article ''\n\t\t\t[224] HeaderAsNonLandmark ''\n\t\t\t\t[382] heading '[P] I built Adrenaline, a debugger that fixes errors and explains them with GPT-3'\n\t\t\t\t\t[687] link '[P] I built Adrenaline, a debugger that fixes errors and explains them with GPT-3'\n\t\t\t\t[689] StaticText 'Submitted by '\n\t\t\t\t[690] link 'jsonathan' expanded: False\n\t\t\t\t[1099] StaticText 't3_106q6m9'\n\t\t\t\t[694] time 'January 8, 2023 at 1:23:03 PM EST'\n\t\t\t\t\t[1785] StaticText '9 months ago'\n\t\t\t\t[695] StaticText ' in '\n\t\t\t\t[696] link 'MachineLearning'\n\t\t\t[1104] link '94 comments'\n\t\t\t[386] button 'Upvote'\n\t\t\t[389] button 'Downvote'\n\t[13] complementary ''\n\t\t[88] heading 'Subscribed forums'\n\t\t[285] link 'books'\n\t\t[286] link 'CyberpunkCyberpunk'\n\t\t[287] link 'MachineLearning'\n\t\t[288] link 'pittsburgh'"
+}

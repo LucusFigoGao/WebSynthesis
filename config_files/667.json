@@ -1,0 +1,54 @@
+{
+    "sites": [
+        "gitlab"
+    ],
+    "task_id": 667,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:8023/primer/design",
+    "geolocation": null,
+    "intent_template": "Submit a merge request for {{source_branch}} branch to be merged into {{target_branch}} branch, assign {{reviewer}} as the reviewer",
+    "instantiation_dict": {
+        "source_branch": "dialog-component",
+        "target_branch": "bump-doctocat",
+        "reviewer": "primer"
+    },
+    "intent": "Submit a merge request for dialog-component branch to be merged into bump-doctocat branch, assign primer as the reviewer",
+    "require_reset": false,
+    "eval": {
+        "eval_types": [
+            "url_match",
+            "program_html"
+        ],
+        "reference_answers": null,
+        "reference_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:8023/primer/design/-/merge_requests",
+        "program_html": [
+            {
+                "url": "last",
+                "locator": "document.querySelectorAll(\".detail-page-description > a.gl-font-monospace\")[1].outerText",
+                "required_contents": {
+                    "exact_match": "bump-doctocat"
+                }
+            },
+            {
+                "url": "last",
+                "locator": "document.querySelectorAll(\".detail-page-description > a.gl-font-monospace\")[0].outerText",
+                "required_contents": {
+                    "exact_match": "dialog-component"
+                }
+            },
+            {
+                "url": "last",
+                "locator": "document.querySelector('.block.reviewer').outerText",
+                "required_contents": {
+                    "must_include": [
+                        "Primer"
+                    ]
+                }
+            }
+        ],
+        "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 335,
+    "state": "Tab 0 (current): Primer / design · GitLab\n\n[1] RootWebArea 'Primer / design · GitLab' focused: True\n\t[9] link 'Skip to content'\n\t[72] link 'Dashboard'\n\t[1653] button '' hasPopup: menu expanded: False\n\t[545] textbox 'Search GitLab' required: False\n\t[406] generic 'Use the shortcut key <kbd>/</kbd> to start a search'\n\t[147] link 'Create new...'\n\t[149] link 'Issues'\n\t\t[283] generic '13 assigned issues'\n\t[150] link 'Merge requests'\n\t\t[285] generic '8 merge requests'\n\t[152] link 'To-Do List'\n\t\t[289] generic 'Todos count'\n\t[153] link 'Help'\n\t[155] link 'Byte Blaze'\n\t\t[295] img 'Byte Blaze'\n\t[11] complementary 'Project navigation'\n\t\t[39] listitem 'design'\n\t\t\t[87] link 'design'\n\t\t\t\t[455] StaticText 'D'\n\t\t[88] link 'Project information'\n\t\t[90] link 'Repository'\n\t\t[92] link 'Issues'\n\t\t\t[318] StaticText '21'\n\t\t[94] link 'Merge requests'\n\t\t\t[326] StaticText '16'\n\t\t[96] link 'CI/CD'\n\t\t[98] link 'Security &amp; Compliance'\n\t\t[100] link 'Deployments'\n\t\t[102] link 'Packages and registries'\n\t\t[104] link 'Infrastructure'\n\t\t[106] link 'Monitor'\n\t\t[108] link 'Analytics'\n\t\t[110] link 'Wiki'\n\t\t[112] link 'Snippets'\n\t\t[26] button 'Collapse sidebar'\n\t[1031] alert '' live: assertive atomic: True relevant: additions text\n\t\t[882] button 'Dismiss'\n\t\t[990] alert '' live: assertive atomic: True relevant: additions text\n\t\t\t[1003] link 'Add SSH key'\n\t\t\t[989] button \"Don't show again\"\n\t[1009] navigation 'Breadcrumbs'\n\t\t[974] link 'Primer'\n\t\t[923] link 'design'\n\t[1004] main ''\n\t\t[985] StaticText 'D'\n\t\t[979] heading 'design Public - The project can be accessed without any authentication.'\n\t\t\t[982] generic 'Public - The project can be accessed without any authentication.'\n\t\t[886] StaticText 'Project ID: 180 '\n\t\t[899] button 'Copy project ID' live: polite atomic: False relevant: additions text\n\t\t[1032] link 'Leave project'\n\t\t[1082] button '' hasPopup: menu expanded: False\n\t\t[1027] button 'Unstar'\n\t\t[915] link '22'\n\t\t[881] link 'Fork'\n\t\t[1022] link '0'\n\t\t[1039] link '921 Commits'\n\t\t[1040] link '38 Branches'\n\t\t[1041] link '0 Tags'\n\t\t[1068] StaticText '97.8 MB'\n\t\t[1057] StaticText ' Project Storage'\n\t\t[967] StaticText 'Primer Design Guidelines'\n\t\t[875] generic '<span class=\"repository-language-bar-tooltip-language\">JavaScript</span> <span class=\"repository-language-bar-tooltip-share\">77.4%</span>'\n\t\t[925] generic '<span class=\"repository-language-bar-tooltip-language\">TSX</span> <span class=\"repository-language-bar-tooltip-share\">22.6%</span>'\n\t\t[1589] img 'user avatar'\n\t\t[1593] link 'Add interface guidelines for ProgressBar (#452)'\n\t\t[1594] button 'Toggle commit description'\n\t\t[1601] StaticText 'Mike Perrotti authored '\n\t\t[1602] time 'Mar 24, 2023 12:33pm EDT'\n\t\t\t[1609] StaticText '6 months ago'\n\t\t[1605] button 'Unverified'\n\t\t[1598] group ''\n\t\t\t[1622] StaticText '260e840e'\n\t\t\t[1607] button 'Copy commit SHA' live: polite atomic: False relevant: additions text\n\t\t[1273] button 'main' hasPopup: menu expanded: False\n\t\t[1246] navigation 'Files breadcrumb'\n\t\t\t[1274] link 'design'\n\t\t\t[1288] button 'Add to tree' hasPopup: menu expanded: False\n\t\t[963] link 'Find file'\n\t\t[1270] link 'Web IDE'\n\t\t[918] button 'Download'\n\t\t\t[992] StaticText 'Select Archive Format'\n\t\t[955] link 'Clone'\n\t\t[1058] link 'README'\n\t\t[1059] link 'MIT License'\n\t\t[1060] link 'CONTRIBUTING'\n\t\t[1263] table 'Files, directories, and submodules in the path / for commit reference main' live: polite atomic: False relevant: additions text\n\t\t\t[1277] row ''\n\t\t\t\t[1290] columnheader 'Name' required: False\n\t\t\t\t[1291] columnheader 'Last commit' required: False\n\t\t\t\t[1292] columnheader 'Last update' required: False\n\t\t\t[1874] row ''\n\t\t\t\t[1897] gridcell '.github' required: False\n\t\t\t\t\t[1958] link '.github'\n\t\t\t\t[1898] gridcell 'Add more deploy triggers (#406)' required: False\n\t\t\t\t\t[2661] link 'Add more deploy triggers (#406)'\n\t\t\t\t[1899] gridcell '7 months ago' required: False\n\t\t\t\t\t[2662] time 'Feb 23, 2023 12:27pm EST'\n\t\t\t[1875] row ''\n\t\t\t\t[1900] gridcell 'content' required: False\n\t\t\t\t\t[1960] link 'content'\n\t\t\t\t[1901] gridcell 'Add interface guidelines for ProgressBar (#452)' required: False\n\t\t\t\t\t[2663] link 'Add interface guidelines for ProgressBar (#452)'\n\t\t\t\t[1902] gridcell '6 months ago' required: False\n\t\t\t\t\t[2664] time 'Mar 24, 2023 12:33pm EDT'\n\t\t\t[1876] row ''\n\t\t\t\t[1903] gridcell 'docs' required: False\n\t\t\t\t\t[1962] link 'docs'\n\t\t\t\t[1904] gridcell 'Introduce markdownlinting (#345)' required: False\n\t\t\t\t\t[2665] link 'Introduce markdownlinting (#345)'\n\t\t\t\t[1905] gridcell '9 months ago' required: False"
+}

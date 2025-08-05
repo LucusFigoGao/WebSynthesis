@@ -1,0 +1,58 @@
+{
+    "sites": [
+        "map"
+    ],
+    "task_id": 762,
+    "require_login": true,
+    "storage_state": null,
+    "start_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:3000",
+    "geolocation": null,
+    "intent_template": "Get directions from {{location/address_1}} to {{location/address_2}} using {{transportation}} options.",
+    "instantiation_dict": {
+        "location/address_1": "Carnegie Music Hall in NYC",
+        "location/address_2": "Carnegie Mellon University",
+        "transportation": "driving"
+    },
+    "intent": "Get directions from Carnegie Music Hall in NYC to Carnegie Mellon University using driving options.",
+    "require_reset": false,
+    "eval": {
+        "eval_types": [
+            "program_html"
+        ],
+        "reference_answers": null,
+        "reference_url": "",
+        "program_html": [
+            {
+                "url": "last",
+                "locator": "document.querySelector(\"div#content select.routing_engines\").selectedIndex",
+                "required_contents": {
+                    "exact_match": "1"
+                }
+            },
+            {
+                "url": "last",
+                "locator": "document.querySelector('[name=\"route_from\"').value",
+                "required_contents": {
+                    "must_include": [
+                        "Carnegie Hall",
+                        "West 57th Street",
+                        "Manhattan",
+                        "New York"
+                    ]
+                }
+            },
+            {
+                "url": "last",
+                "locator": "document.querySelector('[name=\"route_to\"').value",
+                "required_contents": {
+                    "must_include": [
+                        "Carnegie Mellon University",
+                        "Pittsburgh"
+                    ]
+                }
+            }
+        ]
+    },
+    "intent_template_id": 54,
+    "state": "Tab 0 (current): OpenStreetMap\n\n[1] RootWebArea 'OpenStreetMap' focused: True\n\t[5] heading 'OpenStreetMap logo OpenStreetMap'\n\t\t[8] link 'OpenStreetMap logo OpenStreetMap'\n\t\t\t[12] img 'OpenStreetMap logo'\n\t[127] link 'Edit'\n\t[128] button ''\n\t[83] link 'History'\n\t[84] link 'Export'\n\t[132] link 'GPS Traces'\n\t[133] link 'User Diaries'\n\t[134] link 'Communities'\n\t[135] link 'Copyright'\n\t[136] link 'Help'\n\t[137] link 'About'\n\t[92] link 'Log In'\n\t[93] link 'Sign Up'\n\t[446] link 'Where is this?'\n\t[65] textbox 'Search' focused: True required: False\n\t[447] button 'Go'\n\t[294] link 'Find directions between two points'\n\t[149] heading 'Welcome to OpenStreetMap!'\n\t[219] button 'Close'\n\t[220] StaticText 'OpenStreetMap is a map of the world, created by people like you and free to use under an open license.'\n\t[221] StaticText 'Hosting is supported by '\n\t[222] link 'UCL'\n\t[224] link 'Fastly'\n\t[225] StaticText ', '\n\t[226] link 'Bytemark Hosting'\n\t[227] StaticText ', and other '\n\t[228] link 'partners'\n\t[229] StaticText '.'\n\t[307] link 'Learn More'\n\t[308] link 'Start Mapping'\n\t[45] generic 'Zoom In Zoom Out Show My Location Layers Share 50 km 50 mi © OpenStreetMap contributors ♥ Make a Donation. Website and API terms'\n\t\t[49] link 'Zoom In'\n\t\t[50] link 'Zoom Out'\n\t\t[52] button 'Show My Location'\n\t\t[54] link 'Layers'\n\t\t[265] link ''\n\t\t[56] link 'Share'\n\t\t[266] link ''\n\t\t[267] link ''\n\t\t[371] StaticText '50 km'\n\t\t[372] StaticText '50 mi'\n\t\t[270] StaticText '© '\n\t\t[271] link 'OpenStreetMap contributors'\n\t\t[272] StaticText ' ♥ '\n\t\t[273] link 'Make a Donation'\n\t\t[274] StaticText '. '\n\t\t[275] link 'Website and API terms'"
+}

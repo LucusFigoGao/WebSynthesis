@@ -1,0 +1,38 @@
+{
+    "sites": [
+        "reddit"
+    ],
+    "task_id": 599,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:9999",
+    "geolocation": null,
+    "intent_template": "Open the thread of a trending post on the forum \"{{subreddit}}\" and subscribe.",
+    "instantiation_dict": {
+        "subreddit": "machine learning"
+    },
+    "intent": "Open the thread of a trending post on the forum \"machine learning\" and subscribe.",
+    "require_reset": false,
+    "eval": {
+        "eval_types": [
+            "url_match",
+            "program_html"
+        ],
+        "reference_answers": null,
+        "reference_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:9999/f/MachineLearning",
+        "program_html": [
+            {
+                "url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:9999/",
+                "locator": "document.querySelector(\"#sidebar > section\").outerText",
+                "required_contents": {
+                    "must_include": [
+                        "MachineLearning"
+                    ]
+                }
+            }
+        ],
+        "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 4,
+    "state": "Tab 0 (current): Postmill\n\n[1] RootWebArea 'Postmill' focused: True\n\t[17] HeaderAsNonLandmark ''\n\t\t[52] link 'Home'\n\t[170] link 'Forums'\n\t[171] link 'Wiki'\n\t[100] searchbox 'Search query'\n\t[101] link 'Notifications (0)'\n\t[102] link 'Submit'\n\t[1787] button 'MarvelsGrantMan136' hasPopup: menu expanded: False\n\t[12] main ''\n\t\t[202] link 'Submissions'\n\t\t[203] link 'Comments'\n\t\t[1788] button 'Filter on: Subscribed' hasPopup: menu expanded: False\n\t\t[1789] button 'Sort by: Hot' hasPopup: menu expanded: False\n\t\t[22] article ''\n\t\t\t[208] HeaderAsNonLandmark ''\n\t\t\t\t[329] heading 'Friendly reminder bookshop.org exists.'\n\t\t\t\t\t[602] link 'Friendly reminder bookshop.org exists.'\n\t\t\t\t[604] StaticText 'Submitted by '\n\t\t\t\t[605] link 'smita16' expanded: False\n\t\t\t\t[1010] StaticText 't3_zzvi0q'\n\t\t\t\t[609] time 'December 31, 2022 at 9:40:19 AM EST'\n\t\t\t\t\t[1815] StaticText '9 months ago'\n\t\t\t\t[610] StaticText ' in '\n\t\t\t\t[611] link 'books'\n\t\t\t[1015] link '135 comments'\n\t\t\t[333] button 'Upvote'\n\t\t\t[1790] StaticText '3085'\n\t\t\t[336] button 'Downvote'\n\t\t[23] article ''\n\t\t\t[211] HeaderAsNonLandmark ''\n\t\t\t\t[338] heading 'The letters of T. S. Eliot to Emily Hale that were kept sealed from 1956 to 2020 have been released for free online'\n\t\t\t\t\t[617] link 'The letters of T. S. Eliot to Emily Hale that were kept sealed from 1956 to 2020 have been released for free online'\n\t\t\t\t[340] link 'tseliot.com'\n\t\t\t\t[620] StaticText 'Submitted by '\n\t\t\t\t[621] link 'RunDNA' expanded: False\n\t\t\t\t[1025] StaticText 't3_10p83br'\n\t\t\t\t[625] time 'January 30, 2023 at 12:11:46 PM EST'\n\t\t\t\t\t[1816] StaticText '8 months ago'\n\t\t\t\t[626] StaticText ' in '\n\t\t\t\t[627] link 'books'\n\t\t\t[1030] link '184 comments'\n\t\t\t[344] button 'Upvote'\n\t\t\t[1791] StaticText '3591'\n\t\t\t[347] button 'Downvote'\n\t\t[24] article ''\n\t\t\t[214] HeaderAsNonLandmark ''\n\t\t\t\t[349] heading 'Appalachian prison book project seeks notebook donations: \"The books can help inmates learn new skills, broaden their worldviews and obtain college credits through the West Virginia University Higher Education in Prison Initiative\"'\n\t\t\t\t\t[633] link 'Appalachian prison book project seeks notebook donations: \"The books can help inmates learn new skills, broaden their worldviews and obtain college credits through the West Virginia University Higher Education in Prison Initiative\"'\n\t\t\t\t[351] link 'timeswv.com'\n\t\t\t\t[636] StaticText 'Submitted by '\n\t\t\t\t[637] link 'SAT0725' expanded: False\n\t\t\t\t[1040] StaticText 't3_zd6cxz'\n\t\t\t\t[641] time 'December 5, 2022 at 8:08:47 AM EST'\n\t\t\t\t\t[1817] StaticText '10 months ago'\n\t\t\t\t[642] StaticText ' in '\n\t\t\t\t[643] link 'books'\n\t\t\t[1045] link '33 comments'\n\t\t\t[355] button 'Upvote'\n\t\t\t[1792] StaticText '1716'\n\t\t\t[358] button 'Downvote'\n\t\t[25] article ''\n\t\t\t[217] HeaderAsNonLandmark ''\n\t\t\t\t[360] heading 'After Two Decades And 38 Children’s Books Lin Oliver Continues Her Thriving Collaboration With Henry Winkler'\n\t\t\t\t\t[649] link 'After Two Decades And 38 Children’s Books Lin Oliver Continues Her Thriving Collaboration With Henry Winkler'\n\t\t\t\t[362] link 'forbes.com'\n\t\t\t\t[652] StaticText 'Submitted by '\n\t\t\t\t[653] link 'drak0bsidian' expanded: False\n\t\t\t\t[1055] StaticText 't3_11dewje'\n\t\t\t\t[657] time 'February 27, 2023 at 10:43:55 AM EST'\n\t\t\t\t\t[1818] StaticText '7 months ago'\n\t\t\t\t[658] StaticText ' in '\n\t\t\t\t[659] link 'books'\n\t\t\t[1060] link '27 comments'\n\t\t\t[366] button 'Upvote'\n\t\t\t[1793] StaticText '1695'\n\t\t\t[369] button 'Downvote'\n\t\t[26] article ''\n\t\t\t[220] HeaderAsNonLandmark ''\n\t\t\t\t[371] heading 'Museum issues appeal to save famed \"Misty of Chincoteague\" ranch from being sold to developers'\n\t\t\t\t\t[665] link 'Museum issues appeal to save famed \"Misty of Chincoteague\" ranch from being sold to developers'\n\t\t\t\t[373] link 'delmarvanow.com'\n\t\t\t\t[668] StaticText 'Submitted by '\n\t\t\t\t[669] link 'ZebZ' expanded: False\n\t\t\t\t[1070] StaticText 't3_11goa5z'\n\t\t\t\t[673] time 'March 2, 2023 at 9:12:11 PM EST'\n\t\t\t\t\t[1819] StaticText '7 months ago'\n\t\t\t\t[674] StaticText ' in '\n\t\t\t\t[675] link 'books'\n\t\t\t[1075] link '43 comments'\n\t\t\t[377] button 'Upvote'\n\t\t\t[1794] StaticText '1539'\n\t\t\t[380] button 'Downvote'\n\t\t[27] article ''\n\t\t\t[223] HeaderAsNonLandmark ''\n\t\t\t\t[382] heading 'Driving in Pittsburgh summed up by one traffic sign.'\n\t\t\t\t\t[681] link 'Driving in Pittsburgh summed up by one traffic sign.'\n\t\t\t[386] button 'Upvote'\n\t\t\t[1795] StaticText '1438'\n\t[13] complementary ''\n\t\t[88] heading 'Subscribed forums'\n\t\t[284] link 'books'\n\t\t[285] link 'CyberpunkCyberpunk'\n\t\t[286] link 'pittsburgh'"
+}

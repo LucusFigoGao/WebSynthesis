@@ -1,0 +1,43 @@
+{
+    "sites": [
+        "gitlab",
+        "wikipedia"
+    ],
+    "task_id": 558,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:8023",
+    "geolocation": null,
+    "intent_template": "Create a repo named {{name}} with {{topics}} in a README file",
+    "instantiation_dict": {
+        "name": "nolan_young_fans",
+        "topics": "movies directed by Christopher Nolan after 2010"
+    },
+    "intent": "Create a repo named nolan_young_fans with movies directed by Christopher Nolan after 2010 in a README file",
+    "require_reset": false,
+    "eval": {
+        "eval_types": [
+            "program_html"
+        ],
+        "reference_answers": null,
+        "reference_url": "",
+        "program_html": [
+            {
+                "url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:8023/byteblaze/nolan_young_fans/-/raw/main/README.md",
+                "locator": "",
+                "required_contents": {
+                    "must_include": [
+                        "Inception",
+                        "The Dark Knight Rises",
+                        "Interstellar",
+                        "Dunkirk",
+                        "Tenet",
+                        "Oppenheimer"
+                    ]
+                }
+            }
+        ]
+    },
+    "intent_template_id": 87,
+    "state": "Tab 0 (current): Projects · Dashboard · GitLab\n\n[1] RootWebArea 'Projects · Dashboard · GitLab' focused: True\n\t[8] link 'Skip to content'\n\t[33] link 'Dashboard'\n\t[2505] button '' hasPopup: menu expanded: False\n\t[180] textbox 'Search GitLab' required: False\n\t[126] generic 'Use the shortcut key <kbd>/</kbd> to start a search'\n\t[62] link 'Create new...'\n\t[64] link 'Issues'\n\t\t[96] generic '13 assigned issues'\n\t[65] link 'Merge requests'\n\t\t[98] generic '8 merge requests'\n\t[67] link 'To-Do List'\n\t\t[102] generic 'Todos count'\n\t\t\t[142] StaticText '5'\n\t[68] link 'Help'\n\t[70] link 'Byte Blaze'\n\t\t[108] img 'Byte Blaze'\n\t[1981] main ''\n\t\t[1907] heading 'Projects'\n\t\t[1781] link 'New project'\n\t\t[1559] link 'Yours 18'\n\t\t[2148] link 'Starred 3'\n\t\t[1488] link 'Explore'\n\t\t[1884] link 'Topics'\n\t\t[1609] searchbox 'Filter by name'\n\t\t[2124] button 'Most stars'\n\t\t[1467] link 'All'\n\t\t[2225] link 'Personal'\n\t\t[1861] link 'D'\n\t\t[1618] heading 'Primer / design'\n\t\t\t[1669] link 'Primer / design'\n\t\t[2246] generic 'Public - The project can be accessed without any authentication.'\n\t\t[2073] StaticText 'Developer'\n\t\t[1590] StaticText 'Primer Design Guidelines'\n\t\t[1997] link '22'\n\t\t[1749] link '0'\n\t\t[2116] link '16'\n\t\t[1583] link '21'\n\t\t[1457] StaticText 'Updated '\n\t\t[1952] time 'Sep 26, 2023 9:53pm EDT'\n\t\t\t[1500] StaticText '4 hours ago'\n\t\t[1703] link 'A'\n\t\t[1498] heading 'The A11Y Project / a11yproject.com'\n\t\t\t[1706] link 'The A11Y Project / a11yproject.com'\n\t\t[2050] generic 'Public - The project can be accessed without any authentication.'\n\t\t[1625] StaticText 'Maintainer'\n\t\t[2039] StaticText 'The A11Y Project is a community-driven effort to make digital accessibility easier.'\n\t\t[2096] link '20'\n\t\t[1876] link '0'\n\t\t[1477] link '10'\n\t\t[1463] link '40'\n\t\t[1456] StaticText 'Updated '\n\t\t[1489] time 'Sep 26, 2023 9:46pm EDT'\n\t\t\t[1989] StaticText '4 hours ago'\n\t\t[1740] link 'M'\n\t\t[1533] heading 'Byte Blaze / millennials-to-snake-people'\n\t\t\t[1626] link 'Byte Blaze / millennials-to-snake-people'\n\t\t[1975] generic 'Public - The project can be accessed without any authentication.'\n\t\t[1718] StaticText 'Owner'\n\t\t[1412] generic 'snake'\n\t\t\t[1852] StaticText '🐍'\n\t\t[1637] link '6'\n\t\t[2090] link '0'\n\t\t[2189] link '2'\n\t\t[2144] link '4'\n\t\t[1508] StaticText 'Updated '\n\t\t[1629] time 'Mar 27, 2023 7:22pm EDT'\n\t\t\t[2299] StaticText '6 months ago'\n\t\t[2074] link 'E'\n\t\t[1904] heading 'Byte Blaze / empathy-prompts'\n\t\t\t[1787] link 'Byte Blaze / empathy-prompts'\n\t\t[2089] generic 'Public - The project can be accessed without any authentication.'\n\t\t[2003] StaticText 'Owner'\n\t\t[1670] generic 'electric light bulb'\n\t\t\t[1969] StaticText '💡'\n\t\t[1959] StaticText ' Ideas to help consider Inclusive Design principles when making things for others to use.'\n\t\t[1890] link '6'\n\t\t[2131] link '1'\n\t\t[1521] link '2'\n\t\t[1643] link '6'\n\t\t[1460] StaticText 'Updated '\n\t\t[1655] time 'Sep 26, 2023 10:01pm EDT'\n\t\t\t[1483] StaticText '3 hours ago'\n\t\t[1607] link 'A'\n\t\t[1802] heading 'Byte Blaze / a11y-webring.club'\n\t\t\t[1720] link 'Byte Blaze / a11y-webring.club'\n\t\t[1835] generic 'Public - The project can be accessed without any authentication.'\n\t\t[2142] StaticText 'Owner'\n\t\t[1820] generic 'globe with meridians'\n\t\t\t[1440] StaticText '🌐'\n\t\t[1562] StaticText ' A webring for digital accessibility practitioners.'\n\t\t[1689] link '2'\n\t\t[1447] link '0'\n\t\t[1788] link '1'\n\t\t[1879] link '4'\n\t\t[2228] StaticText 'Updated '\n\t\t[2154] time 'Mar 27, 2023 7:22pm EDT'\n\t\t\t[1575] StaticText '6 months ago'\n\t\t[2010] link 'E'\n\t\t[1990] heading 'Byte Blaze / ericwbailey.website'\n\t\t\t[1816] link 'Byte Blaze / ericwbailey.website'\n\t\t[2033] generic 'Public - The project can be accessed without any authentication.'\n\t\t[1413] StaticText 'Owner'\n\t\t[1911] generic 'triangular ruler'\n\t\t\t[1837] StaticText '📐'\n\t\t[1833] StaticText ' Repo for my personal website.'\n\t\t[1470] link '2'\n\t\t[1738] link '0'\n\t\t[1686] link '0'\n\t\t[1748] link '0'\n\t\t[2149] StaticText 'Updated '\n\t\t[1832] time 'Mar 27, 2023 7:22pm EDT'\n\t\t\t[1801] StaticText '6 months ago'\n\t\t[2166] link 'A'\n\t\t[1690] heading 'Byte Blaze / a11y-syntax-highlighting'\n\t\t\t[1415] link 'Byte Blaze / a11y-syntax-highlighting'\n\t\t[1425] generic 'Public - The project can be accessed without any authentication.'\n\t\t[2067] StaticText 'Owner'\n\t\t[2098] generic 'lipstick'\n\t\t\t[1840] StaticText '💄'\n\t\t[1993] StaticText ' Accessible light and dark syntax highlighting themes'\n\t\t[2237] link '1'\n\t\t[1779] link '0'\n\t\t[1810] link '0'\n\t\t[1742] link '1'\n\t\t[2030] StaticText 'Updated '\n\t\t[2198] time 'Mar 27, 2023 7:22pm EDT'\n\t\t\t[2104] StaticText '6 months ago'"
+}

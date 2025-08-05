@@ -1,0 +1,33 @@
+{
+    "sites": [
+        "gitlab"
+    ],
+    "task_id": 304,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:8023/a11yproject/a11yproject.com",
+    "geolocation": null,
+    "intent_template": "How many commits did {{user}} make {{period}}?",
+    "instantiation_dict": {
+        "user": "Eric",
+        "period": "between Feb 2023 and May 2023"
+    },
+    "intent": "How many commits did Eric make between Feb 2023 and May 2023?",
+    "require_reset": false,
+    "eval": {
+        "eval_types": [
+            "string_match"
+        ],
+        "reference_answers": {
+            "must_include": [
+                "14"
+            ]
+        },
+        "reference_url": "",
+        "program_html": [],
+        "string_note": "",
+        "reference_answer_raw_annotation": "14"
+    },
+    "intent_template_id": 321,
+    "state": "Tab 0 (current): The A11Y Project / a11yproject.com · GitLab\n\n[1] RootWebArea 'The A11Y Project / a11yproject.com · GitLab' focused: True\n\t[8] link 'Skip to content'\n\t[70] link 'Dashboard'\n\t[1838] button '' hasPopup: menu expanded: False\n\t[581] textbox 'Search GitLab' required: False\n\t[432] generic 'Use the shortcut key <kbd>/</kbd> to start a search'\n\t[148] link 'Create new...'\n\t[150] link 'Issues'\n\t\t[296] generic '13 assigned issues'\n\t[151] link 'Merge requests'\n\t\t[298] generic '8 merge requests'\n\t[153] link 'To-Do List'\n\t\t[302] generic 'Todos count'\n\t[154] link 'Help'\n\t[156] link 'Byte Blaze'\n\t\t[308] img 'Byte Blaze'\n\t[10] complementary 'Project navigation'\n\t\t[36] listitem 'a11yproject.com'\n\t\t\t[85] link 'a11yproject.com'\n\t\t\t\t[482] StaticText 'A'\n\t\t[86] link 'Project information'\n\t\t[88] link 'Repository'\n\t\t[90] link 'Issues'\n\t\t\t[331] StaticText '40'\n\t\t[92] link 'Merge requests'\n\t\t\t[339] StaticText '10'\n\t\t[94] link 'CI/CD'\n\t\t[96] link 'Security &amp; Compliance'\n\t\t[98] link 'Deployments'\n\t\t[100] link 'Packages and registries'\n\t\t[102] link 'Infrastructure'\n\t\t[104] link 'Monitor'\n\t\t[106] link 'Analytics'\n\t\t[108] link 'Wiki'\n\t\t[110] link 'Snippets'\n\t\t[112] link 'Settings'\n\t\t[23] button 'Collapse sidebar'\n\t[1121] alert '' live: assertive atomic: True relevant: additions text\n\t\t[1095] button 'Dismiss'\n\t\t[1110] alert '' live: assertive atomic: True relevant: additions text\n\t\t\t[1078] link 'Add SSH key'\n\t\t\t[1146] button \"Don't show again\"\n\t[993] navigation 'Breadcrumbs'\n\t\t[994] link 'The A11Y Project'\n\t\t[1148] link 'a11yproject.com'\n\t[1100] main ''\n\t\t[987] heading 'a11yproject.com Public - The project can be accessed without any authentication.'\n\t\t\t[1094] generic 'Public - The project can be accessed without any authentication.'\n\t\t[1028] StaticText 'Project ID: 174 '\n\t\t[1024] button 'Copy project ID' live: polite atomic: False relevant: additions text\n\t\t[1068] link 'Leave project'\n\t\t[1230] button '' hasPopup: menu expanded: False\n\t\t[1066] button 'Unstar'\n\t\t[1049] link '21'\n\t\t[1092] link 'Fork'\n\t\t[1119] link '0'\n\t\t[1192] link '2,320 Commits'\n\t\t[1193] link '15 Branches'\n\t\t[1194] link '5 Tags'\n\t\t[1195] link '85.5 MB Project Storage'\n\t\t[1196] link '5 Releases'\n\t\t[1150] StaticText 'The A11Y Project is a community-driven effort to make digital accessibility easier.'\n\t\t[962] generic '<span class=\"repository-language-bar-tooltip-language\">Nunjucks</span> <span class=\"repository-language-bar-tooltip-share\">51.8%</span>'\n\t\t[1035] generic '<span class=\"repository-language-bar-tooltip-language\">SCSS</span> <span class=\"repository-language-bar-tooltip-share\">40.3%</span>'\n\t\t[1061] generic '<span class=\"repository-language-bar-tooltip-language\">JavaScript</span> <span class=\"repository-language-bar-tooltip-share\">7.9%</span>'\n\t\t[1783] img 'user avatar'\n\t\t[1787] link 'Update...'\n\t\t[1788] button 'Toggle commit description'\n\t\t[1795] StaticText 'Eric Bailey authored '\n\t\t[1796] time 'Mar 13, 2023 9:04pm EDT'\n\t\t\t[1802] StaticText '6 months ago'\n\t\t[1798] button 'Unverified'\n\t\t[1792] group ''\n\t\t\t[1807] StaticText 'ed37a2f2'\n\t\t\t[1800] button 'Copy commit SHA' live: polite atomic: False relevant: additions text\n\t\t[1467] button 'main' hasPopup: menu expanded: False\n\t\t[1440] navigation 'Files breadcrumb'\n\t\t\t[1468] link 'a11yproject.com'\n\t\t\t[1482] button 'Add to tree' hasPopup: menu expanded: False\n\t\t[1057] link 'Find file'\n\t\t[1464] link 'Web IDE'\n\t\t[968] button 'Download'\n\t\t\t[1014] StaticText 'Select Archive Format'\n\t\t[1104] link 'Clone'\n\t\t[1246] link 'README'\n\t\t[1247] link 'Add LICENSE'\n\t\t[1248] link 'Add CHANGELOG'\n\t\t[1249] link 'Add CONTRIBUTING'\n\t\t[1250] link 'Enable Auto DevOps'\n\t\t[1251] link 'Add Kubernetes cluster'\n\t\t[1252] link 'Set up CI/CD'\n\t\t[1253] link 'Configure Integrations'\n\t\t[1457] table 'Files, directories, and submodules in the path / for commit reference main' live: polite atomic: False relevant: additions text\n\t\t\t[1471] row ''\n\t\t\t\t[1484] columnheader 'Name' required: False\n\t\t\t\t[1485] columnheader 'Last commit' required: False\n\t\t\t\t[1486] columnheader 'Last update' required: False\n\t\t\t[2064] row ''\n\t\t\t\t[2090] gridcell '.github' required: False\n\t\t\t\t\t[2160] link '.github'\n\t\t\t\t[2091] gridcell 'Update issue templates' required: False\n\t\t\t\t\t[3102] link 'Update issue templates'\n\t\t\t\t[2092] gridcell '1 year ago' required: False\n\t\t\t\t\t[3103] time 'Oct 12, 2021 2:46pm EDT'\n\t\t\t[2065] row ''\n\t\t\t\t[2093] gridcell '.tours' required: False\n\t\t\t\t\t[2162] link '.tours'\n\t\t\t\t[2094] gridcell 'Add Jammies announcement (#1354)' required: False\n\t\t\t\t\t[3104] link 'Add Jammies announcement (#1354)'\n\t\t\t\t[2095] gridcell '1 year ago' required: False\n\t\t\t\t\t[3105] time 'Oct 6, 2021 9:21pm EDT'"
+}

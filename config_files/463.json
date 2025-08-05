@@ -1,0 +1,35 @@
+{
+    "sites": [
+        "shopping_admin"
+    ],
+    "task_id": 463,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:7780/admin/catalog/product/edit/id/996/",
+    "geolocation": null,
+    "intent_template": "{{action}} the price of this product by {{amount}}",
+    "instantiation_dict": {
+        "amount": "15%",
+        "action": "Increase"
+    },
+    "intent": "Increase the price of this product by 15%",
+    "require_reset": false,
+    "eval": {
+        "eval_types": [
+            "program_html"
+        ],
+        "reference_answers": null,
+        "reference_url": "",
+        "program_html": [
+            {
+                "url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:7780/admin/catalog/product/edit/id/996/",
+                "locator": "document.querySelector('[name=\"product[price]\"').value",
+                "required_contents": {
+                    "exact_match": "36.80"
+                }
+            }
+        ]
+    },
+    "intent_template_id": 247,
+    "state": "Tab 0 (current): Sol Active Short-34-Blue / Products / Inventory / Catalog / Magento Admin\n\n[1] RootWebArea 'Sol Active Short-34-Blue / Products / Inventory / Catalog / Magento Admin' focused: True\n\t[56] link 'Magento Admin Panel'\n\t\t[67] img 'Magento Admin Panel'\n\t[6] menubar '' orientation: horizontal\n\t\t[8] link '\\ue604 DASHBOARD'\n\t\t[12] link '\\ue60b SALES'\n\t\t[16] link '\\ue608 CATALOG'\n\t\t[20] link '\\ue603 CUSTOMERS'\n\t\t[24] link '\\ue609 MARKETING'\n\t\t[28] link '\\ue602 CONTENT'\n\t\t[32] link '\\ue60a REPORTS'\n\t\t[36] link '\\ue60d STORES'\n\t\t[40] link '\\ue610 SYSTEM'\n\t\t[44] link '\\ue612 FIND PARTNERS &amp; EXTENSIONS'\n\t[87] heading 'Sol Active Short-34-Blue'\n\t[88] link '\\ue600 admin'\n\t[90] link '\\ue607'\n\t[957] textbox '\\ue60c' required: False\n\t[51] main ''\n\t\t[93] StaticText 'Scope:'\n\t\t[159] button 'All Store Views' hasPopup: menu\n\t\t[162] link '\\ue633 What is this?'\n\t\t[928] generic 'Save'\n\t\t\t[931] button 'Save'\n\t\t\t[932] button 'Save options'\n\t\t[929] button '\\ue626 Back'\n\t\t[930] button 'Add Attribute'\n\t\t[2514] group ''\n\t\t\t[3124] StaticText 'Enable Product'\n\t\t\t[2785] checkbox '[website] Enable Product Yes' checked: true\n\t\t\t[2788] StaticText 'Attribute Set'\n\t\t\t[2767] generic 'Bottom'\n\t\t\t[3126] StaticText 'Product Name'\n\t\t\t[2768] textbox '[store view] Product Name *' required: False\n\t\t\t\t[3127] StaticText 'Sol Active Short-34-Blue'\n\t\t\t[3128] StaticText 'SKU'\n\t\t\t[2769] textbox '[global] SKU *' required: False\n\t\t\t\t[3129] StaticText 'MSH10-34-Blue'\n\t\t\t[2545] group ''\n\t\t\t\t[2548] LayoutTable ''\n\t\t\t\t\t[3279] StaticText 'Price'\n\t\t\t\t\t[3246] textbox '[global] Price * $' required: False\n\t\t\t\t\t\t[3304] StaticText '32.00'\n\t\t\t\t[3320] button 'Advanced Pricing'\n\t\t\t[3131] StaticText 'Tax Class'\n\t\t\t[2772] combobox 'notice-KK7O719' hasPopup: menu expanded: False\n\t\t\t[2562] group ''\n\t\t\t\t[2565] LayoutTable ''\n\t\t\t\t\t[3283] StaticText 'Quantity'\n\t\t\t\t\t[3132] textbox '[global] Quantity' required: False\n\t\t\t\t\t\t[3284] StaticText '100'"
+}

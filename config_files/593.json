@@ -1,0 +1,58 @@
+{
+    "sites": [
+        "gitlab"
+    ],
+    "task_id": 593,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:8023/byteblaze/dotfiles",
+    "geolocation": null,
+    "intent_template": "Create a milestone for the upcoming {{event}} starting on {{start_date}} and ending on {{end_date}}",
+    "instantiation_dict": {
+        "event": "task of merging all branches to main",
+        "start_date": "March 15, 2044",
+        "end_date": "March 30, 2044"
+    },
+    "intent": "Create a milestone for the upcoming task of merging all branches to main starting on March 15, 2044 and ending on March 30, 2044",
+    "require_reset": false,
+    "eval": {
+        "eval_types": [
+            "url_match",
+            "program_html"
+        ],
+        "reference_answers": null,
+        "reference_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:8023/byteblaze/dotfiles/-/milestones",
+        "program_html": [
+            {
+                "url": "last",
+                "locator": "document.querySelector(\"#content-body\").outerText",
+                "required_contents": {
+                    "must_include": [
+                        "all branches to main"
+                    ]
+                }
+            },
+            {
+                "url": "last",
+                "locator": "document.querySelector('.block.start_date').outerText",
+                "required_contents": {
+                    "must_include": [
+                        "Mar 15, 2044"
+                    ]
+                }
+            },
+            {
+                "url": "last",
+                "locator": "document.querySelector('.block.due_date').outerText",
+                "required_contents": {
+                    "must_include": [
+                        "Mar 30, 2044"
+                    ]
+                }
+            }
+        ],
+        "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 339,
+    "state": "Tab 0 (current): Byte Blaze / dotfiles · GitLab\n\n[1] RootWebArea 'Byte Blaze / dotfiles · GitLab' focused: True\n\t[8] link 'Skip to content'\n\t[38] link 'Dashboard'\n\t[1805] button '' hasPopup: menu expanded: False\n\t[351] textbox 'Search GitLab' required: False\n\t[253] generic 'Use the shortcut key <kbd>/</kbd> to start a search'\n\t[82] link 'Create new...'\n\t[84] link 'Issues'\n\t\t[174] generic '13 assigned issues'\n\t[85] link 'Merge requests'\n\t\t[176] generic '8 merge requests'\n\t[87] link 'To-Do List'\n\t\t[180] generic 'Todos count'\n\t\t\t[276] StaticText '5'\n\t[88] link 'Help'\n\t[90] link 'Byte Blaze'\n\t\t[186] img 'Byte Blaze'\n\t[10] complementary 'Project navigation'\n\t\t[27] listitem 'dotfiles'\n\t\t\t[53] link 'dotfiles'\n\t\t\t\t[303] StaticText 'D'\n\t\t[54] link 'Project information'\n\t\t[56] link 'Repository'\n\t\t[58] link 'Issues'\n\t\t\t[209] StaticText '0'\n\t\t[60] link 'Merge requests'\n\t\t[62] link 'CI/CD'\n\t\t[64] link 'Security &amp; Compliance'\n\t\t[66] link 'Deployments'\n\t\t[68] link 'Packages and registries'\n\t\t[70] link 'Infrastructure'\n\t\t[506] link 'Monitor'\n\t\t[508] link 'Analytics'\n\t\t[510] link 'Wiki'\n\t\t[512] link 'Snippets'\n\t\t[514] link 'Settings'\n\t\t[474] button 'Collapse sidebar'\n\t[1112] alert '' live: assertive atomic: True relevant: additions text\n\t\t[1111] button 'Dismiss'\n\t\t[996] alert '' live: assertive atomic: True relevant: additions text\n\t\t\t[1130] link 'Add SSH key'\n\t\t\t[1136] button \"Don't show again\"\n\t[1156] alert '' live: assertive atomic: True relevant: additions text\n\t\t[1109] button 'Dismiss'\n\t\t[1071] alert '' live: assertive atomic: True relevant: additions text\n\t\t\t[1009] StaticText 'The Auto DevOps pipeline has been enabled and will be used if no alternative CI configuration file is found.'\n\t\t\t[1034] StaticText 'Container registry is not enabled on this GitLab instance. Ask an administrator to enable it in order for Auto DevOps to work.'\n\t\t\t[989] link 'Settings'\n\t\t\t[997] link 'More information'\n\t[1102] navigation 'Breadcrumbs'\n\t\t[1089] link 'Byte Blaze'\n\t\t[1002] link 'dotfiles'\n\t[1056] main ''\n\t\t[1148] StaticText 'D'\n\t\t[1068] heading 'dotfiles Public - The project can be accessed without any authentication.'\n\t\t\t[1094] generic 'Public - The project can be accessed without any authentication.'\n\t\t[971] StaticText 'Project ID: 193 '\n\t\t[1144] button 'Copy project ID' live: polite atomic: False relevant: additions text\n\t\t[1174] button '' hasPopup: menu expanded: False\n\t\t[1061] button 'Star'\n\t\t[1131] link '0'\n\t\t[979] link 'Fork'\n\t\t[1043] link '0'\n\t\t[1306] link '553 Commits'\n\t\t[1307] link '2 Branches'\n\t\t[1308] link '0 Tags'\n\t\t[1309] link '2.7 MB Project Storage'\n\t\t[1006] generic 'robot face'\n\t\t\t[1077] StaticText '🤖'\n\t\t[1038] StaticText ' Computer setup'\n\t\t[1138] generic '<span class=\"repository-language-bar-tooltip-language\">Shell</span> <span class=\"repository-language-bar-tooltip-share\">98.0%</span>'\n\t\t[1125] generic '<span class=\"repository-language-bar-tooltip-language\">JavaScript</span> <span class=\"repository-language-bar-tooltip-share\">1.3%</span>'\n\t\t[972] generic '<span class=\"repository-language-bar-tooltip-language\">AppleScript</span> <span class=\"repository-language-bar-tooltip-share\">0.6%</span>'\n\t\t[1759] img 'user avatar'\n\t\t[1763] link 'Update .macos'\n\t\t[1768] StaticText 'Eric Bailey authored '\n\t\t[1769] time 'Mar 19, 2023 12:00pm EDT'\n\t\t\t[1773] StaticText '6 months ago'\n\t\t[1770] button 'Unverified'\n\t\t[1766] group ''\n\t\t\t[1777] StaticText '218b5e72'\n\t\t\t[1772] button 'Copy commit SHA' live: polite atomic: False relevant: additions text\n\t\t[1407] button 'main' hasPopup: menu expanded: False\n\t\t[1250] navigation 'Files breadcrumb'\n\t\t\t[1408] link 'dotfiles'\n\t\t\t[1441] button 'Add to tree' hasPopup: menu expanded: False\n\t\t[1116] link 'Find file'\n\t\t[1382] link 'Web IDE'\n\t\t[1084] button 'Download'\n\t\t\t[999] StaticText 'Select Archive Format'\n\t\t[1032] link 'Clone'\n\t\t[1357] link 'README'\n\t\t[1358] link 'Auto DevOps enabled'\n\t\t[1359] link 'Add LICENSE'\n\t\t[1360] link 'Add CHANGELOG'\n\t\t[1361] link 'Add CONTRIBUTING'\n\t\t[1362] link 'Add Kubernetes cluster'\n\t\t[1363] link 'Configure Integrations'"
+}

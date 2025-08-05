@@ -1,0 +1,34 @@
+{
+    "sites": [
+        "gitlab"
+    ],
+    "task_id": 449,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:8023",
+    "geolocation": null,
+    "intent_template": "set the homepage URL on my GitLab profile to {{url}}",
+    "instantiation_dict": {
+        "url": "https://helloworld.xyz"
+    },
+    "intent": "set the homepage URL on my GitLab profile to https://helloworld.xyz",
+    "require_reset": false,
+    "eval": {
+        "eval_types": [
+            "program_html"
+        ],
+        "reference_answers": null,
+        "reference_url": "",
+        "program_html": [
+            {
+                "url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:8023/byteblaze",
+                "locator": "document.querySelector('.profile-header [itemprop=\"url\"]').outerText",
+                "required_contents": {
+                    "exact_match": "helloworld.xyz"
+                }
+            }
+        ]
+    },
+    "intent_template_id": 331,
+    "state": "Tab 0 (current): Projects · Dashboard · GitLab\n\n[1] RootWebArea 'Projects · Dashboard · GitLab' focused: True\n\t[8] link 'Skip to content'\n\t[36] link 'Dashboard'\n\t[2348] button '' hasPopup: menu expanded: False\n\t[261] textbox 'Search GitLab' required: False\n\t[177] generic 'Use the shortcut key <kbd>/</kbd> to start a search'\n\t[70] link 'Create new...'\n\t[72] link 'Issues'\n\t\t[117] generic '13 assigned issues'\n\t[73] link 'Merge requests'\n\t\t[119] generic '8 merge requests'\n\t[75] link 'To-Do List'\n\t\t[123] generic 'Todos count'\n\t[76] link 'Help'\n\t[78] link 'Byte Blaze'\n\t\t[129] img 'Byte Blaze'\n\t[1855] main ''\n\t\t[1712] alert '' live: assertive atomic: True relevant: additions text\n\t\t\t[1549] button 'Dismiss'\n\t\t\t[2099] alert '' live: assertive atomic: True relevant: additions text\n\t\t\t\t[1366] StaticText 'You pushed to'\n\t\t\t\t[1752] strong 'byteblaze-main-patch-82318'\n\t\t\t\t\t[1640] link 'byteblaze-main-patch-82318'\n\t\t\t\t[1690] link 'Byte Blaze / gimmiethat.spaceGIVE GHelloHelloHelloHelloGIVE ME SPACEGIVE ME SPACEGIVE ME SPACEGIVE ME SPACEGIVE ME SPACEIVE ME SPACEME SPACE'\n\t\t\t\t[1603] time 'Sep 27, 2023 1:19am EDT'\n\t\t\t\t\t[1546] StaticText '9 minutes ago'\n\t\t\t\t[1392] link 'Create merge request'\n\t\t[1644] heading 'Projects'\n\t\t[2091] link 'New project'\n\t\t[1429] link 'Yours 16'\n\t\t[1921] link 'Starred 3'\n\t\t[1671] link 'Explore'\n\t\t[1678] link 'Topics'\n\t\t[1436] searchbox 'Filter by name'\n\t\t[1715] button 'Most stars'\n\t\t[1787] link 'All'\n\t\t[1946] link 'Personal'\n\t\t[1526] link 'D'\n\t\t[1463] heading 'Primer / design'\n\t\t\t[1694] link 'Primer / design'\n\t\t[2077] generic 'Public - The project can be accessed without any authentication.'\n\t\t[1554] StaticText 'Developer'\n\t\t[1493] StaticText 'Primer Design Guidelines'\n\t\t[1683] link '22'\n\t\t[1462] link '0'\n\t\t[1672] link '16'\n\t\t[1590] link '21'\n\t\t[1891] StaticText 'Updated '\n\t\t[1685] time 'Sep 26, 2023 9:53pm EDT'\n\t\t\t[2064] StaticText '3 hours ago'\n\t\t[1423] link 'A'\n\t\t[1684] heading 'The A11Y Project / a11yproject.com'\n\t\t\t[1879] link 'The A11Y Project / a11yproject.com'\n\t\t[1410] generic 'Public - The project can be accessed without any authentication.'\n\t\t[1924] StaticText 'Maintainer'\n\t\t[1941] StaticText 'The A11Y Project is a community-driven effort to make digital accessibility easier.'\n\t\t[1568] link '20'\n\t\t[2094] link '0'\n\t\t[1772] link '10'\n\t\t[1808] link '40'\n\t\t[1900] StaticText 'Updated '\n\t\t[2112] time 'Sep 26, 2023 9:46pm EDT'\n\t\t\t[1406] StaticText '3 hours ago'\n\t\t[1333] link 'M'\n\t\t[1844] heading 'Byte Blaze / millennials-to-snake-people'\n\t\t\t[1948] link 'Byte Blaze / millennials-to-snake-people'\n\t\t[1784] generic 'Public - The project can be accessed without any authentication.'\n\t\t[2098] StaticText 'Owner'\n\t\t[1845] generic 'snake'\n\t\t\t[1551] StaticText '🐍'\n\t\t[2049] link '6'\n\t\t[2048] link '0'\n\t\t[1468] link '2'\n\t\t[1576] link '4'\n\t\t[1484] StaticText 'Updated '\n\t\t[1663] time 'Mar 27, 2023 7:22pm EDT'\n\t\t\t[1498] StaticText '6 months ago'\n\t\t[1738] link 'E'\n\t\t[1552] heading 'Byte Blaze / empathy-prompts'\n\t\t\t[1773] link 'Byte Blaze / empathy-prompts'\n\t\t[1402] generic 'Public - The project can be accessed without any authentication.'\n\t\t[1918] StaticText 'Owner'\n\t\t[1476] generic 'electric light bulb'\n\t\t\t[1455] StaticText '💡'\n\t\t[1471] StaticText ' Ideas to help consider Inclusive Design principles when making things for others to use.'\n\t\t[2106] link '6'\n\t\t[1877] link '1'\n\t\t[1905] link '2'\n\t\t[1509] link '6'\n\t\t[2046] StaticText 'Updated '\n\t\t[2118] time 'Sep 26, 2023 10:01pm EDT'\n\t\t\t[1537] StaticText '3 hours ago'\n\t\t[1647] link 'A'\n\t\t[1587] heading 'Byte Blaze / a11y-webring.club'\n\t\t\t[1359] link 'Byte Blaze / a11y-webring.club'\n\t\t[1801] generic 'Public - The project can be accessed without any authentication.'\n\t\t[1525] StaticText 'Owner'\n\t\t[1953] generic 'globe with meridians'\n\t\t\t[1898] StaticText '🌐'\n\t\t[2042] StaticText ' A webring for digital accessibility practitioners.'\n\t\t[1378] link '2'\n\t\t[1700] link '0'\n\t\t[1327] link '1'\n\t\t[1572] link '4'\n\t\t[1997] StaticText 'Updated '\n\t\t[1432] time 'Mar 27, 2023 7:22pm EDT'\n\t\t\t[1472] StaticText '6 months ago'"
+}

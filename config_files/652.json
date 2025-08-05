@@ -1,0 +1,37 @@
+{
+    "sites": [
+        "reddit"
+    ],
+    "task_id": 652,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:9999/f/technology/134852/ai-experts-disown-musk-backed-campaign-citing-their-research",
+    "geolocation": null,
+    "intent_template": "Reply to {{position_description}} with my comment \"{{content_description}}\"",
+    "instantiation_dict": {
+        "position_description": "the post",
+        "content_description": "???"
+    },
+    "intent": "Reply to the post with my comment \"???\"",
+    "require_reset": false,
+    "eval": {
+        "eval_types": [
+            "url_match",
+            "program_html"
+        ],
+        "reference_answers": null,
+        "reference_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:9999/f/technology/134852/ai-experts-disown-musk-backed-campaign-citing-their-research",
+        "program_html": [
+            {
+                "url": "last",
+                "locator": "document.querySelector('.comment__body').outerText",
+                "required_contents": {
+                    "exact_match": "???"
+                }
+            }
+        ],
+        "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 23,
+    "state": "Tab 0 (current): AI experts disown Musk-backed campaign citing their research\n\n[1] RootWebArea 'AI experts disown Musk-backed campaign citing their research' focused: True\n\t[21] HeaderAsNonLandmark ''\n\t\t[37] link 'Home'\n\t\t\t[68] StaticText 'Postmill'\n\t[115] link 'Forums'\n\t[116] link 'Wiki'\n\t[74] searchbox 'Search query'\n\t[75] link 'Notifications (0)'\n\t[76] link 'Submit'\n\t[542] button 'MarvelsGrantMan136' hasPopup: menu expanded: False\n\t[17] main ''\n\t\t[147] link '/f/technology'\n\t\t[26] article ''\n\t\t\t[148] HeaderAsNonLandmark ''\n\t\t\t\t[202] heading 'AI experts disown Musk-backed campaign citing their research'\n\t\t\t\t\t[258] link 'AI experts disown Musk-backed campaign citing their research'\n\t\t\t\t[204] link 'reuters.com'\n\t\t\t\t[261] StaticText 'Submitted by '\n\t\t\t\t[262] link 'Don_Gato1' expanded: False\n\t\t\t\t[315] StaticText 't3_127ti42'\n\t\t\t\t[266] time 'March 31, 2023 at 1:56:20 PM EDT'\n\t\t\t\t\t[547] StaticText '6 months ago'\n\t\t\t\t[267] StaticText ' in '\n\t\t\t\t[268] link 'technology'\n\t\t\t[320] link 'No comments'\n\t\t\t[209] button 'Upvote'\n\t\t\t[544] StaticText '4'\n\t\t\t[212] button 'Downvote'\n\t\t[27] heading 'Comments'\n\t\t[215] textbox 'Comment' required: True describedby: reply_to_submission_134852_comment_help\n\t\t[154] checkbox 'Formatting help +' checked: false\n\t\t[156] StaticText 'Markdown allowed.'\n\t\t[85] button 'Post'\n\t\t[53] img 'A tense emoji'\n\t\t\t[87] StaticText '(._.)'\n\t[5] complementary ''\n\t\t[90] StaticText '0 points'\n\t\t[93] StaticText '(+0, −0)'\n\t\t[94] heading 'Short URL:'\n\t\t[225] StaticText 'http://metis.lti.cs.cmu.edu:9999/134852'\n\t\t[57] heading 'technology'\n\t\t\t[96] link 'technology'\n\t\t[166] button 'Subscribe No subscribers'\n\t\t\t[227] generic 'No subscribers'\n\t\t\t\t[546] StaticText '0'\n\t\t[167] StaticText 't5_2qh16'\n\t\t[60] separator '' orientation: horizontal\n\t\t[168] StaticText 'Created '\n\t\t[169] time 'September 30, 2022 at 9:22:49 PM EDT'\n\t\t\t[543] StaticText '12 months ago'\n\t\t[170] link 'Subscribe via RSS'\n\t\t[6] Details ''\n\t\t\t[8] DisclosureTriangle 'Hide this forum' expanded: False\n\t\t[63] heading 'Toolbox'\n\t\t[178] link 'Bans'\n\t\t[179] link 'Moderation log'"
+}

@@ -1,0 +1,30 @@
+{
+    "sites": [
+        "shopping"
+    ],
+    "task_id": 22,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:7770/fujifilm-finepix-z200fd-10mp-digital-camera-with-5x-optical-dual-image-stabilized-zoom-black.html",
+    "geolocation": null,
+    "intent_template": "List out reviewers, if exist, who mention about {{description}}",
+    "instantiation_dict": {
+        "description": "under water photo"
+    },
+    "intent": "List out reviewers, if exist, who mention about under water photo",
+    "require_reset": false,
+    "eval": {
+        "eval_types": [
+            "string_match"
+        ],
+        "reference_answers": {
+            "fuzzy_match": "N/A"
+        },
+        "reference_url": "",
+        "program_html": [],
+        "string_note": "There is no review about under water photo",
+        "reference_answer_raw_annotation": "N/A"
+    },
+    "intent_template_id": 222,
+    "state": "Tab 0 (current): Fujifilm FinePix Z200fd 10MP Digital Camera with 5x Optical Dual Image Stabilized Zoom (Black)\n\n[1] RootWebArea 'Fujifilm FinePix Z200fd 10MP Digital Camera with 5x Optical Dual Image Stabilized Zoom (Black)' focused: True\n\t[129] link 'My Account'\n\t[130] link 'My Wish List'\n\t[131] link 'Sign Out'\n\t[3512] StaticText 'Welcome to One Stop Market'\n\t[67] link 'Skip to Content'\n\t[52] link 'store logo'\n\t\t[69] img 'one_stop_market_logo'\n\t[70] link '\\ue611 My Cart'\n\t[360] StaticText 'Search'\n\t[234] combobox '\\ue615 Search' autocomplete: both hasPopup: listbox required: False expanded: False\n\t[363] link 'Advanced Search'\n\t[181] button 'Search' disabled: True\n\t[3497] tablist '' multiselectable: False orientation: horizontal\n\t\t[3499] tabpanel ''\n\t\t\t[1743] menu '' orientation: vertical\n\t\t\t\t[2494] menuitem '\\ue622 Beauty &amp; Personal Care' hasPopup: menu\n\t\t\t\t[2559] menuitem '\\ue622 Sports &amp; Outdoors' hasPopup: menu\n\t\t\t\t[2569] menuitem '\\ue622 Clothing, Shoes &amp; Jewelry' hasPopup: menu\n\t\t\t\t[2583] menuitem '\\ue622 Home &amp; Kitchen' hasPopup: menu\n\t\t\t\t[2620] menuitem '\\ue622 Office Products' hasPopup: menu\n\t\t\t\t[2628] menuitem '\\ue622 Tools &amp; Home Improvement' hasPopup: menu\n\t\t\t\t[2633] menuitem '\\ue622 Health &amp; Household' hasPopup: menu\n\t\t\t\t[2639] menuitem '\\ue622 Patio, Lawn &amp; Garden' hasPopup: menu\n\t\t\t\t[2644] menuitem '\\ue622 Electronics' hasPopup: menu\n\t\t\t\t[2705] menuitem '\\ue622 Cell Phones &amp; Accessories' hasPopup: menu\n\t\t\t\t[2720] menuitem '\\ue622 Video Games' hasPopup: menu\n\t\t\t\t[2733] menuitem '\\ue622 Grocery &amp; Gourmet Food' hasPopup: menu\n\t[1737] link 'Home'\n\t[1740] StaticText 'Fujifilm FinePix Z200fd 10MP Digital Camera with 5x Optical Dual Image Stabilized Zoom (Black)'\n\t[5] main ''\n\t\t[59] heading 'Fujifilm FinePix Z200fd 10MP Digital Camera with 5x Optical Dual Image Stabilized Zoom (Black)'\n\t\t[11] generic 'Availability'\n\t\t\t[13] StaticText 'IN STOCK'\n\t\t[336] StaticText 'SKU'\n\t\t[500] StaticText 'B001D0G57S'\n\t\t[156] LayoutTable ''\n\t\t\t[502] StaticText 'Rating:'\n\t\t\t[339] generic '78%'\n\t\t\t\t[1125] StaticText '% of'\n\t\t\t\t[1367] StaticText '100'\n\t\t\t[340] link '12\\xa0 Reviews '\n\t\t\t[341] link 'Add Your Review'\n\t\t[1733] StaticText '$99.95'\n\t\t[344] generic 'Color * Black Pink Silver'\n\t\t\t[1607] radio 'Black' checked: false\n\t\t\t[1609] radio 'Pink' checked: false\n\t\t\t[1611] radio 'Silver' checked: false\n\t\t[345] LayoutTable ''\n\t\t\t[1373] StaticText 'Qty'\n\t\t\t[1374] spinbutton 'Qty' required: False valuemin: 0 valuemax: 0 valuetext: \n\t\t\t[1135] button 'Add to Cart'\n\t\t[160] link 'Skip to the end of the images gallery'\n\t\t[3518] button 'Previous'\n\t\t[3520] generic 'Image'\n\t\t\t[3547] img 'Image'\n\t\t[3519] button 'Next'"
+}

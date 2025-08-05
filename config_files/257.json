@@ -1,0 +1,33 @@
+{
+    "sites": [
+        "map"
+    ],
+    "task_id": 257,
+    "require_login": true,
+    "storage_state": null,
+    "start_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:3000",
+    "geolocation": null,
+    "intent_template": "What is the {{information}} of {{location}}",
+    "instantiation_dict": {
+        "location": "Tokyo Japanese Food Store in Pittsburgh",
+        "information": "hours of operation"
+    },
+    "intent": "What is the hours of operation of Tokyo Japanese Food Store in Pittsburgh",
+    "require_reset": false,
+    "eval": {
+        "eval_types": [
+            "string_match"
+        ],
+        "reference_answers": {
+            "fuzzy_match": [
+                "We-Su 10:00-17:00"
+            ]
+        },
+        "reference_url": "",
+        "program_html": [],
+        "string_note": "",
+        "reference_answer_raw_annotation": "We-Su 10:00-17:00"
+    },
+    "intent_template_id": 501,
+    "state": "Tab 0 (current): OpenStreetMap\n\n[1] RootWebArea 'OpenStreetMap' focused: True\n\t[36] heading 'OpenStreetMap logo OpenStreetMap'\n\t\t[41] link 'OpenStreetMap logo OpenStreetMap'\n\t\t\t[59] img 'OpenStreetMap logo'\n\t[111] link 'Edit'\n\t[112] button ''\n\t[64] link 'History'\n\t[65] link 'Export'\n\t[508] link 'GPS Traces'\n\t[509] link 'User Diaries'\n\t[510] link 'Communities'\n\t[511] link 'Copyright'\n\t[512] link 'Help'\n\t[513] link 'About'\n\t[73] link 'Log In'\n\t[74] link 'Sign Up'\n\t[443] link 'Where is this?'\n\t[12] textbox 'Search' focused: True required: False\n\t[444] button 'Go'\n\t[285] link 'Find directions between two points'\n\t[133] heading 'Welcome to OpenStreetMap!'\n\t[207] button 'Close'\n\t[208] StaticText 'OpenStreetMap is a map of the world, created by people like you and free to use under an open license.'\n\t[209] StaticText 'Hosting is supported by '\n\t[210] link 'UCL'\n\t[212] link 'Fastly'\n\t[213] StaticText ', '\n\t[214] link 'Bytemark Hosting'\n\t[215] StaticText ', and other '\n\t[216] link 'partners'\n\t[217] StaticText '.'\n\t[298] link 'Learn More'\n\t[299] link 'Start Mapping'\n\t[23] generic 'Zoom In Zoom Out Show My Location Layers Share 50 km 50 mi © OpenStreetMap contributors ♥ Make a Donation. Website and API terms'\n\t\t[27] link 'Zoom In'\n\t\t[28] link 'Zoom Out'\n\t\t[30] button 'Show My Location'\n\t\t[32] link 'Layers'\n\t\t[253] link ''\n\t\t[34] link 'Share'\n\t\t[254] link ''\n\t\t[255] link ''\n\t\t[362] StaticText '50 km'\n\t\t[363] StaticText '50 mi'\n\t\t[258] StaticText '© '\n\t\t[259] link 'OpenStreetMap contributors'\n\t\t[260] StaticText ' ♥ '\n\t\t[261] link 'Make a Donation'\n\t\t[262] StaticText '. '\n\t\t[263] link 'Website and API terms'"
+}

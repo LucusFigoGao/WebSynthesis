@@ -1,0 +1,36 @@
+{
+    "sites": [
+        "wikipedia",
+        "map"
+    ],
+    "task_id": 267,
+    "require_login": true,
+    "storage_state": null,
+    "start_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:3000",
+    "geolocation": null,
+    "intent_template": "What's the closest national park to {{city}}? How long it takes to drive there?",
+    "instantiation_dict": {
+        "city": "the hometown of Stephen King"
+    },
+    "intent": "What's the closest national park to the hometown of Stephen King? How long it takes to drive there?",
+    "require_reset": false,
+    "eval": {
+        "eval_types": [
+            "string_match"
+        ],
+        "reference_answers": {
+            "must_include": [
+                "Acadia National Park"
+            ],
+            "fuzzy_match": [
+                "1h 23min"
+            ]
+        },
+        "reference_url": "",
+        "program_html": [],
+        "string_note": "",
+        "reference_answer_raw_annotation": "Acadia National Park\n1h 23min"
+    },
+    "intent_template_id": 85,
+    "state": "Tab 0 (current): OpenStreetMap\n\n[1] RootWebArea 'OpenStreetMap' focused: True\n\t[14] heading 'OpenStreetMap logo OpenStreetMap'\n\t\t[22] link 'OpenStreetMap logo OpenStreetMap'\n\t\t\t[37] img 'OpenStreetMap logo'\n\t[65] link 'Edit'\n\t[66] button ''\n\t[43] link 'History'\n\t[44] link 'Export'\n\t[310] link 'GPS Traces'\n\t[311] link 'User Diaries'\n\t[312] link 'Communities'\n\t[313] link 'Copyright'\n\t[314] link 'Help'\n\t[315] link 'About'\n\t[52] link 'Log In'\n\t[53] link 'Sign Up'\n\t[209] link 'Where is this?'\n\t[12] textbox 'Search' focused: True required: False\n\t[210] button 'Go'\n\t[163] link 'Find directions between two points'\n\t[254] heading 'Welcome to OpenStreetMap!'\n\t[255] button 'Close'\n\t[229] StaticText 'OpenStreetMap is a map of the world, created by people like you and free to use under an open license.'\n\t[231] StaticText 'Hosting is supported by '\n\t[249] link 'UCL'\n\t[256] link 'Fastly'\n\t[240] StaticText ', '\n\t[257] link 'Bytemark Hosting'\n\t[236] StaticText ', and other '\n\t[235] link 'partners'\n\t[246] StaticText '.'\n\t[234] link 'Learn More'\n\t[252] link 'Start Mapping'\n\t[20] generic 'Zoom In Zoom Out Show My Location Layers Share 50 km 50 mi © OpenStreetMap contributors ♥ Make a Donation. Website and API terms'\n\t\t[266] link 'Zoom In'\n\t\t[267] link 'Zoom Out'\n\t\t[269] button 'Show My Location'\n\t\t[271] link 'Layers'\n\t\t[384] link ''\n\t\t[273] link 'Share'\n\t\t[385] link ''\n\t\t[386] link ''\n\t\t[457] StaticText '50 km'\n\t\t[458] StaticText '50 mi'\n\t\t[389] StaticText '© '\n\t\t[390] link 'OpenStreetMap contributors'\n\t\t[391] StaticText ' ♥ '\n\t\t[392] link 'Make a Donation'\n\t\t[393] StaticText '. '\n\t\t[394] link 'Website and API terms'"
+}

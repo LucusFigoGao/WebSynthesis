@@ -1,0 +1,36 @@
+{
+    "sites": [
+        "shopping"
+    ],
+    "task_id": 21,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:7770/6s-wireless-headphones-over-ear-noise-canceling-hi-fi-bass-foldable-stereo-wireless-kid-headsets-earbuds-with-built-in-mic-micro-sd-tf-fm-for-iphone-samsung-ipad-pc-black-gold.html",
+    "geolocation": null,
+    "intent_template": "List out reviewers, if exist, who mention about {{description}}",
+    "instantiation_dict": {
+        "description": "ear cups being small"
+    },
+    "intent": "List out reviewers, if exist, who mention about ear cups being small",
+    "require_reset": false,
+    "eval": {
+        "eval_types": [
+            "string_match"
+        ],
+        "reference_answers": {
+            "must_include": [
+                "Joseph Brzezinski",
+                "Catso",
+                "Dibbins",
+                "Anglebert Dinkherhump",
+                "Michelle Davis"
+            ]
+        },
+        "reference_url": "",
+        "program_html": [],
+        "string_note": "",
+        "reference_answer_raw_annotation": "Joseph Brzezinski, Catso, Dibbins, Anglebert Dinkherhump, Michelle Davis"
+    },
+    "intent_template_id": 222,
+    "state": "Tab 0 (current): 6S Wireless Headphones Over Ear,Noise Canceling Hi-Fi Bass Foldable Stereo Wireless Kid Headsets Earbuds with Built-in Mic, Micro SD/TF, FM for iPhone/Samsung/iPad/PC (Black &amp; Gold)\n\n[1] RootWebArea '6S Wireless Headphones Over Ear,Noise Canceling Hi-Fi Bass Foldable Stereo Wireless Kid Headsets Earbuds with Built-in Mic, Micro SD/TF, FM for iPhone/Samsung/iPad/PC (Black &amp; Gold)' focused: True\n\t[127] link 'My Account'\n\t[128] link 'My Wish List'\n\t[129] link 'Sign Out'\n\t[3542] StaticText 'Welcome to One Stop Market'\n\t[65] link 'Skip to Content'\n\t[50] link 'store logo'\n\t\t[67] img 'one_stop_market_logo'\n\t[68] link '\\ue611 My Cart'\n\t[358] StaticText 'Search'\n\t[232] combobox '\\ue615 Search' autocomplete: both hasPopup: listbox required: False expanded: False\n\t[361] link 'Advanced Search'\n\t[179] button 'Search' disabled: True\n\t[3498] tablist '' multiselectable: False orientation: horizontal\n\t\t[3500] tabpanel ''\n\t\t\t[1744] menu '' orientation: vertical\n\t\t\t\t[2495] menuitem '\\ue622 Beauty &amp; Personal Care' hasPopup: menu\n\t\t\t\t[2560] menuitem '\\ue622 Sports &amp; Outdoors' hasPopup: menu\n\t\t\t\t[2570] menuitem '\\ue622 Clothing, Shoes &amp; Jewelry' hasPopup: menu\n\t\t\t\t[2584] menuitem '\\ue622 Home &amp; Kitchen' hasPopup: menu\n\t\t\t\t[2621] menuitem '\\ue622 Office Products' hasPopup: menu\n\t\t\t\t[2629] menuitem '\\ue622 Tools &amp; Home Improvement' hasPopup: menu\n\t\t\t\t[2634] menuitem '\\ue622 Health &amp; Household' hasPopup: menu\n\t\t\t\t[2640] menuitem '\\ue622 Patio, Lawn &amp; Garden' hasPopup: menu\n\t\t\t\t[2645] menuitem '\\ue622 Electronics' hasPopup: menu\n\t\t\t\t[2706] menuitem '\\ue622 Cell Phones &amp; Accessories' hasPopup: menu\n\t\t\t\t[2721] menuitem '\\ue622 Video Games' hasPopup: menu\n\t\t\t\t[2734] menuitem '\\ue622 Grocery &amp; Gourmet Food' hasPopup: menu\n\t[1738] link 'Home'\n\t[1741] StaticText '6S Wireless Headphones Over Ear,Noise Canceling Hi-Fi Bass Foldable Stereo Wireless Kid Headsets Earbuds with Built-in Mic, Micro SD/TF, FM for iPhone/Samsung/iPad/PC (Black &amp; Gold)'\n\t[5] main ''\n\t\t[57] heading '6S Wireless Headphones Over Ear,Noise Canceling Hi-Fi Bass Foldable Stereo Wireless Kid Headsets Earbuds with Built-in Mic, Micro SD/TF, FM for iPhone/Samsung/iPad/PC (Black &amp; Gold)'\n\t\t[11] generic 'Availability'\n\t\t\t[13] StaticText 'IN STOCK'\n\t\t[334] StaticText 'SKU'\n\t\t[498] StaticText 'B086GNDL8K'\n\t\t[154] LayoutTable ''\n\t\t\t[500] StaticText 'Rating:'\n\t\t\t[337] generic '75%'\n\t\t\t\t[1121] StaticText '% of'\n\t\t\t\t[1361] StaticText '100'\n\t\t\t[338] link '12\\xa0 Reviews '\n\t\t\t[339] link 'Add Your Review'\n\t\t[1734] StaticText '$19.99'\n\t\t[342] generic 'Color * Black &amp; Blue Black &amp; Gold Black &amp; Red White &amp; Gold White &amp; Rose Gold'\n\t\t\t[1603] radio 'Black &amp; Blue' checked: false\n\t\t\t[1605] radio 'Black &amp; Gold' checked: false\n\t\t\t[1607] radio 'Black &amp; Red' checked: false\n\t\t\t[1609] radio 'White &amp; Gold' checked: false\n\t\t\t[1611] radio 'White &amp; Rose Gold' checked: false\n\t\t[158] link 'Skip to the end of the images gallery'\n\t\t[3514] button 'Previous'\n\t\t[3516] generic 'Image'\n\t\t\t[3544] img 'Image'\n\t\t[3515] button 'Next'"
+}

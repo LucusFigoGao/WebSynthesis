@@ -20,7 +20,7 @@ WebSynthesis is a framework integrating **world model** learning and **Monte Car
 
 
 ## Two-stage Curriculum Learning
-![class](./figure/class.png)
+![class](./figure/class.jpg)
 
 ## Data Collection (MCTS)
 
@@ -70,6 +70,13 @@ WebSynthesis is a framework integrating **world model** learning and **Monte Car
 
 ## Scaling Analysis
 ![scaling-exp](./figure/scaling.jpg)
+
+## Case Study on WebMCTS
+![case](./figure/case_webmcts.jpg)
+
+## Case Study on World Model
+![case](./figure/world_model.jpg)
+
 
 ## Citation 📖
 

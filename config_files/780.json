@@ -1,0 +1,43 @@
+{
+    "sites": [
+        "shopping_admin"
+    ],
+    "task_id": 780,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:7780/admin/catalog/product/edit/id/1481/",
+    "geolocation": null,
+    "intent_template": "{{action}} the price of {{config}} by {{amount}}",
+    "instantiation_dict": {
+        "amount": "$17",
+        "action": "Increase",
+        "config": "white Ingrid Running with size L and above"
+    },
+    "intent": "Increase the price of white Ingrid Running with size L and above by $17",
+    "require_reset": false,
+    "eval": {
+        "eval_types": [
+            "program_html"
+        ],
+        "reference_answers": null,
+        "reference_url": "",
+        "program_html": [
+            {
+                "url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:7780/admin/catalog/product/edit/id/1264/",
+                "locator": "document.querySelector('[name=\"product[price]\"').value",
+                "required_contents": {
+                    "exact_match": "64.00"
+                }
+            },
+            {
+                "url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:7780/admin/catalog/product/edit/id/1267/",
+                "locator": "document.querySelector('[name=\"product[price]\"').value",
+                "required_contents": {
+                    "exact_match": "64.00"
+                }
+            }
+        ]
+    },
+    "intent_template_id": 742,
+    "state": "Tab 0 (current): Minerva LumaTech™ V-Tee-S-Blue / Products / Inventory / Catalog / Magento Admin\n\n[1] RootWebArea 'Minerva LumaTech™ V-Tee-S-Blue / Products / Inventory / Catalog / Magento Admin' focused: True\n\t[56] link 'Magento Admin Panel'\n\t\t[67] img 'Magento Admin Panel'\n\t[6] menubar '' orientation: horizontal\n\t\t[8] link '\\ue604 DASHBOARD'\n\t\t[12] link '\\ue60b SALES'\n\t\t[16] link '\\ue608 CATALOG'\n\t\t[20] link '\\ue603 CUSTOMERS'\n\t\t[24] link '\\ue609 MARKETING'\n\t\t[28] link '\\ue602 CONTENT'\n\t\t[32] link '\\ue60a REPORTS'\n\t\t[36] link '\\ue60d STORES'\n\t\t[40] link '\\ue610 SYSTEM'\n\t\t[44] link '\\ue612 FIND PARTNERS &amp; EXTENSIONS'\n\t[87] heading 'Minerva LumaTech™ V-Tee-S-Blue'\n\t[88] link '\\ue600 admin'\n\t[90] link '\\ue607'\n\t[943] textbox '\\ue60c' required: False\n\t[51] main ''\n\t\t[93] StaticText 'Scope:'\n\t\t[159] button 'All Store Views' hasPopup: menu\n\t\t[162] link '\\ue633 What is this?'\n\t\t[930] generic 'Save'\n\t\t\t[934] button 'Save'\n\t\t\t[935] button 'Save options'\n\t\t[931] button '\\ue626 Back'\n\t\t[932] button 'Add Attribute'\n\t\t[2000] group ''\n\t\t\t[2590] StaticText 'Enable Product'\n\t\t\t[2247] checkbox '[website] Enable Product Yes' checked: true\n\t\t\t[2251] StaticText 'Attribute Set'\n\t\t\t[2844] generic 'Top'\n\t\t\t[2594] StaticText 'Product Name'\n\t\t\t[2003] textbox '[store view] Product Name *' required: False\n\t\t\t\t[2595] StaticText 'Minerva LumaTech™ V-Tee-S-Blue'\n\t\t\t[2596] StaticText 'SKU'\n\t\t\t[2006] textbox '[global] SKU *' required: False\n\t\t\t\t[2597] StaticText 'WS08-S-Blue'\n\t\t\t[2007] group ''\n\t\t\t\t[2008] LayoutTable ''\n\t\t\t\t\t[2677] StaticText 'Price'\n\t\t\t\t\t[2012] textbox '[global] Price * $' required: False\n\t\t\t\t\t\t[2696] StaticText '32.00'\n\t\t\t\t[2841] button 'Advanced Pricing'\n\t\t\t[2598] StaticText 'Tax Class'\n\t\t\t[2026] combobox 'notice-OCHLEWO' hasPopup: menu expanded: False\n\t\t\t[2013] group ''\n\t\t\t\t[2014] LayoutTable ''\n\t\t\t\t\t[2681] StaticText 'Quantity'\n\t\t\t\t\t[2017] textbox '[global] Quantity' required: False\n\t\t\t\t\t\t[2682] StaticText '100'"
+}

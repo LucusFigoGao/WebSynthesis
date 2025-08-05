@@ -1,0 +1,33 @@
+{
+    "sites": [
+        "map"
+    ],
+    "task_id": 53,
+    "require_login": true,
+    "storage_state": null,
+    "start_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:3000",
+    "geolocation": null,
+    "intent_template": "How long does it take to walk from {{start}} to {{end}}?",
+    "instantiation_dict": {
+        "start": "Univ of Pittsburgh",
+        "end": "starbucks on Craig Street"
+    },
+    "intent": "How long does it take to walk from Univ of Pittsburgh to starbucks on Craig Street?",
+    "require_reset": false,
+    "eval": {
+        "eval_types": [
+            "string_match"
+        ],
+        "reference_answers": {
+            "fuzzy_match": [
+                "18 min"
+            ]
+        },
+        "reference_url": "",
+        "program_html": [],
+        "string_note": "",
+        "reference_answer_raw_annotation": "18 min"
+    },
+    "intent_template_id": 68,
+    "state": "Tab 0 (current): OpenStreetMap\n\n[1] RootWebArea 'OpenStreetMap' focused: True\n\t[14] heading 'OpenStreetMap logo OpenStreetMap'\n\t\t[22] link 'OpenStreetMap logo OpenStreetMap'\n\t\t\t[37] img 'OpenStreetMap logo'\n\t[66] link 'Edit'\n\t[67] button ''\n\t[43] link 'History'\n\t[44] link 'Export'\n\t[538] link 'GPS Traces'\n\t[539] link 'User Diaries'\n\t[540] link 'Communities'\n\t[541] link 'Copyright'\n\t[542] link 'Help'\n\t[543] link 'About'\n\t[52] link 'Log In'\n\t[53] link 'Sign Up'\n\t[218] link 'Where is this?'\n\t[12] textbox 'Search' focused: True required: False\n\t[219] button 'Go'\n\t[169] link 'Find directions between two points'\n\t[233] heading 'Welcome to OpenStreetMap!'\n\t[237] button 'Close'\n\t[235] StaticText 'OpenStreetMap is a map of the world, created by people like you and free to use under an open license.'\n\t[251] StaticText 'Hosting is supported by '\n\t[247] link 'UCL'\n\t[243] link 'Fastly'\n\t[244] StaticText ', '\n\t[232] link 'Bytemark Hosting'\n\t[255] StaticText ', and other '\n\t[256] link 'partners'\n\t[252] StaticText '.'\n\t[230] link 'Learn More'\n\t[254] link 'Start Mapping'\n\t[20] generic 'Zoom In Zoom Out Show My Location Layers Share 50 km 50 mi © OpenStreetMap contributors ♥ Make a Donation. Website and API terms'\n\t\t[266] link 'Zoom In'\n\t\t[267] link 'Zoom Out'\n\t\t[269] button 'Show My Location'\n\t\t[271] link 'Layers'\n\t\t[363] link ''\n\t\t[273] link 'Share'\n\t\t[364] link ''\n\t\t[365] link ''\n\t\t[436] StaticText '50 km'\n\t\t[437] StaticText '50 mi'\n\t\t[368] StaticText '© '\n\t\t[369] link 'OpenStreetMap contributors'\n\t\t[370] StaticText ' ♥ '\n\t\t[371] link 'Make a Donation'\n\t\t[372] StaticText '. '\n\t\t[373] link 'Website and API terms'"
+}

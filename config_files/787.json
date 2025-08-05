@@ -1,0 +1,33 @@
+{
+    "sites": [
+        "gitlab"
+    ],
+    "task_id": 787,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:8023/dehenne/awesome-visibility/-/graphs/master",
+    "geolocation": null,
+    "intent_template": "Tell me the {{attribute}} of the contributor who has the most commits to branch {{branch_name}}",
+    "instantiation_dict": {
+        "branch_name": "main",
+        "attribute": "number of followers"
+    },
+    "intent": "Tell me the number of followers of the contributor who has the most commits to branch main",
+    "require_reset": false,
+    "eval": {
+        "eval_types": [
+            "string_match"
+        ],
+        "reference_answers": {
+            "must_include": [
+                "0"
+            ]
+        },
+        "reference_url": "",
+        "program_html": [],
+        "string_note": "",
+        "reference_answer_raw_annotation": "0"
+    },
+    "intent_template_id": 316,
+    "state": "Tab 0 (current): Contributors · Henning Leutz / awesome-visibility · GitLab\n\n[1] RootWebArea 'Contributors · Henning Leutz / awesome-visibility · GitLab' focused: True\n\t[8] link 'Skip to content'\n\t[57] link 'Dashboard'\n\t[688] button '' hasPopup: menu expanded: False\n\t[418] textbox 'Search GitLab' required: False\n\t[314] generic 'Use the shortcut key <kbd>/</kbd> to start a search'\n\t[117] link 'Create new...'\n\t[119] link 'Issues'\n\t\t[224] generic '13 assigned issues'\n\t[120] link 'Merge requests'\n\t\t[226] generic '8 merge requests'\n\t[122] link 'To-Do List'\n\t\t[230] generic 'Todos count'\n\t\t\t[334] StaticText '5'\n\t[123] link 'Help'\n\t[125] link 'Byte Blaze'\n\t\t[236] img 'Byte Blaze'\n\t[10] complementary 'Project navigation'\n\t\t[33] listitem 'awesome-visibility'\n\t\t\t[72] link 'awesome-visibility'\n\t\t\t\t[361] StaticText 'A'\n\t\t[73] link 'Project information'\n\t\t[75] link 'Repository'\n\t\t[250] link 'Files'\n\t\t[251] link 'Commits'\n\t\t[252] link 'Branches'\n\t\t[253] link 'Tags'\n\t\t[254] link 'Contributors'\n\t\t[255] link 'Graph'\n\t\t[256] link 'Compare'\n\t\t[77] link 'Issues'\n\t\t\t[259] StaticText '3'\n\t\t[79] link 'Merge requests'\n\t\t\t[267] StaticText '0'\n\t\t[81] link 'CI/CD'\n\t\t[83] link 'Deployments'\n\t\t[85] link 'Packages and registries'\n\t\t[87] link 'Monitor'\n\t\t[89] link 'Analytics'\n\t\t[91] link 'Wiki'\n\t\t[93] link 'Snippets'\n\t\t[22] button 'Collapse sidebar'\n\t[654] navigation 'Breadcrumbs'\n\t\t[631] link 'Henning Leutz'\n\t\t[651] link 'awesome-visibility'\n\t\t[652] link 'Contributors'\n\t[636] main ''\n\t\t[655] button 'master'\n\t\t[658] link 'History'\n\t\t[1402] heading 'Commits to master'\n\t\t[1404] StaticText 'Excluding merge commits. Limited to 6,000 commits.'\n\t\t[1340] SvgRoot ''\n\t\t\t[2120] StaticText 'Number of commits'\n\t\t\t[2059] StaticText '5'\n\t\t\t[2057] StaticText '6'\n\t\t\t[2053] StaticText 'Mar'\n\t\t\t[2051] StaticText 'Apr'\n\t\t\t[2049] StaticText 'May'\n\t\t\t[2047] StaticText 'Jun'\n\t\t\t[2045] StaticText 'Jul'\n\t\t\t[2043] StaticText 'Aug'\n\t\t\t[2041] StaticText 'Sep'\n\t\t\t[2039] StaticText 'Oct'\n\t\t\t[2037] StaticText 'Nov'\n\t\t\t[2035] StaticText 'Dec'\n\t\t\t[2033] StaticText 'Feb'\n\t\t\t[2031] StaticText 'Mar'\n\t\t\t[2029] StaticText 'Apr'\n\t\t\t[2027] StaticText 'May'\n\t\t\t[2025] StaticText 'Jun'\n\t\t\t[2023] StaticText 'Jul'\n\t\t\t[2021] StaticText 'Aug'\n\t\t\t[2019] StaticText 'Sep'\n\t\t\t[2017] StaticText 'Oct'\n\t\t\t[2015] StaticText 'Nov'\n\t\t\t[2013] StaticText 'Dec'\n\t\t\t[2011] StaticText '2020'\n\t\t[1450] button 'Commits Avg: 92.6m · Max: 7'\n\t\t\t[1546] generic 'Commits'\n\t\t[1408] heading 'Henning Leutz'\n\t\t[1431] StaticText '51 commits (leutz@pcsg.de)'\n\t\t[1296] SvgRoot ''\n\t\t\t[1335] StaticText 'Commits'\n\t\t[1410] heading 'Jérémie Zarca'\n\t\t[1433] StaticText '3 commits (jzarca01@users.noreply.github.com)'\n\t\t[1251] SvgRoot ''\n\t\t\t[1290] StaticText 'Commits'\n\t\t\t[1276] StaticText '6'"
+}

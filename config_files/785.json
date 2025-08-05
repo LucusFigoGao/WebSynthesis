@@ -1,0 +1,33 @@
+{
+    "sites": [
+        "gitlab"
+    ],
+    "task_id": 785,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:8023/CellularPrivacy/Android-IMSI-Catcher-Detector",
+    "geolocation": null,
+    "intent_template": "Tell me the {{attribute}} of the contributor who has the most commits to branch {{branch_name}}",
+    "instantiation_dict": {
+        "branch_name": "gh-page",
+        "attribute": "email address"
+    },
+    "intent": "Tell me the email address of the contributor who has the most commits to branch gh-page",
+    "require_reset": false,
+    "eval": {
+        "eval_types": [
+            "string_match"
+        ],
+        "reference_answers": {
+            "must_include": [
+                "secupwn@users.noreply.github.com"
+            ]
+        },
+        "reference_url": "",
+        "program_html": [],
+        "string_note": "",
+        "reference_answer_raw_annotation": "secupwn@users.noreply.github.com"
+    },
+    "intent_template_id": 316,
+    "state": "Tab 0 (current): CellularPrivacy / Android-IMSI-Catcher-Detector · GitLab\n\n[1] RootWebArea 'CellularPrivacy / Android-IMSI-Catcher-Detector · GitLab' focused: True\n\t[5] link 'Skip to content'\n\t[18] link 'Dashboard'\n\t[1554] button '' hasPopup: menu expanded: False\n\t[96] textbox 'Search GitLab' required: False\n\t[74] generic 'Use the shortcut key <kbd>/</kbd> to start a search'\n\t[37] link 'Create new...'\n\t[39] link 'Issues'\n\t\t[59] generic '13 assigned issues'\n\t[40] link 'Merge requests'\n\t\t[61] generic '8 merge requests'\n\t[42] link 'To-Do List'\n\t\t[120] generic 'Todos count'\n\t\t\t[415] StaticText '5'\n\t[224] link 'Help'\n\t[226] link 'Byte Blaze'\n\t\t[326] img 'Byte Blaze'\n\t[125] complementary 'Project navigation'\n\t\t[143] listitem 'Android-IMSI-Catcher-Detector'\n\t\t\t[179] link 'Android-IMSI-Catcher-Detector'\n\t\t[180] link 'Project information'\n\t\t[182] link 'Repository'\n\t\t[184] link 'Issues'\n\t\t\t[349] StaticText '162'\n\t\t[186] link 'Merge requests'\n\t\t\t[357] StaticText '5'\n\t\t[188] link 'CI/CD'\n\t\t[190] link 'Deployments'\n\t\t[192] link 'Packages and registries'\n\t\t[194] link 'Monitor'\n\t\t[196] link 'Analytics'\n\t\t[198] link 'Wiki'\n\t\t[200] link 'Snippets'\n\t\t[135] button 'Collapse sidebar'\n\t[803] alert '' live: assertive atomic: True relevant: additions text\n\t\t[842] button 'Dismiss'\n\t\t[883] alert '' live: assertive atomic: True relevant: additions text\n\t\t\t[926] link 'Add SSH key'\n\t\t\t[833] button \"Don't show again\"\n\t[819] navigation 'Breadcrumbs'\n\t\t[915] link 'CellularPrivacy'\n\t\t[843] link 'Android-IMSI-Catcher-Detector'\n\t[889] main ''\n\t\t[797] heading 'Android-IMSI-Catcher-Detector Public - The project can be accessed without any authentication.'\n\t\t\t[816] generic 'Public - The project can be accessed without any authentication.'\n\t\t[823] StaticText 'Project ID: 61 '\n\t\t[907] button 'Copy project ID' live: polite atomic: False relevant: additions text\n\t\t[906] link 'Request Access'\n\t\t[1034] button '' hasPopup: menu expanded: False\n\t\t[893] button 'Star'\n\t\t[854] link '28'\n\t\t[924] link 'Fork'\n\t\t[897] link '0'\n\t\t[1026] link '2,642 Commits'\n\t\t[1027] link '11 Branches'\n\t\t[1028] link '49 Tags'\n\t\t[1068] StaticText '258.9 MB'\n\t\t[1046] StaticText ' Project Storage'\n\t\t[1030] link '48 Releases'\n\t\t[827] StaticText 'AIMSICD • Fight IMSI-Catcher, StingRay and silent SMS!'\n\t\t[925] generic '<span class=\"repository-language-bar-tooltip-language\">Java</span> <span class=\"repository-language-bar-tooltip-share\">100.0%</span>'\n\t\t[1503] img 'user avatar'\n\t\t[1507] link 'Translated using Weblate (Portuguese)'\n\t\t[1508] button 'Toggle commit description'\n\t\t[1515] StaticText 'ssantos authored '\n\t\t[1516] time 'Mar 18, 2023 6:18am EDT'\n\t\t\t[1522] StaticText '6 months ago'\n\t\t[1518] button 'Unverified'\n\t\t[1512] group ''\n\t\t\t[1527] StaticText '0f9268c5'\n\t\t\t[1520] button 'Copy commit SHA' live: polite atomic: False relevant: additions text\n\t\t[1214] button 'development' hasPopup: menu expanded: False\n\t\t[1205] navigation 'Files breadcrumb'\n\t\t\t[1215] link 'Android-IMSI-Catcher-Detector'\n\t\t\t[2272] button 'Add to tree' hasPopup: menu expanded: False\n\t\t[813] link 'Find file'\n\t\t[1211] link 'Web IDE'\n\t\t[836] button 'Download'\n\t\t\t[868] StaticText 'Select Archive Format'\n\t\t[899] link 'Clone'\n\t\t[1050] link 'README'\n\t\t[1051] link 'GNU GPLv3'\n\t\t[1052] link 'CHANGELOG'\n\t\t[1202] table 'Files, directories, and submodules in the path / for commit reference development' live: polite atomic: False relevant: additions text\n\t\t\t[1217] row ''\n\t\t\t\t[1228] columnheader 'Name' required: False\n\t\t\t\t[1229] columnheader 'Last commit' required: False\n\t\t\t\t[1230] columnheader 'Last update' required: False\n\t\t\t[2253] row ''\n\t\t\t\t[2273] gridcell '.github' required: False\n\t\t\t\t\t[2322] link '.github'\n\t\t\t\t[2274] gridcell 'Reduce visual noise' required: False\n\t\t\t\t\t[2947] link 'Reduce visual noise'\n\t\t\t\t[2275] gridcell '6 years ago' required: False\n\t\t\t\t\t[2948] time 'Jan 1, 2017 11:37am EST'\n\t\t\t[2254] row ''\n\t\t\t\t[2276] gridcell '.idea' required: False\n\t\t\t\t\t[2324] link '.idea'\n\t\t\t\t[2277] gridcell 'Improve Checkstyle Configuration' required: False\n\t\t\t\t\t[2949] link 'Improve Checkstyle Configuration'\n\t\t\t\t[2278] gridcell '6 years ago' required: False\n\t\t\t\t\t[2950] time 'Apr 11, 2017 6:19pm EDT'\n\t\t\t[2255] row ''\n\t\t\t\t[2279] gridcell 'AIMSICD' required: False\n\t\t\t\t\t[2326] link 'AIMSICD'\n\t\t\t\t[2280] gridcell 'Translated using Weblate (Portuguese)' required: False\n\t\t\t\t\t[2951] link 'Translated using Weblate (Portuguese)'\n\t\t\t\t[2281] gridcell '6 months ago' required: False"
+}

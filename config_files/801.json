@@ -1,0 +1,40 @@
+{
+    "sites": [
+        "gitlab"
+    ],
+    "task_id": 801,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:8023",
+    "geolocation": null,
+    "intent_template": "create a new group \"{{name}}\" with members {{members}}",
+    "instantiation_dict": {
+        "name": "crew",
+        "members": "ASWATFZLLC, patrickhlauke, westurner, linkmatrix"
+    },
+    "intent": "create a new group \"crew\" with members ASWATFZLLC, patrickhlauke, westurner, linkmatrix",
+    "require_reset": false,
+    "eval": {
+        "eval_types": [
+            "program_html"
+        ],
+        "reference_answers": null,
+        "reference_url": "",
+        "program_html": [
+            {
+                "url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:8023/groups/crew/-/group_members",
+                "locator": "",
+                "required_contents": {
+                    "must_include": [
+                        "@ASWATFZLLC",
+                        "@patrickhlauke",
+                        "@westurner",
+                        "@linkmatrix"
+                    ]
+                }
+            }
+        ]
+    },
+    "intent_template_id": 600,
+    "state": "Tab 0 (current): Projects · Dashboard · GitLab\n\n[1] RootWebArea 'Projects · Dashboard · GitLab' focused: True\n\t[8] link 'Skip to content'\n\t[33] link 'Dashboard'\n\t[1850] button '' hasPopup: menu expanded: False\n\t[180] textbox 'Search GitLab' required: False\n\t[126] generic 'Use the shortcut key <kbd>/</kbd> to start a search'\n\t[62] link 'Create new...'\n\t[64] link 'Issues'\n\t\t[96] generic '13 assigned issues'\n\t[65] link 'Merge requests'\n\t\t[98] generic '8 merge requests'\n\t[67] link 'To-Do List'\n\t\t[102] generic 'Todos count'\n\t\t\t[142] StaticText '5'\n\t[68] link 'Help'\n\t[70] link 'Byte Blaze'\n\t\t[108] img 'Byte Blaze'\n\t[299] main ''\n\t\t[284] heading 'Projects'\n\t\t[268] link 'New project'\n\t\t[290] link 'Yours 58'\n\t\t[272] link 'Starred 3'\n\t\t[283] link 'Explore'\n\t\t[263] link 'Topics'\n\t\t[275] searchbox 'Filter by name'\n\t\t[410] button 'Most stars'\n\t\t[334] link 'All'\n\t\t[335] link 'Personal'\n\t\t[414] link 'D'\n\t\t[652] heading 'Primer / design'\n\t\t\t[904] link 'Primer / design'\n\t\t[653] generic 'Public - The project can be accessed without any authentication.'\n\t\t[906] StaticText 'Developer'\n\t\t[907] StaticText 'Primer Design Guidelines'\n\t\t[658] link '22'\n\t\t[659] link '0'\n\t\t[660] link '16'\n\t\t[661] link '21'\n\t\t[918] StaticText 'Updated '\n\t\t[919] time 'Sep 26, 2023 9:53pm EDT'\n\t\t\t[1796] StaticText '17 hours ago'\n\t\t[417] link 'A'\n\t\t[664] heading 'The A11Y Project / a11yproject.com'\n\t\t\t[920] link 'The A11Y Project / a11yproject.com'\n\t\t[665] generic 'Public - The project can be accessed without any authentication.'\n\t\t[922] StaticText 'Maintainer'\n\t\t[923] StaticText 'The A11Y Project is a community-driven effort to make digital accessibility easier.'\n\t\t[670] link '20'\n\t\t[671] link '0'\n\t\t[672] link '10'\n\t\t[673] link '40'\n\t\t[934] StaticText 'Updated '\n\t\t[935] time 'Sep 26, 2023 9:46pm EDT'\n\t\t\t[1797] StaticText '17 hours ago'\n\t\t[420] link 'E'\n\t\t[676] heading 'Byte Blaze / empathy-prompts'\n\t\t\t[936] link 'Byte Blaze / empathy-prompts'\n\t\t[677] generic 'Public - The project can be accessed without any authentication.'\n\t\t[938] StaticText 'Owner'\n\t\t[939] generic 'electric light bulb'\n\t\t\t[1273] StaticText '💡'\n\t\t[940] StaticText ' Ideas to help consider Inclusive Design principles when making things for others to use.'\n\t\t[682] link '6'\n\t\t[683] link '1'\n\t\t[684] link '2'\n\t\t[685] link '6'\n\t\t[951] StaticText 'Updated '\n\t\t[952] time 'Sep 26, 2023 10:01pm EDT'\n\t\t\t[1798] StaticText '16 hours ago'\n\t\t[423] link 'M'\n\t\t[688] heading 'Byte Blaze / millennials-to-snake-people'\n\t\t\t[953] link 'Byte Blaze / millennials-to-snake-people'\n\t\t[689] generic 'Public - The project can be accessed without any authentication.'\n\t\t[955] StaticText 'Owner'\n\t\t[956] generic 'snake'\n\t\t\t[1293] StaticText '🐍'\n\t\t[694] link '6'\n\t\t[695] link '0'\n\t\t[696] link '2'\n\t\t[697] link '4'\n\t\t[968] StaticText 'Updated '\n\t\t[969] time 'Mar 27, 2023 7:22pm EDT'\n\t\t\t[1799] StaticText '6 months ago'\n\t\t[426] link 'E'\n\t\t[700] heading 'Byte Blaze / ericwbailey.website'\n\t\t\t[970] link 'Byte Blaze / ericwbailey.website'\n\t\t[701] generic 'Public - The project can be accessed without any authentication.'\n\t\t[972] StaticText 'Owner'\n\t\t[973] generic 'triangular ruler'\n\t\t\t[1313] StaticText '📐'\n\t\t[974] StaticText ' Repo for my personal website.'\n\t\t[706] link '2'\n\t\t[707] link '0'\n\t\t[708] link '0'\n\t\t[709] link '0'\n\t\t[985] StaticText 'Updated '\n\t\t[986] time 'Mar 27, 2023 7:22pm EDT'\n\t\t\t[1800] StaticText '6 months ago'\n\t\t[429] link 'A'\n\t\t[712] heading 'Byte Blaze / a11y-webring.club'\n\t\t\t[987] link 'Byte Blaze / a11y-webring.club'\n\t\t[713] generic 'Public - The project can be accessed without any authentication.'\n\t\t[989] StaticText 'Owner'\n\t\t[990] generic 'globe with meridians'\n\t\t\t[1333] StaticText '🌐'\n\t\t[991] StaticText ' A webring for digital accessibility practitioners.'\n\t\t[718] link '2'\n\t\t[719] link '0'\n\t\t[720] link '1'\n\t\t[721] link '4'\n\t\t[1002] StaticText 'Updated '\n\t\t[1003] time 'Mar 27, 2023 7:22pm EDT'\n\t\t\t[1801] StaticText '6 months ago'\n\t\t[432] link 'A'\n\t\t[724] heading 'Byte Blaze / a11y-syntax-highlighting'\n\t\t\t[1004] link 'Byte Blaze / a11y-syntax-highlighting'\n\t\t[725] generic 'Public - The project can be accessed without any authentication.'\n\t\t[1006] StaticText 'Owner'\n\t\t[1007] generic 'lipstick'\n\t\t\t[1353] StaticText '💄'\n\t\t[1008] StaticText ' Accessible light and dark syntax highlighting themes'\n\t\t[730] link '1'\n\t\t[731] link '0'\n\t\t[732] link '0'\n\t\t[733] link '1'\n\t\t[1019] StaticText 'Updated '\n\t\t[1020] time 'Mar 27, 2023 7:22pm EDT'\n\t\t\t[1802] StaticText '6 months ago'"
+}

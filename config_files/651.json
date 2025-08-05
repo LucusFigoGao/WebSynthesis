@@ -1,0 +1,37 @@
+{
+    "sites": [
+        "reddit"
+    ],
+    "task_id": 651,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:9999/f/pittsburgh/45899/driving-in-pittsburgh-summed-up-by-one-traffic-sign",
+    "geolocation": null,
+    "intent_template": "Reply to {{position_description}} with my comment \"{{content_description}}\"",
+    "instantiation_dict": {
+        "position_description": "the post",
+        "content_description": "Yeah, pittsburgh traffic, you know..."
+    },
+    "intent": "Reply to the post with my comment \"Yeah, pittsburgh traffic, you know...\"",
+    "require_reset": false,
+    "eval": {
+        "eval_types": [
+            "url_match",
+            "program_html"
+        ],
+        "reference_answers": null,
+        "reference_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:9999/f/pittsburgh/45899/driving-in-pittsburgh-summed-up-by-one-traffic-sign",
+        "program_html": [
+            {
+                "url": "last",
+                "locator": "document.querySelector('.comment__body').outerText",
+                "required_contents": {
+                    "exact_match": "Yeah, pittsburgh traffic, you know..."
+                }
+            }
+        ],
+        "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 23,
+    "state": "Tab 0 (current): Driving in Pittsburgh summed up by one traffic sign.\n\n[1] RootWebArea 'Driving in Pittsburgh summed up by one traffic sign.' focused: True\n\t[14] HeaderAsNonLandmark ''\n\t\t[51] link 'Home'\n\t\t\t[135] StaticText 'Postmill'\n\t[241] link 'Forums'\n\t[242] link 'Wiki'\n\t[141] searchbox 'Search query'\n\t[142] link 'Notifications (0)'\n\t[143] link 'Submit'\n\t[6405] button 'MarvelsGrantMan136' hasPopup: menu expanded: False\n\t[11] main ''\n\t\t[273] link '/f/pittsburgh'\n\t\t[19] article ''\n\t\t\t[274] HeaderAsNonLandmark ''\n\t\t\t\t[482] heading 'Driving in Pittsburgh summed up by one traffic sign.'\n\t\t\t\t\t[834] link 'Driving in Pittsburgh summed up by one traffic sign.'\n\t\t\t\t[836] StaticText 'Submitted by '\n\t\t\t\t[837] link 'Dare_County' expanded: False\n\t\t\t\t[1395] StaticText 't3_z780b9'\n\t\t\t\t[841] time 'November 28, 2022 at 3:47:46 PM EST'\n\t\t\t\t\t[6462] StaticText '10 months ago'\n\t\t\t\t[842] StaticText ' in '\n\t\t\t\t[843] link 'pittsburgh'\n\t\t\t[485] link ''\n\t\t\t[1400] link '87 comments'\n\t\t\t[488] button 'Upvote'\n\t\t\t[6407] StaticText '1438'\n\t\t\t[491] button 'Downvote'\n\t[4334] complementary ''\n\t\t[4479] StaticText '0 points'\n\t\t[4482] StaticText '(+0, −0)'\n\t\t[4483] heading 'Short URL:'\n\t\t[4828] StaticText 'http://metis.lti.cs.cmu.edu:9999/45899'\n\t\t[4421] heading 'pittsburgh'\n\t\t\t[4485] link 'pittsburgh'\n\t\t[4599] button 'Unsubscribe 1 subscriber'\n\t\t\t[4830] generic '1 subscriber'\n\t\t[4600] StaticText 't5_2qhrn'\n\t\t[4424] separator '' orientation: horizontal\n\t\t[4601] StaticText 'Created '\n\t\t[4602] time 'October 1, 2022 at 1:02:24 PM EDT'\n\t\t\t[6406] StaticText '12 months ago'\n\t\t[4603] link 'Subscribe via RSS'\n\t\t[4335] Details ''\n\t\t\t[4337] DisclosureTriangle 'Hide this forum' expanded: False\n\t\t[4427] heading 'Toolbox'\n\t\t[4611] link 'Bans'\n\t\t[4612] link 'Moderation log'"
+}

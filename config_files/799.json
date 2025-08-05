@@ -1,0 +1,40 @@
+{
+    "sites": [
+        "gitlab"
+    ],
+    "task_id": 799,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:8023",
+    "geolocation": null,
+    "intent_template": "create a new group \"{{name}}\" with members {{members}}",
+    "instantiation_dict": {
+        "name": "n-lab",
+        "members": "patou, egpast, westurner, jontutcher"
+    },
+    "intent": "create a new group \"n-lab\" with members patou, egpast, westurner, jontutcher",
+    "require_reset": false,
+    "eval": {
+        "eval_types": [
+            "program_html"
+        ],
+        "reference_answers": null,
+        "reference_url": "",
+        "program_html": [
+            {
+                "url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:8023/groups/n-lab/-/group_members",
+                "locator": "",
+                "required_contents": {
+                    "must_include": [
+                        "@patou",
+                        "@egpast",
+                        "@westurner",
+                        "@jontutcher"
+                    ]
+                }
+            }
+        ]
+    },
+    "intent_template_id": 600,
+    "state": "Tab 0 (current): Projects · Dashboard · GitLab\n\n[1] RootWebArea 'Projects · Dashboard · GitLab' focused: True\n\t[9] link 'Skip to content'\n\t[38] link 'Dashboard'\n\t[2769] button '' hasPopup: menu expanded: False\n\t[348] textbox 'Search GitLab' required: False\n\t[225] generic 'Use the shortcut key <kbd>/</kbd> to start a search'\n\t[70] link 'Create new...'\n\t[72] link 'Issues'\n\t\t[127] generic '13 assigned issues'\n\t[73] link 'Merge requests'\n\t\t[129] generic '8 merge requests'\n\t[75] link 'To-Do List'\n\t\t[133] generic 'Todos count'\n\t[76] link 'Help'\n\t[78] link 'Byte Blaze'\n\t\t[139] img 'Byte Blaze'\n\t[2167] main ''\n\t\t[2424] heading 'Projects'\n\t\t[2037] link 'New project'\n\t\t[2244] link 'Yours 58'\n\t\t[2381] link 'Starred 3'\n\t\t[2257] link 'Explore'\n\t\t[2332] link 'Topics'\n\t\t[1510] searchbox 'Filter by name'\n\t\t[2199] button 'Most stars'\n\t\t[1986] link 'All'\n\t\t[2140] link 'Personal'\n\t\t[1787] link 'D'\n\t\t[2236] heading 'Primer / design'\n\t\t\t[2061] link 'Primer / design'\n\t\t[2351] generic 'Public - The project can be accessed without any authentication.'\n\t\t[1748] StaticText 'Developer'\n\t\t[1816] StaticText 'Primer Design Guidelines'\n\t\t[2237] link '22'\n\t\t[2278] link '0'\n\t\t[2069] link '16'\n\t\t[1615] link '21'\n\t\t[1792] StaticText 'Updated '\n\t\t[1994] time 'Sep 26, 2023 9:53pm EDT'\n\t\t\t[2715] StaticText '16 hours ago'\n\t\t[1727] link 'A'\n\t\t[2280] heading 'The A11Y Project / a11yproject.com'\n\t\t\t[1552] link 'The A11Y Project / a11yproject.com'\n\t\t[1604] generic 'Public - The project can be accessed without any authentication.'\n\t\t[2405] StaticText 'Maintainer'\n\t\t[2308] StaticText 'The A11Y Project is a community-driven effort to make digital accessibility easier.'\n\t\t[1941] link '20'\n\t\t[1707] link '0'\n\t\t[2458] link '10'\n\t\t[2050] link '40'\n\t\t[2117] StaticText 'Updated '\n\t\t[1554] time 'Sep 26, 2023 9:46pm EDT'\n\t\t\t[2716] StaticText '17 hours ago'\n\t\t[1545] link 'E'\n\t\t[1525] heading 'Byte Blaze / empathy-prompts'\n\t\t\t[2299] link 'Byte Blaze / empathy-prompts'\n\t\t[1893] generic 'Public - The project can be accessed without any authentication.'\n\t\t[2292] StaticText 'Owner'\n\t\t[2277] generic 'electric light bulb'\n\t\t\t[1785] StaticText '💡'\n\t\t[1943] StaticText ' Ideas to help consider Inclusive Design principles when making things for others to use.'\n\t\t[2171] link '6'\n\t\t[2319] link '1'\n\t\t[1832] link '2'\n\t\t[2173] link '6'\n\t\t[2419] StaticText 'Updated '\n\t\t[2196] time 'Sep 26, 2023 10:01pm EDT'\n\t\t\t[2717] StaticText '16 hours ago'\n\t\t[2180] link 'M'\n\t\t[1840] heading 'Byte Blaze / millennials-to-snake-people'\n\t\t\t[2152] link 'Byte Blaze / millennials-to-snake-people'\n\t\t[1777] generic 'Public - The project can be accessed without any authentication.'\n\t\t[1860] StaticText 'Owner'\n\t\t[2166] generic 'snake'\n\t\t\t[2010] StaticText '🐍'\n\t\t[1496] link '6'\n\t\t[2338] link '0'\n\t\t[1550] link '2'\n\t\t[1734] link '4'\n\t\t[2095] StaticText 'Updated '\n\t\t[2455] time 'Mar 27, 2023 7:22pm EDT'\n\t\t\t[2718] StaticText '6 months ago'\n\t\t[2109] link 'E'\n\t\t[1885] heading 'Byte Blaze / ericwbailey.website'\n\t\t\t[1520] link 'Byte Blaze / ericwbailey.website'\n\t\t[1917] generic 'Public - The project can be accessed without any authentication.'\n\t\t[2320] StaticText 'Owner'\n\t\t[2172] generic 'triangular ruler'\n\t\t\t[2059] StaticText '📐'\n\t\t[2066] StaticText ' Repo for my personal website.'\n\t\t[2108] link '2'\n\t\t[1526] link '0'\n\t\t[2421] link '0'\n\t\t[2042] link '0'\n\t\t[1641] StaticText 'Updated '\n\t\t[2092] time 'Mar 27, 2023 7:22pm EDT'\n\t\t\t[2719] StaticText '6 months ago'\n\t\t[2350] link 'A'\n\t\t[2125] heading 'Byte Blaze / a11y-webring.club'\n\t\t\t[1881] link 'Byte Blaze / a11y-webring.club'\n\t\t[1696] generic 'Public - The project can be accessed without any authentication.'\n\t\t[1948] StaticText 'Owner'\n\t\t[1896] generic 'globe with meridians'\n\t\t\t[1848] StaticText '🌐'\n\t\t[1551] StaticText ' A webring for digital accessibility practitioners.'\n\t\t[2081] link '2'\n\t\t[2190] link '0'\n\t\t[2187] link '1'\n\t\t[2112] link '4'\n\t\t[2479] StaticText 'Updated '\n\t\t[2465] time 'Mar 27, 2023 7:22pm EDT'\n\t\t\t[2720] StaticText '6 months ago'\n\t\t[2390] link 'A'\n\t\t[2391] heading 'Byte Blaze / a11y-syntax-highlighting'\n\t\t\t[1902] link 'Byte Blaze / a11y-syntax-highlighting'\n\t\t[2312] generic 'Public - The project can be accessed without any authentication.'\n\t\t[2438] StaticText 'Owner'\n\t\t[1505] generic 'lipstick'\n\t\t\t[1626] StaticText '💄'\n\t\t[2287] StaticText ' Accessible light and dark syntax highlighting themes'\n\t\t[1632] link '1'\n\t\t[1822] link '0'\n\t\t[1587] link '0'\n\t\t[1895] link '1'\n\t\t[2453] StaticText 'Updated '\n\t\t[1824] time 'Mar 27, 2023 7:22pm EDT'\n\t\t\t[2721] StaticText '6 months ago'"
+}

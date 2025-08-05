@@ -1,0 +1,33 @@
+{
+    "sites": [
+        "shopping"
+    ],
+    "task_id": 25,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:7770/epson-workforce-wf-3620-wifi-direct-all-in-one-color-inkjet-printer-copier-scanner-amazon-dash-replenishment-ready.html",
+    "geolocation": null,
+    "intent_template": "List out reviewers, if exist, who mention about {{description}}",
+    "instantiation_dict": {
+        "description": "average print quality"
+    },
+    "intent": "List out reviewers, if exist, who mention about average print quality",
+    "require_reset": false,
+    "eval": {
+        "eval_types": [
+            "string_match"
+        ],
+        "reference_answers": {
+            "must_include": [
+                "Goldfish",
+                "Roxanne Brandon Coffey"
+            ]
+        },
+        "reference_url": "",
+        "program_html": [],
+        "string_note": "",
+        "reference_answer_raw_annotation": "GoldfishGoldfish, Roxanne Brandon Coffey"
+    },
+    "intent_template_id": 222,
+    "state": "Tab 0 (current): Epson WorkForce WF-3620 WiFi Direct All-in-One Color Inkjet Printer, Copier, Scanner, Amazon Dash Replenishment Ready\n\n[1] RootWebArea 'Epson WorkForce WF-3620 WiFi Direct All-in-One Color Inkjet Printer, Copier, Scanner, Amazon Dash Replenishment Ready' focused: True\n\t[83] link 'My Account'\n\t[84] link 'My Wish List'\n\t[85] link 'Sign Out'\n\t[3993] StaticText 'Welcome to One Stop Market'\n\t[40] link 'Skip to Content'\n\t[29] link 'store logo'\n\t\t[42] img 'one_stop_market_logo'\n\t[43] link '\\ue611 My Cart'\n\t[293] StaticText 'Search'\n\t[175] combobox '\\ue615 Search' autocomplete: both hasPopup: listbox required: False expanded: False\n\t[296] link 'Advanced Search'\n\t[127] button 'Search' disabled: True\n\t[3950] tablist '' multiselectable: False orientation: horizontal\n\t\t[3952] tabpanel ''\n\t\t\t[2188] menu '' orientation: vertical\n\t\t\t\t[2939] menuitem '\\ue622 Beauty &amp; Personal Care' hasPopup: menu\n\t\t\t\t[3004] menuitem '\\ue622 Sports &amp; Outdoors' hasPopup: menu\n\t\t\t\t[3014] menuitem '\\ue622 Clothing, Shoes &amp; Jewelry' hasPopup: menu\n\t\t\t\t[3028] menuitem '\\ue622 Home &amp; Kitchen' hasPopup: menu\n\t\t\t\t[3065] menuitem '\\ue622 Office Products' hasPopup: menu\n\t\t\t\t[3073] menuitem '\\ue622 Tools &amp; Home Improvement' hasPopup: menu\n\t\t\t\t[3078] menuitem '\\ue622 Health &amp; Household' hasPopup: menu\n\t\t\t\t[3084] menuitem '\\ue622 Patio, Lawn &amp; Garden' hasPopup: menu\n\t\t\t\t[3089] menuitem '\\ue622 Electronics' hasPopup: menu\n\t\t\t\t[3150] menuitem '\\ue622 Cell Phones &amp; Accessories' hasPopup: menu\n\t\t\t\t[3165] menuitem '\\ue622 Video Games' hasPopup: menu\n\t\t\t\t[3178] menuitem '\\ue622 Grocery &amp; Gourmet Food' hasPopup: menu\n\t[2182] link 'Home'\n\t[2185] StaticText 'Epson WorkForce WF-3620 WiFi Direct All-in-One Color Inkjet Printer, Copier, Scanner, Amazon Dash Replenishment Ready'\n\t[5] main ''\n\t\t[36] heading 'Epson WorkForce WF-3620 WiFi Direct All-in-One Color Inkjet Printer, Copier, Scanner, Amazon Dash Replenishment Ready'\n\t\t[11] generic 'Availability'\n\t\t\t[13] StaticText 'IN STOCK'\n\t\t[277] StaticText 'SKU'\n\t\t[433] StaticText 'B00JXLGF06'\n\t\t[110] LayoutTable ''\n\t\t\t[435] StaticText 'Rating:'\n\t\t\t[280] generic '35%'\n\t\t\t\t[1039] StaticText '% of'\n\t\t\t\t[1267] StaticText '100'\n\t\t\t[281] link '12\\xa0 Reviews '\n\t\t\t[282] link 'Add Your Review'\n\t\t[2178] StaticText '$607.39'\n\t\t[164] LayoutTable ''\n\t\t\t[1042] StaticText 'Qty'\n\t\t\t[1043] spinbutton 'Qty' required: False valuemin: 0 valuemax: 0 valuetext: \n\t\t\t[745] button 'Add to Cart'\n\t\t[165] link 'Add to Wish List'\n\t\t[166] link 'Add to Compare'\n\t\t[114] link 'Skip to the end of the images gallery'\n\t\t[3943] button 'Previous'\n\t\t[3945] generic 'Image'\n\t\t\t[3979] img 'Image'\n\t\t[3944] button 'Next'"
+}

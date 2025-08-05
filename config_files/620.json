@@ -1,0 +1,40 @@
+{
+    "sites": [
+        "reddit"
+    ],
+    "task_id": 620,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:9999",
+    "geolocation": null,
+    "intent_template": "Ask for advice about {{issue}} in a subreddit for relations",
+    "instantiation_dict": {
+        "issue": "deal with long-distance relationships"
+    },
+    "intent": "Ask for advice about deal with long-distance relationships in a subreddit for relations",
+    "require_reset": false,
+    "eval": {
+        "eval_types": [
+            "url_match",
+            "program_html"
+        ],
+        "reference_answers": null,
+        "reference_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:9999/f/relationship_advice",
+        "program_html": [
+            {
+                "url": "func:reddit_get_post_url('__last_url__')",
+                "locator": "document.querySelector('.submission__inner').outerText",
+                "required_contents": {
+                    "must_include": [
+                        "long",
+                        "distance",
+                        "relation"
+                    ]
+                }
+            }
+        ],
+        "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 12,
+    "state": "Tab 0 (current): Postmill\n\n[1] RootWebArea 'Postmill' focused: True\n\t[17] HeaderAsNonLandmark ''\n\t\t[52] link 'Home'\n\t[171] link 'Forums'\n\t[172] link 'Wiki'\n\t[100] searchbox 'Search query'\n\t[101] link 'Notifications (0)'\n\t[102] link 'Submit'\n\t[1919] button 'MarvelsGrantMan136' hasPopup: menu expanded: False\n\t[12] main ''\n\t\t[203] link 'Submissions'\n\t\t[204] link 'Comments'\n\t\t[1920] button 'Filter on: Subscribed' hasPopup: menu expanded: False\n\t\t[1921] button 'Sort by: Hot' hasPopup: menu expanded: False\n\t\t[22] article ''\n\t\t\t[209] HeaderAsNonLandmark ''\n\t\t\t\t[334] heading 'Gone with the wind'\n\t\t\t\t\t[614] link 'Gone with the wind'\n\t\t\t\t[616] StaticText 'Submitted by '\n\t\t\t\t[617] link 'MarvelsGrantMan136' expanded: False\n\t\t\t\t[619] time 'September 27, 2023 at 5:11:33 AM EDT'\n\t\t\t\t\t[1955] StaticText '9 minutes ago'\n\t\t\t\t[620] StaticText ' in '\n\t\t\t\t[621] link 'books'\n\t\t\t[1037] link '2 comments'\n\t\t\t[1039] link 'Edit'\n\t\t\t[1433] button 'Delete'\n\t\t\t[338] button 'Retract upvote'\n\t\t\t[341] button 'Downvote'\n\t\t[23] article ''\n\t\t\t[212] HeaderAsNonLandmark ''\n\t\t\t\t[343] heading 'what is the recommended console to buy these days'\n\t\t\t\t\t[629] link 'what is the recommended console to buy these days'\n\t\t\t\t[631] StaticText 'Submitted by '\n\t\t\t\t[632] link 'MarvelsGrantMan136' expanded: False\n\t\t\t\t[634] time 'September 27, 2023 at 4:09:06 AM EDT'\n\t\t\t\t\t[1956] StaticText '1 hour ago'\n\t\t\t\t[635] StaticText ' in '\n\t\t\t\t[636] link 'CyberpunkCyberpunk'\n\t\t\t[1051] link '1 comment'\n\t\t\t[1053] link 'Edit'\n\t\t\t[1443] button 'Delete'\n\t\t\t[1922] button 'Actions' hasPopup: menu expanded: False\n\t\t\t[347] button 'Upvote'\n\t\t\t[1924] StaticText '−1'\n\t\t\t[350] button 'Retract downvote'\n\t\t[24] article ''\n\t\t\t[215] HeaderAsNonLandmark ''\n\t\t\t\t[352] heading 'Nvidia RTX 4090'\n\t\t\t\t\t[646] link 'Nvidia RTX 4090'\n\t\t\t\t[648] StaticText 'Submitted by '\n\t\t\t\t[649] link 'MarvelsGrantMan136' expanded: False\n\t\t\t\t[651] time 'June 12, 2023 at 12:55:45 PM EDT'\n\t\t\t\t\t[1958] StaticText '4 months ago'\n\t\t\t\t[652] StaticText ' in '\n\t\t\t\t[653] link 'MachineLearning'\n\t\t\t[1068] link 'No comments'\n\t\t\t[1070] link 'Edit'\n\t\t\t[1460] button 'Delete'\n\t\t\t[356] button 'Upvote'\n\t\t\t[1926] StaticText '−1'\n\t\t\t[359] button 'Retract downvote'\n\t\t[25] article ''\n\t\t\t[218] HeaderAsNonLandmark ''\n\t\t\t\t[361] heading 'Museum issues appeal to save famed \"Misty of Chincoteague\" ranch from being sold to developers'\n\t\t\t\t\t[662] link 'Museum issues appeal to save famed \"Misty of Chincoteague\" ranch from being sold to developers'\n\t\t\t\t[363] link 'delmarvanow.com'\n\t\t\t\t[665] StaticText 'Submitted by '\n\t\t\t\t[666] link 'ZebZ' expanded: False\n\t\t\t\t[1081] StaticText 't3_11goa5z'\n\t\t\t\t[670] time 'March 2, 2023 at 9:12:11 PM EST'\n\t\t\t\t\t[1960] StaticText '7 months ago'\n\t\t\t\t[671] StaticText ' in '\n\t\t\t\t[672] link 'books'\n\t\t\t[1086] link '43 comments'\n\t\t\t[367] button 'Upvote'\n\t\t\t[1928] StaticText '−1'\n\t\t\t[370] button 'Retract downvote'\n\t\t[26] article ''\n\t\t\t[221] HeaderAsNonLandmark ''\n\t\t\t\t[372] heading 'After Two Decades And 38 Children’s Books Lin Oliver Continues Her Thriving Collaboration With Henry Winkler'\n\t\t\t\t\t[679] link 'After Two Decades And 38 Children’s Books Lin Oliver Continues Her Thriving Collaboration With Henry Winkler'\n\t\t\t\t[374] link 'forbes.com'\n\t\t\t\t[682] StaticText 'Submitted by '\n\t\t\t\t[683] link 'drak0bsidian' expanded: False\n\t\t\t\t[1097] StaticText 't3_11dewje'\n\t\t\t\t[687] time 'February 27, 2023 at 10:43:55 AM EST'\n\t\t\t\t\t[1962] StaticText '7 months ago'\n\t\t\t\t[688] StaticText ' in '\n\t\t\t\t[689] link 'books'\n\t\t\t[1102] link '27 comments'\n\t\t\t[378] button 'Upvote'\n\t\t\t[1930] StaticText '−1'\n\t\t\t[381] button 'Retract downvote'\n\t\t[27] article ''\n\t\t\t[224] HeaderAsNonLandmark ''\n\t\t\t\t[383] heading 'The letters of T. S. Eliot to Emily Hale that were kept sealed from 1956 to 2020 have been released for free online'\n\t\t\t\t\t[696] link 'The letters of T. S. Eliot to Emily Hale that were kept sealed from 1956 to 2020 have been released for free online'\n\t\t\t\t[385] link 'tseliot.com'\n\t\t\t\t[699] StaticText 'Submitted by '\n\t\t\t\t[700] link 'RunDNA' expanded: False\n\t\t\t\t[1113] StaticText 't3_10p83br'\n\t\t\t\t[704] time 'January 30, 2023 at 12:11:46 PM EST'\n\t\t\t\t\t[1964] StaticText '8 months ago'\n\t\t\t\t[705] StaticText ' in '\n\t\t\t\t[706] link 'books'\n\t\t\t[1118] link '184 comments'\n\t\t\t[389] button 'Upvote'\n\t\t\t[1932] StaticText '−1'\n\t\t\t[392] button 'Retract downvote'\n\t\t[28] article ''\n\t\t\t[227] HeaderAsNonLandmark ''\n\t\t\t\t[394] heading '[P] I built Adrenaline, a debugger that fixes errors and explains them with GPT-3'\n\t\t\t\t\t[713] link '[P] I built Adrenaline, a debugger that fixes errors and explains them with GPT-3'\n\t[13] complementary ''\n\t\t[88] heading 'Subscribed forums'\n\t\t[285] link 'books'\n\t\t[286] link 'CyberpunkCyberpunk'\n\t\t[287] link 'MachineLearning'\n\t\t[288] link 'pittsburgh'"
+}

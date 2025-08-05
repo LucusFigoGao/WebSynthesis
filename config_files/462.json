@@ -1,0 +1,35 @@
+{
+    "sites": [
+        "shopping_admin"
+    ],
+    "task_id": 462,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:7780/admin/catalog/product/edit/id/710/",
+    "geolocation": null,
+    "intent_template": "{{action}} the price of this product by {{amount}}",
+    "instantiation_dict": {
+        "amount": "10%",
+        "action": "Increase"
+    },
+    "intent": "Increase the price of this product by 10%",
+    "require_reset": false,
+    "eval": {
+        "eval_types": [
+            "program_html"
+        ],
+        "reference_answers": null,
+        "reference_url": "",
+        "program_html": [
+            {
+                "url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:7780/admin/catalog/product/edit/id/710/",
+                "locator": "document.querySelector('[name=\"product[price]\"').value",
+                "required_contents": {
+                    "exact_match": "19.80"
+                }
+            }
+        ]
+    },
+    "intent_template_id": 247,
+    "state": "Tab 0 (current): Tiberius Gym Tank-L-Yellow / Products / Inventory / Catalog / Magento Admin\n\n[1] RootWebArea 'Tiberius Gym Tank-L-Yellow / Products / Inventory / Catalog / Magento Admin' focused: True\n\t[56] link 'Magento Admin Panel'\n\t\t[67] img 'Magento Admin Panel'\n\t[6] menubar '' orientation: horizontal\n\t\t[8] link '\\ue604 DASHBOARD'\n\t\t[12] link '\\ue60b SALES'\n\t\t[16] link '\\ue608 CATALOG'\n\t\t[20] link '\\ue603 CUSTOMERS'\n\t\t[24] link '\\ue609 MARKETING'\n\t\t[28] link '\\ue602 CONTENT'\n\t\t[32] link '\\ue60a REPORTS'\n\t\t[36] link '\\ue60d STORES'\n\t\t[40] link '\\ue610 SYSTEM'\n\t\t[44] link '\\ue612 FIND PARTNERS &amp; EXTENSIONS'\n\t[87] heading 'Tiberius Gym Tank-L-Yellow'\n\t[88] link '\\ue600 admin'\n\t[90] link '\\ue607'\n\t[957] textbox '\\ue60c' required: False\n\t[51] main ''\n\t\t[93] StaticText 'Scope:'\n\t\t[159] button 'All Store Views' hasPopup: menu\n\t\t[162] link '\\ue633 What is this?'\n\t\t[928] generic 'Save'\n\t\t\t[931] button 'Save'\n\t\t\t[932] button 'Save options'\n\t\t[929] button '\\ue626 Back'\n\t\t[930] button 'Add Attribute'\n\t\t[2108] group ''\n\t\t\t[2740] StaticText 'Enable Product'\n\t\t\t[2395] checkbox '[website] Enable Product Yes' checked: true\n\t\t\t[2398] StaticText 'Attribute Set'\n\t\t\t[2383] generic 'Top'\n\t\t\t[2742] StaticText 'Product Name'\n\t\t\t[2384] textbox '[store view] Product Name *' required: False\n\t\t\t\t[2743] StaticText 'Tiberius Gym Tank-L-Yellow'\n\t\t\t[2744] StaticText 'SKU'\n\t\t\t[2385] textbox '[global] SKU *' required: False\n\t\t\t\t[2745] StaticText 'MT10-L-Yellow'\n\t\t\t[2191] group ''\n\t\t\t\t[2194] LayoutTable ''\n\t\t\t\t\t[2932] StaticText 'Price'\n\t\t\t\t\t[2895] textbox '[global] Price * $' required: False\n\t\t\t\t\t\t[2953] StaticText '18.00'\n\t\t\t\t[2963] button 'Advanced Pricing'\n\t\t\t[2747] StaticText 'Tax Class'\n\t\t\t[2111] combobox 'notice-TL89HX0' hasPopup: menu expanded: False\n\t\t\t[2207] group ''\n\t\t\t\t[2210] LayoutTable ''\n\t\t\t\t\t[2936] StaticText 'Quantity'\n\t\t\t\t\t[2748] textbox '[global] Quantity' required: False\n\t\t\t\t\t\t[2937] StaticText '100'"
+}

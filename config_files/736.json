@@ -1,0 +1,47 @@
+{
+    "sites": [
+        "gitlab"
+    ],
+    "task_id": 736,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:8023",
+    "geolocation": null,
+    "intent_template": "Make the LICENSE of {{repo}} to MIT license.",
+    "instantiation_dict": {
+        "repo": "gimmiethat.space and dotfiles"
+    },
+    "intent": "Make the LICENSE of gimmiethat.space and dotfiles to MIT license.",
+    "require_reset": false,
+    "eval": {
+        "eval_types": [
+            "program_html"
+        ],
+        "reference_answers": null,
+        "reference_url": "",
+        "program_html": [
+            {
+                "url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:8023/byteblaze/gimmiethat.space/-/blob/main/LICENSE",
+                "locator": "",
+                "required_contents": {
+                    "must_include": [
+                        "MIT license",
+                        "The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software."
+                    ]
+                }
+            },
+            {
+                "url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:8023/byteblaze/dotfiles/-/blob/main/LICENSE",
+                "locator": "",
+                "required_contents": {
+                    "must_include": [
+                        "MIT license",
+                        "The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software."
+                    ]
+                }
+            }
+        ]
+    },
+    "intent_template_id": 355,
+    "state": "Tab 0 (current): Projects · Dashboard · GitLab\n\n[1] RootWebArea 'Projects · Dashboard · GitLab' focused: True\n\t[5] link 'Skip to content'\n\t[18] link 'Dashboard'\n\t[2725] button '' hasPopup: menu expanded: False\n\t[120] textbox 'Search GitLab' required: False\n\t[85] generic 'Use the shortcut key <kbd>/</kbd> to start a search'\n\t[39] link 'Create new...'\n\t[41] link 'Issues'\n\t\t[65] generic '13 assigned issues'\n\t[42] link 'Merge requests'\n\t\t[67] generic '8 merge requests'\n\t[44] link 'To-Do List'\n\t\t[71] generic 'Todos count'\n\t\t\t[101] StaticText '5'\n\t[45] link 'Help'\n\t[47] link 'Byte Blaze'\n\t\t[77] img 'Byte Blaze'\n\t[1711] main ''\n\t\t[2221] heading 'Projects'\n\t\t[1481] link 'New project'\n\t\t[2018] link 'Yours 35'\n\t\t[2240] link 'Starred 3'\n\t\t[1720] link 'Explore'\n\t\t[1526] link 'Topics'\n\t\t[1731] searchbox 'Filter by name'\n\t\t[2333] button 'Most stars'\n\t\t[1594] link 'All'\n\t\t[2290] link 'Personal'\n\t\t[2347] link 'D'\n\t\t[1918] heading 'Primer / design'\n\t\t\t[2079] link 'Primer / design'\n\t\t[2175] generic 'Public - The project can be accessed without any authentication.'\n\t\t[2364] StaticText 'Developer'\n\t\t[1760] StaticText 'Primer Design Guidelines'\n\t\t[1621] link '22'\n\t\t[2061] link '0'\n\t\t[1997] link '16'\n\t\t[2264] link '21'\n\t\t[2320] StaticText 'Updated '\n\t\t[2273] time 'Sep 26, 2023 9:53pm EDT'\n\t\t\t[2671] StaticText '7 hours ago'\n\t\t[2313] link 'A'\n\t\t[1982] heading 'The A11Y Project / a11yproject.com'\n\t\t\t[1926] link 'The A11Y Project / a11yproject.com'\n\t\t[1729] generic 'Public - The project can be accessed without any authentication.'\n\t\t[2086] StaticText 'Maintainer'\n\t\t[2069] StaticText 'The A11Y Project is a community-driven effort to make digital accessibility easier.'\n\t\t[2036] link '20'\n\t\t[1712] link '0'\n\t\t[1779] link '10'\n\t\t[1527] link '40'\n\t\t[1923] StaticText 'Updated '\n\t\t[1971] time 'Sep 26, 2023 9:46pm EDT'\n\t\t\t[2672] StaticText '8 hours ago'\n\t\t[2440] link 'M'\n\t\t[2006] heading 'Byte Blaze / millennials-to-snake-people'\n\t\t\t[1485] link 'Byte Blaze / millennials-to-snake-people'\n\t\t[2262] generic 'Public - The project can be accessed without any authentication.'\n\t\t[1937] StaticText 'Owner'\n\t\t[1687] generic 'snake'\n\t\t\t[1600] StaticText '🐍'\n\t\t[2156] link '6'\n\t\t[2382] link '0'\n\t\t[1553] link '2'\n\t\t[1832] link '4'\n\t\t[1489] StaticText 'Updated '\n\t\t[1651] time 'Mar 27, 2023 7:22pm EDT'\n\t\t\t[2673] StaticText '6 months ago'\n\t\t[2354] link 'E'\n\t\t[1508] heading 'Byte Blaze / empathy-prompts'\n\t\t\t[2190] link 'Byte Blaze / empathy-prompts'\n\t\t[2432] generic 'Public - The project can be accessed without any authentication.'\n\t\t[2113] StaticText 'Owner'\n\t\t[2274] generic 'electric light bulb'\n\t\t\t[2182] StaticText '💡'\n\t\t[2026] StaticText ' Ideas to help consider Inclusive Design principles when making things for others to use.'\n\t\t[1736] link '6'\n\t\t[2001] link '1'\n\t\t[2381] link '2'\n\t\t[1877] link '6'\n\t\t[1799] StaticText 'Updated '\n\t\t[2393] time 'Sep 26, 2023 10:01pm EDT'\n\t\t\t[2674] StaticText '7 hours ago'\n\t\t[1602] link 'A'\n\t\t[1513] heading 'Byte Blaze / a11y-webring.club'\n\t\t\t[1963] link 'Byte Blaze / a11y-webring.club'\n\t\t[1690] generic 'Public - The project can be accessed without any authentication.'\n\t\t[2152] StaticText 'Owner'\n\t\t[2435] generic 'globe with meridians'\n\t\t\t[1646] StaticText '🌐'\n\t\t[1710] StaticText ' A webring for digital accessibility practitioners.'\n\t\t[2027] link '2'\n\t\t[1670] link '0'\n\t\t[1672] link '1'\n\t\t[2110] link '4'\n\t\t[1504] StaticText 'Updated '\n\t\t[1974] time 'Mar 27, 2023 7:22pm EDT'\n\t\t\t[2675] StaticText '6 months ago'\n\t\t[1968] link 'E'\n\t\t[2271] heading 'Byte Blaze / ericwbailey.website'\n\t\t\t[2146] link 'Byte Blaze / ericwbailey.website'\n\t\t[1499] generic 'Public - The project can be accessed without any authentication.'\n\t\t[1644] StaticText 'Owner'\n\t\t[1585] generic 'triangular ruler'\n\t\t\t[2265] StaticText '📐'\n\t\t[2242] StaticText ' Repo for my personal website.'\n\t\t[2092] link '2'\n\t\t[1797] link '0'\n\t\t[2421] link '0'\n\t\t[2361] link '0'\n\t\t[2234] StaticText 'Updated '\n\t\t[1744] time 'Mar 27, 2023 7:22pm EDT'\n\t\t\t[2676] StaticText '6 months ago'\n\t\t[1791] link 'A'\n\t\t[2323] heading 'Byte Blaze / a11y-syntax-highlighting'\n\t\t\t[1862] link 'Byte Blaze / a11y-syntax-highlighting'\n\t\t[1839] generic 'Public - The project can be accessed without any authentication.'\n\t\t[2447] StaticText 'Owner'\n\t\t[1983] generic 'lipstick'\n\t\t\t[2043] StaticText '💄'\n\t\t[2114] StaticText ' Accessible light and dark syntax highlighting themes'\n\t\t[1885] link '1'\n\t\t[2122] link '0'\n\t\t[1632] link '0'\n\t\t[2085] link '1'\n\t\t[1635] StaticText 'Updated '\n\t\t[1610] time 'Mar 27, 2023 7:22pm EDT'\n\t\t\t[2677] StaticText '6 months ago'"
+}

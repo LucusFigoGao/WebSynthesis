@@ -1,0 +1,49 @@
+{
+    "sites": [
+        "gitlab",
+        "wikipedia"
+    ],
+    "task_id": 556,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:8023",
+    "geolocation": null,
+    "intent_template": "Create a repo named {{name}} with {{topics}} in a README file",
+    "instantiation_dict": {
+        "name": "nolan_honest_fans",
+        "topics": "movies directed by Christopher Nolan"
+    },
+    "intent": "Create a repo named nolan_honest_fans with movies directed by Christopher Nolan in a README file",
+    "require_reset": false,
+    "eval": {
+        "eval_types": [
+            "program_html"
+        ],
+        "reference_answers": null,
+        "reference_url": "",
+        "program_html": [
+            {
+                "url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:8023/byteblaze/nolan_honest_fans/-/raw/main/README.md",
+                "locator": "",
+                "required_contents": {
+                    "must_include": [
+                        "Following",
+                        "Memento",
+                        "Insomnia",
+                        "Batman Begins",
+                        "The Prestige",
+                        "The Dark Knight",
+                        "Inception",
+                        "The Dark Knight Rises",
+                        "Interstellar",
+                        "Dunkirk",
+                        "Tenet",
+                        "Oppenheimer"
+                    ]
+                }
+            }
+        ]
+    },
+    "intent_template_id": 87,
+    "state": "Tab 0 (current): Projects · Dashboard · GitLab\n\n[1] RootWebArea 'Projects · Dashboard · GitLab' focused: True\n\t[5] link 'Skip to content'\n\t[16] link 'Dashboard'\n\t[2348] button '' hasPopup: menu expanded: False\n\t[48] textbox 'Search GitLab' required: False\n\t[45] generic 'Use the shortcut key <kbd>/</kbd> to start a search'\n\t[96] link 'Create new...'\n\t[98] link 'Issues'\n\t\t[141] generic '13 assigned issues'\n\t[99] link 'Merge requests'\n\t\t[143] generic '8 merge requests'\n\t[101] link 'To-Do List'\n\t\t[147] generic 'Todos count'\n\t\t\t[239] StaticText '5'\n\t[102] link 'Help'\n\t[104] link 'Byte Blaze'\n\t\t[153] img 'Byte Blaze'\n\t[1527] main ''\n\t\t[2049] alert '' live: assertive atomic: True relevant: additions text\n\t\t\t[2061] button 'Dismiss'\n\t\t\t[2001] alert '' live: assertive atomic: True relevant: additions text\n\t\t\t\t[1956] StaticText 'You pushed to'\n\t\t\t\t[2042] strong 'byteblaze-main-patch-82318'\n\t\t\t\t\t[1304] link 'byteblaze-main-patch-82318'\n\t\t\t\t[1634] link 'Byte Blaze / gimmiethat.spaceGIVE GHelloHelloHelloHelloGIVE ME SPACEGIVE ME SPACEGIVE ME SPACEGIVE ME SPACEGIVE ME SPACEIVE ME SPACEME SPACE'\n\t\t\t\t[1485] time 'Sep 27, 2023 1:19am EDT'\n\t\t\t\t\t[2301] StaticText '32 minutes ago'\n\t\t\t\t[1484] link 'Create merge request'\n\t\t[1684] heading 'Projects'\n\t\t[1554] link 'New project'\n\t\t[1586] link 'Yours 16'\n\t\t[2048] link 'Starred 3'\n\t\t[1888] link 'Explore'\n\t\t[1340] link 'Topics'\n\t\t[1722] searchbox 'Filter by name'\n\t\t[1547] button 'Most stars'\n\t\t[1368] link 'All'\n\t\t[1712] link 'Personal'\n\t\t[1675] link 'D'\n\t\t[1581] heading 'Primer / design'\n\t\t\t[2075] link 'Primer / design'\n\t\t[1860] generic 'Public - The project can be accessed without any authentication.'\n\t\t[1505] StaticText 'Developer'\n\t\t[1735] StaticText 'Primer Design Guidelines'\n\t\t[1803] link '22'\n\t\t[1874] link '0'\n\t\t[2121] link '16'\n\t\t[1479] link '21'\n\t\t[1362] StaticText 'Updated '\n\t\t[2100] time 'Sep 26, 2023 9:53pm EDT'\n\t\t\t[2302] StaticText '3 hours ago'\n\t\t[2050] link 'A'\n\t\t[1401] heading 'The A11Y Project / a11yproject.com'\n\t\t\t[2006] link 'The A11Y Project / a11yproject.com'\n\t\t[1327] generic 'Public - The project can be accessed without any authentication.'\n\t\t[1827] StaticText 'Maintainer'\n\t\t[1606] StaticText 'The A11Y Project is a community-driven effort to make digital accessibility easier.'\n\t\t[1448] link '20'\n\t\t[1620] link '0'\n\t\t[1737] link '10'\n\t\t[1376] link '40'\n\t\t[1654] StaticText 'Updated '\n\t\t[2039] time 'Sep 26, 2023 9:46pm EDT'\n\t\t\t[2303] StaticText '4 hours ago'\n\t\t[1439] link 'M'\n\t\t[1431] heading 'Byte Blaze / millennials-to-snake-people'\n\t\t\t[1461] link 'Byte Blaze / millennials-to-snake-people'\n\t\t[1422] generic 'Public - The project can be accessed without any authentication.'\n\t\t[1878] StaticText 'Owner'\n\t\t[1960] generic 'snake'\n\t\t\t[1351] StaticText '🐍'\n\t\t[1341] link '6'\n\t\t[1945] link '0'\n\t\t[1870] link '2'\n\t\t[1403] link '4'\n\t\t[1751] StaticText 'Updated '\n\t\t[1418] time 'Mar 27, 2023 7:22pm EDT'\n\t\t\t[2304] StaticText '6 months ago'\n\t\t[1580] link 'E'\n\t\t[2087] heading 'Byte Blaze / empathy-prompts'\n\t\t\t[1848] link 'Byte Blaze / empathy-prompts'\n\t\t[1328] generic 'Public - The project can be accessed without any authentication.'\n\t\t[2015] StaticText 'Owner'\n\t\t[1892] generic 'electric light bulb'\n\t\t\t[1490] StaticText '💡'\n\t\t[1335] StaticText ' Ideas to help consider Inclusive Design principles when making things for others to use.'\n\t\t[1978] link '6'\n\t\t[1649] link '1'\n\t\t[1885] link '2'\n\t\t[1736] link '6'\n\t\t[1459] StaticText 'Updated '\n\t\t[1518] time 'Sep 26, 2023 10:01pm EDT'\n\t\t\t[2305] StaticText '3 hours ago'\n\t\t[1711] link 'A'\n\t\t[1771] heading 'Byte Blaze / a11y-webring.club'\n\t\t\t[1314] link 'Byte Blaze / a11y-webring.club'\n\t\t[1398] generic 'Public - The project can be accessed without any authentication.'\n\t\t[1613] StaticText 'Owner'\n\t\t[1543] generic 'globe with meridians'\n\t\t\t[1981] StaticText '🌐'\n\t\t[1383] StaticText ' A webring for digital accessibility practitioners.'\n\t\t[1502] link '2'\n\t\t[1701] link '0'\n\t\t[1494] link '1'\n\t\t[1641] link '4'\n\t\t[2114] StaticText 'Updated '\n\t\t[1775] time 'Mar 27, 2023 7:22pm EDT'\n\t\t\t[2306] StaticText '6 months ago'"
+}

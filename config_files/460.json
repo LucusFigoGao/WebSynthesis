@@ -1,0 +1,35 @@
+{
+    "sites": [
+        "shopping_admin"
+    ],
+    "task_id": 460,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:7780/admin/catalog/product/edit/id/418/",
+    "geolocation": null,
+    "intent_template": "{{action}} the price of this product by {{amount}}",
+    "instantiation_dict": {
+        "amount": "15%",
+        "action": "Reduce"
+    },
+    "intent": "Reduce the price of this product by 15%",
+    "require_reset": false,
+    "eval": {
+        "eval_types": [
+            "program_html"
+        ],
+        "reference_answers": null,
+        "reference_url": "",
+        "program_html": [
+            {
+                "url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:7780/admin/catalog/product/edit/id/418/",
+                "locator": "document.querySelector('[name=\"product[price]\"').value",
+                "required_contents": {
+                    "exact_match": "38.25"
+                }
+            }
+        ]
+    },
+    "intent_template_id": 247,
+    "state": "Tab 0 (current): Proteus Fitness Jackshirt-S-Black / Products / Inventory / Catalog / Magento Admin\n\n[1] RootWebArea 'Proteus Fitness Jackshirt-S-Black / Products / Inventory / Catalog / Magento Admin' focused: True\n\t[56] link 'Magento Admin Panel'\n\t\t[67] img 'Magento Admin Panel'\n\t[6] menubar '' orientation: horizontal\n\t\t[8] link '\\ue604 DASHBOARD'\n\t\t[12] link '\\ue60b SALES'\n\t\t[16] link '\\ue608 CATALOG'\n\t\t[20] link '\\ue603 CUSTOMERS'\n\t\t[24] link '\\ue609 MARKETING'\n\t\t[28] link '\\ue602 CONTENT'\n\t\t[32] link '\\ue60a REPORTS'\n\t\t[36] link '\\ue60d STORES'\n\t\t[40] link '\\ue610 SYSTEM'\n\t\t[44] link '\\ue612 FIND PARTNERS &amp; EXTENSIONS'\n\t[87] heading 'Proteus Fitness Jackshirt-S-Black'\n\t[88] link '\\ue600 admin'\n\t[90] link '\\ue607'\n\t[957] textbox '\\ue60c' required: False\n\t[51] main ''\n\t\t[93] StaticText 'Scope:'\n\t\t[159] button 'All Store Views' hasPopup: menu\n\t\t[162] link '\\ue633 What is this?'\n\t\t[928] generic 'Save'\n\t\t\t[931] button 'Save'\n\t\t\t[932] button 'Save options'\n\t\t[929] button '\\ue626 Back'\n\t\t[930] button 'Add Attribute'\n\t\t[1966] group ''\n\t\t\t[2225] StaticText 'Enable Product'\n\t\t\t[2324] checkbox '[website] Enable Product Yes' checked: true\n\t\t\t[2191] StaticText 'Attribute Set'\n\t\t\t[2318] generic 'Top'\n\t\t\t[2226] StaticText 'Product Name'\n\t\t\t[2298] textbox '[store view] Product Name *' required: False\n\t\t\t\t[2650] StaticText 'Proteus Fitness Jackshirt-S-Black'\n\t\t\t[2227] StaticText 'SKU'\n\t\t\t[2299] textbox '[global] SKU *' required: False\n\t\t\t\t[2651] StaticText 'MJ12-S-Black'\n\t\t\t[1990] group ''\n\t\t\t\t[1993] LayoutTable ''\n\t\t\t\t\t[2283] StaticText 'Price'\n\t\t\t\t\t[2300] textbox '[global] Price * $' required: False\n\t\t\t\t\t\t[2845] StaticText '45.00'\n\t\t\t\t[2886] button 'Advanced Pricing'\n\t\t\t[2229] StaticText 'Tax Class'\n\t\t\t[2303] combobox 'notice-FPIGMAE' hasPopup: menu expanded: False\n\t\t\t[2007] group ''\n\t\t\t\t[2010] LayoutTable ''\n\t\t\t\t\t[2286] StaticText 'Quantity'\n\t\t\t\t\t[2301] textbox '[global] Quantity' required: False\n\t\t\t\t\t\t[2822] StaticText '100'"
+}

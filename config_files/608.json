@@ -1,0 +1,39 @@
+{
+    "sites": [
+        "reddit"
+    ],
+    "task_id": 608,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:9999",
+    "geolocation": null,
+    "intent_template": "Find a subreddit focused on topics related to {{topic}}, and post my question, \"{{question}}\" there",
+    "instantiation_dict": {
+        "topic": "city lives in DMV area",
+        "question": "safe and budge apartment to live"
+    },
+    "intent": "Find a subreddit focused on topics related to city lives in DMV area, and post my question, \"safe and budge apartment to live\" there",
+    "require_reset": false,
+    "eval": {
+        "eval_types": [
+            "url_match",
+            "program_html"
+        ],
+        "reference_answers": null,
+        "reference_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:9999/f/washington |OR| http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:9999/f/washingtondc",
+        "program_html": [
+            {
+                "url": "func:reddit_get_post_url('__last_url__')",
+                "locator": "document.querySelector('.submission__inner').outerText",
+                "required_contents": {
+                    "must_include": [
+                        "safe and budge apartment to live"
+                    ]
+                }
+            }
+        ],
+        "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 5,
+    "state": "Tab 0 (current): Postmill\n\n[1] RootWebArea 'Postmill' focused: True\n\t[17] HeaderAsNonLandmark ''\n\t\t[52] link 'Home'\n\t[171] link 'Forums'\n\t[172] link 'Wiki'\n\t[100] searchbox 'Search query'\n\t[101] link 'Notifications (0)'\n\t[102] link 'Submit'\n\t[1826] button 'MarvelsGrantMan136' hasPopup: menu expanded: False\n\t[12] main ''\n\t\t[203] link 'Submissions'\n\t\t[204] link 'Comments'\n\t\t[1827] button 'Filter on: Subscribed' hasPopup: menu expanded: False\n\t\t[1828] button 'Sort by: Hot' hasPopup: menu expanded: False\n\t\t[22] article ''\n\t\t\t[209] HeaderAsNonLandmark ''\n\t\t\t\t[331] heading 'what is the recommended console to buy these days'\n\t\t\t\t\t[603] link 'what is the recommended console to buy these days'\n\t\t\t\t[605] StaticText 'Submitted by '\n\t\t\t\t[606] link 'MarvelsGrantMan136' expanded: False\n\t\t\t\t[608] time 'September 27, 2023 at 4:09:06 AM EDT'\n\t\t\t\t\t[1855] StaticText '21 minutes ago'\n\t\t\t\t[609] StaticText ' in '\n\t\t\t\t[610] link 'CyberpunkCyberpunk'\n\t\t\t[1013] link '1 comment'\n\t\t\t[1015] link 'Edit'\n\t\t\t[1402] button 'Delete'\n\t\t\t[1829] button 'Actions' hasPopup: menu expanded: False\n\t\t\t[335] button 'Retract upvote'\n\t\t\t[338] button 'Downvote'\n\t\t[23] article ''\n\t\t\t[212] HeaderAsNonLandmark ''\n\t\t\t\t[340] heading 'Nvidia RTX 4090'\n\t\t\t\t\t[619] link 'Nvidia RTX 4090'\n\t\t\t\t[621] StaticText 'Submitted by '\n\t\t\t\t[622] link 'MarvelsGrantMan136' expanded: False\n\t\t\t\t[624] time 'June 12, 2023 at 12:55:45 PM EDT'\n\t\t\t\t\t[1856] StaticText '4 months ago'\n\t\t\t\t[625] StaticText ' in '\n\t\t\t\t[626] link 'MachineLearning'\n\t\t\t[1029] link 'No comments'\n\t\t\t[1031] link 'Edit'\n\t\t\t[1419] button 'Delete'\n\t\t\t[344] button 'Retract upvote'\n\t\t\t[347] button 'Downvote'\n\t\t[24] article ''\n\t\t\t[215] HeaderAsNonLandmark ''\n\t\t\t\t[349] heading 'Friendly reminder bookshop.org exists.'\n\t\t\t\t\t[634] link 'Friendly reminder bookshop.org exists.'\n\t\t\t\t[636] StaticText 'Submitted by '\n\t\t\t\t[637] link 'smita16' expanded: False\n\t\t\t\t[1041] StaticText 't3_zzvi0q'\n\t\t\t\t[641] time 'December 31, 2022 at 9:40:19 AM EST'\n\t\t\t\t\t[1857] StaticText '9 months ago'\n\t\t\t\t[642] StaticText ' in '\n\t\t\t\t[643] link 'books'\n\t\t\t[1046] link '135 comments'\n\t\t\t[353] button 'Upvote'\n\t\t\t[1832] StaticText '3085'\n\t\t\t[356] button 'Downvote'\n\t\t[25] article ''\n\t\t\t[218] HeaderAsNonLandmark ''\n\t\t\t\t[358] heading 'The letters of T. S. Eliot to Emily Hale that were kept sealed from 1956 to 2020 have been released for free online'\n\t\t\t\t\t[649] link 'The letters of T. S. Eliot to Emily Hale that were kept sealed from 1956 to 2020 have been released for free online'\n\t\t\t\t[360] link 'tseliot.com'\n\t\t\t\t[652] StaticText 'Submitted by '\n\t\t\t\t[653] link 'RunDNA' expanded: False\n\t\t\t\t[1056] StaticText 't3_10p83br'\n\t\t\t\t[657] time 'January 30, 2023 at 12:11:46 PM EST'\n\t\t\t\t\t[1858] StaticText '8 months ago'\n\t\t\t\t[658] StaticText ' in '\n\t\t\t\t[659] link 'books'\n\t\t\t[1061] link '184 comments'\n\t\t\t[364] button 'Upvote'\n\t\t\t[1833] StaticText '3591'\n\t\t\t[367] button 'Downvote'\n\t\t[26] article ''\n\t\t\t[221] HeaderAsNonLandmark ''\n\t\t\t\t[369] heading '[P] I made a command-line tool that explains your errors using ChatGPT (link in comments)'\n\t\t\t\t\t[665] link '[P] I made a command-line tool that explains your errors using ChatGPT (link in comments)'\n\t\t\t\t[667] StaticText 'Submitted by '\n\t\t\t\t[668] link 'jsonathan' expanded: False\n\t\t\t\t[1072] StaticText 't3_zhrgln'\n\t\t\t\t[672] time 'December 10, 2022 at 7:32:57 AM EST'\n\t\t\t\t\t[1859] StaticText '10 months ago'\n\t\t\t\t[673] StaticText ' in '\n\t\t\t\t[674] link 'MachineLearning'\n\t\t\t[1077] link '116 comments'\n\t\t\t[373] button 'Upvote'\n\t\t\t[1834] StaticText '2655'\n\t\t\t[376] button 'Downvote'\n\t\t[27] article ''\n\t\t\t[224] HeaderAsNonLandmark ''\n\t\t\t\t[378] heading '[D] Types of Machine Learning Papers'\n\t\t\t\t\t[680] link '[D] Types of Machine Learning Papers'\n\t\t\t\t[682] StaticText 'Submitted by '\n\t\t\t\t[683] link 'Lost-Parfait568' expanded: False\n\t\t\t\t[1088] StaticText 't3_xtxe6f'\n\t\t\t\t[687] time 'October 2, 2022 at 3:25:49 PM EDT'\n\t\t\t\t\t[1860] StaticText '12 months ago'\n\t\t\t\t[688] StaticText ' in '\n\t\t\t\t[689] link 'MachineLearning'\n\t\t\t[1093] link '96 comments'\n\t\t\t[382] button 'Upvote'\n\t\t\t[1835] StaticText '2476'\n\t\t\t[385] button 'Downvote'\n\t\t[28] article ''\n\t\t\t[227] HeaderAsNonLandmark ''\n\t\t\t\t[387] heading 'Appalachian prison book project seeks notebook donations: \"The books can help inmates learn new skills, broaden their worldviews and obtain college credits through the West Virginia University Higher Education in Prison Initiative\"'\n\t\t\t\t\t[695] link 'Appalachian prison book project seeks notebook donations: \"The books can help inmates learn new skills, broaden their worldviews and obtain college credits through the West Virginia University Higher Education in Prison Initiative\"'\n\t\t\t[393] button 'Upvote'\n\t\t\t[1836] StaticText '1716'\n\t[13] complementary ''\n\t\t[88] heading 'Subscribed forums'\n\t\t[285] link 'books'\n\t\t[286] link 'CyberpunkCyberpunk'\n\t\t[287] link 'MachineLearning'\n\t\t[288] link 'pittsburgh'"
+}

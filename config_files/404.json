@@ -1,0 +1,36 @@
+{
+    "sites": [
+        "reddit"
+    ],
+    "task_id": 404,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:9999",
+    "geolocation": null,
+    "intent_template": "Upvote the newest post in {{subreddit}} subreddit",
+    "instantiation_dict": {
+        "subreddit": "books"
+    },
+    "intent": "Upvote the newest post in books subreddit",
+    "require_reset": false,
+    "eval": {
+        "eval_types": [
+            "program_html"
+        ],
+        "reference_answers": null,
+        "reference_url": "",
+        "program_html": [
+            {
+                "url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:9999/f/books/124260/adults-reading-to-each-other-out-loud",
+                "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+                "required_contents": {
+                    "must_include": [
+                        "vote vote--user-upvoted"
+                    ]
+                }
+            }
+        ]
+    },
+    "intent_template_id": 22,
+    "state": "Tab 0 (current): Postmill\n\n[1] RootWebArea 'Postmill' focused: True\n\t[17] HeaderAsNonLandmark ''\n\t\t[26] link 'Home'\n\t[63] link 'Forums'\n\t[64] link 'Wiki'\n\t[48] searchbox 'Search query'\n\t[49] link 'Notifications (0)'\n\t[50] link 'Submit'\n\t[206] button 'MarvelsGrantMan136' hasPopup: menu expanded: False\n\t[12] main ''\n\t\t[95] link 'Submissions'\n\t\t[96] link 'Comments'\n\t\t[207] button 'Filter on: Subscribed' hasPopup: menu expanded: False\n\t\t[208] button 'Sort by: Hot' hasPopup: menu expanded: False\n\t[13] complementary ''\n\t\t[36] heading 'Subscribed forums'\n\t\t[101] link 'CyberpunkCyberpunk'\n\t[8] contentinfo ''\n\t\t[24] StaticText 'Running '\n\t\t[25] link 'Postmill'"
+}

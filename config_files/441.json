@@ -1,0 +1,36 @@
+{
+    "sites": [
+        "gitlab"
+    ],
+    "task_id": 441,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:8023/byteblaze/gimmiethat.space",
+    "geolocation": null,
+    "intent_template": "Update the project site's title to \"{{title}}\"",
+    "instantiation_dict": {
+        "title": "GIVE ME SPACE"
+    },
+    "intent": "Update the project site's title to \"GIVE ME SPACE\"",
+    "require_reset": false,
+    "eval": {
+        "eval_types": [
+            "program_html"
+        ],
+        "reference_answers": null,
+        "reference_url": "",
+        "program_html": [
+            {
+                "url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:8023/byteblaze/gimmiethat.space/-/raw/main/index.html",
+                "locator": "",
+                "required_contents": {
+                    "must_include": [
+                        "<title>GIVE ME SPACE</title>"
+                    ]
+                }
+            }
+        ]
+    },
+    "intent_template_id": 308,
+    "state": "Tab 0 (current): Byte Blaze / gimmiethat.space · GitLab\n\n[1] RootWebArea 'Byte Blaze / gimmiethat.space · GitLab' focused: True\n\t[5] link 'Skip to content'\n\t[12] link 'Dashboard'\n\t[1844] button '' hasPopup: menu expanded: False\n\t[610] textbox 'Search GitLab' required: False\n\t[453] generic 'Use the shortcut key <kbd>/</kbd> to start a search'\n\t[161] link 'Create new...'\n\t[163] link 'Issues'\n\t\t[313] generic '13 assigned issues'\n\t[164] link 'Merge requests'\n\t\t[315] generic '8 merge requests'\n\t[166] link 'To-Do List'\n\t\t[319] generic 'Todos count'\n\t[167] link 'Help'\n\t[169] link 'Byte Blaze'\n\t\t[325] img 'Byte Blaze'\n\t[23] complementary 'Project navigation'\n\t\t[48] listitem 'gimmiethat.space'\n\t\t\t[98] link 'gimmiethat.space'\n\t\t\t\t[503] StaticText 'G'\n\t\t[99] link 'Project information'\n\t\t[101] link 'Repository'\n\t\t[103] link 'Issues'\n\t\t[105] link 'Merge requests'\n\t\t[107] link 'CI/CD'\n\t\t[109] link 'Security &amp; Compliance'\n\t\t[111] link 'Deployments'\n\t\t[113] link 'Packages and registries'\n\t\t[115] link 'Infrastructure'\n\t\t[117] link 'Monitor'\n\t\t[119] link 'Analytics'\n\t\t[121] link 'Wiki'\n\t\t[123] link 'Snippets'\n\t\t[125] link 'Settings'\n\t\t[35] button 'Collapse sidebar'\n\t[1069] alert '' live: assertive atomic: True relevant: additions text\n\t\t[997] button 'Dismiss'\n\t\t[1075] alert '' live: assertive atomic: True relevant: additions text\n\t\t\t[1128] link 'Add SSH key'\n\t\t\t[1129] button \"Don't show again\"\n\t[1009] alert '' live: assertive atomic: True relevant: additions text\n\t\t[1107] button 'Dismiss'\n\t\t[1071] alert '' live: assertive atomic: True relevant: additions text\n\t\t\t[1132] StaticText 'The Auto DevOps pipeline has been enabled and will be used if no alternative CI configuration file is found.'\n\t\t\t[1060] StaticText 'Container registry is not enabled on this GitLab instance. Ask an administrator to enable it in order for Auto DevOps to work.'\n\t\t\t[1022] link 'Settings'\n\t\t\t[1090] link 'More information'\n\t[998] navigation 'Breadcrumbs'\n\t\t[1018] link 'Byte Blaze'\n\t\t[1074] link 'gimmiethat.space'\n\t[1133] main ''\n\t\t[1064] StaticText 'G'\n\t\t[1020] heading 'gimmiethat.space Private - Project access must be granted explicitly to each user. If this project is part of a group, access is granted to members of the group.'\n\t\t\t[1127] generic 'Private - Project access must be granted explicitly to each user. If this project is part of a group, access is granted to members of the group.'\n\t\t[1112] StaticText 'Project ID: 184 '\n\t\t[1076] button 'Copy project ID' live: polite atomic: False relevant: additions text\n\t\t[1224] button '' hasPopup: menu expanded: False\n\t\t[1153] button 'Star'\n\t\t[1156] link '0'\n\t\t[1158] link 'Fork'\n\t\t[1094] link '0'\n\t\t[1379] link '3 Commits'\n\t\t[1380] link '1 Branch'\n\t\t[1381] link '0 Tags'\n\t\t[1382] link '82 KB Project Storage'\n\t\t[977] StaticText 'I need some space.'\n\t\t[967] generic '<span class=\"repository-language-bar-tooltip-language\">HTML</span> <span class=\"repository-language-bar-tooltip-share\">100.0%</span>'\n\t\t[1801] img 'user avatar'\n\t\t[1805] link 'Add index.html'\n\t\t[1809] StaticText 'Eric Bailey authored '\n\t\t[1810] time 'Mar 28, 2021 5:59pm EDT'\n\t\t\t[1813] StaticText '2 years ago'\n\t\t[1807] group ''\n\t\t\t[1816] StaticText '67c3a0e8'\n\t\t\t[1812] button 'Copy commit SHA' live: polite atomic: False relevant: additions text\n\t\t[1447] button 'main' hasPopup: menu expanded: False\n\t\t[1356] navigation 'Files breadcrumb'\n\t\t\t[1448] link 'gimmiethat.space'\n\t\t\t[1479] button 'Add to tree' hasPopup: menu expanded: False\n\t\t[1025] link 'Find file'\n\t\t[1426] link 'Web IDE'\n\t\t[1010] button 'Download'\n\t\t\t[1148] StaticText 'Select Archive Format'\n\t\t[1039] link 'Clone'\n\t\t[1405] link 'MIT License'\n\t\t[1406] link 'Auto DevOps enabled'\n\t\t[1407] link 'Add README'\n\t\t[1408] link 'Add CHANGELOG'\n\t\t[1409] link 'Add CONTRIBUTING'\n\t\t[1410] link 'Add Kubernetes cluster'\n\t\t[1411] link 'Configure Integrations'"
+}

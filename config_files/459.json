@@ -1,0 +1,35 @@
+{
+    "sites": [
+        "shopping_admin"
+    ],
+    "task_id": 459,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:7780/admin/catalog/product/edit/id/237/",
+    "geolocation": null,
+    "intent_template": "{{action}} the price of this product by {{amount}}",
+    "instantiation_dict": {
+        "amount": "10%",
+        "action": "Reduce"
+    },
+    "intent": "Reduce the price of this product by 10%",
+    "require_reset": false,
+    "eval": {
+        "eval_types": [
+            "program_html"
+        ],
+        "reference_answers": null,
+        "reference_url": "",
+        "program_html": [
+            {
+                "url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:7780/admin/catalog/product/edit/id/237/",
+                "locator": "document.querySelector('[name=\"product[price]\"').value",
+                "required_contents": {
+                    "exact_match": "62.10"
+                }
+            }
+        ]
+    },
+    "intent_template_id": 247,
+    "state": "Tab 0 (current): Ajax Full-Zip Sweatshirt -XL-Red / Products / Inventory / Catalog / Magento Admin\n\n[1] RootWebArea 'Ajax Full-Zip Sweatshirt -XL-Red / Products / Inventory / Catalog / Magento Admin' focused: True\n\t[56] link 'Magento Admin Panel'\n\t\t[67] img 'Magento Admin Panel'\n\t[6] menubar '' orientation: horizontal\n\t\t[8] link '\\ue604 DASHBOARD'\n\t\t[12] link '\\ue60b SALES'\n\t\t[16] link '\\ue608 CATALOG'\n\t\t[20] link '\\ue603 CUSTOMERS'\n\t\t[24] link '\\ue609 MARKETING'\n\t\t[28] link '\\ue602 CONTENT'\n\t\t[32] link '\\ue60a REPORTS'\n\t\t[36] link '\\ue60d STORES'\n\t\t[40] link '\\ue610 SYSTEM'\n\t\t[44] link '\\ue612 FIND PARTNERS &amp; EXTENSIONS'\n\t[87] heading 'Ajax Full-Zip Sweatshirt -XL-Red'\n\t[88] link '\\ue600 admin'\n\t[90] link '\\ue607'\n\t[957] textbox '\\ue60c' required: False\n\t[51] main ''\n\t\t[93] StaticText 'Scope:'\n\t\t[159] button 'All Store Views' hasPopup: menu\n\t\t[162] link '\\ue633 What is this?'\n\t\t[928] generic 'Save'\n\t\t\t[931] button 'Save'\n\t\t\t[932] button 'Save options'\n\t\t[929] button '\\ue626 Back'\n\t\t[930] button 'Add Attribute'\n\t\t[2549] group ''\n\t\t\t[3182] StaticText 'Enable Product'\n\t\t\t[2841] checkbox '[website] Enable Product Yes' checked: true\n\t\t\t[2844] StaticText 'Attribute Set'\n\t\t\t[2826] generic 'Top'\n\t\t\t[3184] StaticText 'Product Name'\n\t\t\t[2827] textbox '[store view] Product Name *' required: False\n\t\t\t\t[3185] StaticText 'Ajax Full-Zip Sweatshirt -XL-Red'\n\t\t\t[3186] StaticText 'SKU'\n\t\t\t[2828] textbox '[global] SKU *' required: False\n\t\t\t\t[3187] StaticText 'MH12-XL-Red'\n\t\t\t[2561] group ''\n\t\t\t\t[2606] LayoutTable ''\n\t\t\t\t\t[3383] StaticText 'Price'\n\t\t\t\t\t[3343] textbox '[global] Price * $' required: False\n\t\t\t\t\t\t[3405] StaticText '69.00'\n\t\t\t\t[2564] button 'Advanced Pricing'\n\t\t\t[3190] StaticText 'Tax Class'\n\t\t\t[2830] combobox 'notice-XIEF87D' hasPopup: menu expanded: False\n\t\t\t[2565] group ''\n\t\t\t\t[2622] LayoutTable ''\n\t\t\t\t\t[3387] StaticText 'Quantity'\n\t\t\t\t\t[3191] textbox '[global] Quantity' required: False\n\t\t\t\t\t\t[3388] StaticText '100'"
+}

@@ -1,0 +1,34 @@
+{
+    "sites": [
+        "shopping"
+    ],
+    "task_id": 517,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:7770/skinit-decal-gaming-skin-compatible-with-xbox-one-s-console-and-controller-bundle-officially-licensed-nfl-baltimore-ravens-design.html",
+    "geolocation": null,
+    "intent_template": "Add this product to my wishlist",
+    "instantiation_dict": {},
+    "intent": "Add this product to my wishlist",
+    "require_reset": false,
+    "eval": {
+        "eval_types": [
+            "program_html"
+        ],
+        "reference_answers": null,
+        "reference_url": "",
+        "program_html": [
+            {
+                "url": "http://ec2-3-14-123-57.us-east-2.compute.amazonaws.com:7770/wishlist/",
+                "locator": "document.querySelector('.products-grid.wishlist').outerText",
+                "required_contents": {
+                    "must_include": [
+                        "Skinit Decal Gaming Skin Compatible with Xbox One S Console and Controller Bundle - Officially Licensed NFL Baltimore Ravens Design"
+                    ]
+                }
+            }
+        ]
+    },
+    "intent_template_id": 196,
+    "state": "Tab 0 (current): Elmwood Inn Fine Teas, Orange Vanilla Caffeine-free Fruit Infusion, 16-Ounce Pouch\n\n[1] RootWebArea 'Elmwood Inn Fine Teas, Orange Vanilla Caffeine-free Fruit Infusion, 16-Ounce Pouch' focused: True\n\t[125] link 'My Account'\n\t[126] link 'My Wish List'\n\t[127] link 'Sign Out'\n\t[3490] StaticText 'Welcome to One Stop Market'\n\t[63] link 'Skip to Content'\n\t[48] link 'store logo'\n\t\t[65] img 'one_stop_market_logo'\n\t[66] link '\\ue611 My Cart'\n\t[354] StaticText 'Search'\n\t[229] combobox '\\ue615 Search' autocomplete: both hasPopup: listbox required: False expanded: False\n\t[357] link 'Advanced Search'\n\t[177] button 'Search' disabled: True\n\t[3469] tablist '' multiselectable: False orientation: horizontal\n\t\t[3471] tabpanel ''\n\t\t\t[1715] menu '' orientation: vertical\n\t\t\t\t[2466] menuitem '\\ue622 Beauty &amp; Personal Care' hasPopup: menu\n\t\t\t\t[2531] menuitem '\\ue622 Sports &amp; Outdoors' hasPopup: menu\n\t\t\t\t[2541] menuitem '\\ue622 Clothing, Shoes &amp; Jewelry' hasPopup: menu\n\t\t\t\t[2555] menuitem '\\ue622 Home &amp; Kitchen' hasPopup: menu\n\t\t\t\t[2592] menuitem '\\ue622 Office Products' hasPopup: menu\n\t\t\t\t[2600] menuitem '\\ue622 Tools &amp; Home Improvement' hasPopup: menu\n\t\t\t\t[2605] menuitem '\\ue622 Health &amp; Household' hasPopup: menu\n\t\t\t\t[2611] menuitem '\\ue622 Patio, Lawn &amp; Garden' hasPopup: menu\n\t\t\t\t[2616] menuitem '\\ue622 Electronics' hasPopup: menu\n\t\t\t\t[2677] menuitem '\\ue622 Cell Phones &amp; Accessories' hasPopup: menu\n\t\t\t\t[2692] menuitem '\\ue622 Video Games' hasPopup: menu\n\t\t\t\t[2705] menuitem '\\ue622 Grocery &amp; Gourmet Food' hasPopup: menu\n\t[1709] link 'Home'\n\t[1712] StaticText 'Elmwood Inn Fine Teas, Orange Vanilla Caffeine-free Fruit Infusion, 16-Ounce Pouch'\n\t[5] main ''\n\t\t[55] heading 'Elmwood Inn Fine Teas, Orange Vanilla Caffeine-free Fruit Infusion, 16-Ounce Pouch'\n\t\t[11] generic 'Availability'\n\t\t\t[13] StaticText 'IN STOCK'\n\t\t[331] StaticText 'SKU'\n\t\t[494] StaticText 'B0040WHKIY'\n\t\t[152] LayoutTable ''\n\t\t\t[496] StaticText 'Rating:'\n\t\t\t[334] generic '95%'\n\t\t\t\t[1117] StaticText '% of'\n\t\t\t\t[1352] StaticText '100'\n\t\t\t[335] link '4\\xa0 Reviews '\n\t\t\t[336] link 'Add Your Review'\n\t\t[1705] StaticText '$19.36'\n\t\t[214] LayoutTable ''\n\t\t\t[1120] StaticText 'Qty'\n\t\t\t[1121] spinbutton 'Qty' required: False valuemin: 0 valuemax: 0 valuetext: \n\t\t\t[814] button 'Add to Cart'\n\t\t[215] link 'Add to Wish List'\n\t\t[216] link 'Add to Compare'\n\t\t[156] link 'Skip to the end of the images gallery'\n\t\t[3485] button 'Previous'\n\t\t[3487] generic 'Image'\n\t\t\t[3508] img 'Image'\n\t\t[3486] button 'Next'"
+}
