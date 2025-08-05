@@ -75,10 +75,10 @@ def generate_traceable_traj(intent: str, trajectory):
     
     # 合成反思
     reflection_result = llm.llm_gen_reflection(
-        target_task=intent,
-        previous_trace=failure_node.trace, 
-        correct_action=correct_node.action, 
-        n=MAX_RETRY
+        objective=intent, 
+        fnode_action=failure_node['action'], 
+        last_state=parent_node['state'], 
+        current_state=failure_node['state']
     )
     print('>>> 完成反思生成:{}'.format(reflection_result))
     

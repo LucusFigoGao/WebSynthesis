@@ -1,5 +1,5 @@
 import json
-
+import time
 from openai import OpenAI
 
 MAX_RETRY = 3
@@ -29,6 +29,52 @@ fuzzy_match_template = {
         "similarity_score":  "<0.00-1.00>", 
         "analysis":          "<一句话解释主要理由>"
     }
+}
+
+reflection_cot_prompt = {
+    'intro': """You are an autonomous intelligent agent tasked with navigating a web browser. You will be given web-based tasks. These tasks will be accomplished through the use of specific actions you can issue.
+
+Here's the information you'll have:
+* The user's objective: This is the task you're trying to complete.
+* The current observation of web page. This is a simplified representation of the webpage, refer to as accessibility tree (a11y), providing key information.
+* The previous trajectory: This is the `observations`, `thoughts` and `actions` you have just performed. It may be helpful to track your progress. Each step is splited by <step></step> tag.
+
+## Action Space
+### URL Navigation Actions:
+`go_back`: Navigate to the previously viewed page. 
+
+### Homepage:
+If you want to visit other websites. Here is a list of websites you can visit.
+`Gitlab`: http://gitlab.com
+`OpenStreetMap`: https://www.openstreetmap.org
+`OpenStopMarket`: http://onestopmarket.com
+`Admin`: http://luma.com/admin
+`Redit`: http://reddit.com
+
+## Action Rules:
+To be successful, it is very important to follow the following rules:
+1. You should think step by step and then issue the next action. Start with a "Let's think step-by-step." phrase.
+2. You should only issue an action that is valid given the current web page.
+3. You should only issue one action at a time.
+4. Generate the action in the correct format. Start with a "In summary, the next action I will perform is" phrase, followed by action inside ``````. For example, "In summary, the next action I will perform is ```click [1234]```".
+5. Issue stop action when you think you have achieved the objective. Don't generate anything after stop.""", 
+
+    "template": """OBJECTIVE:
+{objective}
+
+Previously, the action:
+```
+{fnode_action}
+```
+has been attempted, and this action will not lead to the task completion. Please provide an action for going back to the last observation following the aforementioned format. Give your reason why this action cannot help to complete the task.
+
+Last Observation:
+{last_state}
+
+Current Observation:
+{current_state}
+
+What's the next action?"""
 }
 
 examples = [
@@ -172,3 +218,37 @@ class LLMAPI:
                 print('>>> 第{}次解析结果失败:{}'.format(try_times, e))
                 if try_times == MAX_RETRY:
                     return False
+    
+    def llm_gen_reflection(self, objective, fnode_action, last_state, current_state):
+        message = reflection_cot_prompt['intro'] + reflection_cot_prompt['template'].format(
+            objective=objective, 
+            fnode_action=fnode_action, 
+            last_state=last_state, 
+            current_state=current_state, 
+        )
+        
+        attempt = 0
+        while attempt < MAX_RETRY:
+            try:
+                completion = self.client.chat.completions.create(
+                    model='gpt-4',
+                    messages=[{'role': 'user', 'content': message}],
+                    temperature=0.7, 
+                    max_tokens=16384
+                )
+                return completion.choices[0].message.content
+            except Exception as e:
+                error_str = str(e)
+                print(f"Attempt {attempt + 1} failed with error: {e}")
+                
+                # 检查是否是输入长度超限错误
+                if "Range of input length should be [1, 30720]" in error_str:
+                    print(f"输入长度超过模型限制(30720)，跳过重试")
+                    # 直接返回错误信息，不再重试
+                    return f"ERROR: 输入长度超过模型限制(30720)"
+                
+                if attempt + 1 < MAX_RETRY:
+                    time.sleep(1)
+                else:
+                    print(f"Failed to process message after {MAX_RETRY} attempts. Error: {e}")
+                    return ''
