@@ -14,9 +14,10 @@ WebSynthesis is a framework integrating **world model** learning and **Monte Car
 ![framwork](./figure/framework.jpg)
 
 ## News
-* [08/07/2025] Our Paper is now available in [Arxiv](https://www.arxiv.org/abs/2507.04370).
-* [07/07/2025] We upload some of the training data and LoRA weights.
-* [06/07/2025] We release the code of WebSynthesis.
+* [08/07/2025] 🎉 Our Paper has been accepted as main conference in ACL 2026.
+* [08/07/2025] 📢 Our Paper is now available in [Arxiv](https://www.arxiv.org/abs/2507.04370).
+* [07/07/2025] 📢 We upload some of the training data and LoRA weights.
+* [06/07/2025] 📢 We release the code of WebSynthesis.
 
 
 ## Two-stage Curriculum Learning
